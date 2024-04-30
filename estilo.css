@@ -1,0 +1,150 @@
+body {
+    /*background: linear-gradient(170deg, pink, darkorchid);
+    background-attachment: fixed;*/
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    grid-template-rows: 8vh 200vh 8vh;
+    grid-template-areas: "h h" "m a" "f f";
+    /*font-family: Helvetica;*/
+}
+
+header {
+    /*color: black; */
+    background-color: pink;
+    /* border-radius: 0.3em;
+    margin-top: 1em;*/
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 85fr 15fr;
+    grid-template-areas: "hh1 ha";
+}
+
+header h1 {
+    grid-area: hh1;
+    /*padding: 0.45em;
+    margin: 0;
+    display: flex;
+    align-items: center;*/
+}
+
+header a {
+    grid-area: ha;
+    /*padding: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;*/
+}
+
+header a:hover {
+    /* background-color: darkmagenta; */
+    /*border-radius: inherit;
+    color: violet;*/
+}
+
+main { display: grid;
+    grid-area: m;
+    grid-template-rows: 5vh 95vh 100vh;
+    grid-template-areas: "g" "ti" "tw";
+    background-color: lightblue;
+}
+
+aside {
+    grid-area: a;
+    background-color: lightseagreen;
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-areas: "td" "tic";
+}
+
+aside article.talentosDesc {
+    grid-area: td;
+}
+
+section.talentosInfoComen {
+    grid-area: tic;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+footer {
+    grid-area: f;
+}
+
+#cabecalho {
+    /*height: 10%;
+    background: blue*/
+}
+
+.grupos {
+    grid-area: g;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas: "h21 h22 h23";
+    /* Cada item dentro das aspas está dentro de uma linha do grid, e esses itens preenchem as três colunas, se colocar cada item entre aspas, eles estarão cada um em uma linha diferente */
+}
+
+.grupos div h2 {
+    margin: 0;
+}
+
+.grupos div:first-of-type {
+    grid-area: h21;
+    background-color: blue;
+}
+
+.grupos div:nth-of-type(2) {
+    grid-area: h22;
+    background-color: purple;
+}
+
+.grupos div:last-of-type {
+    grid-area: h23;
+    background-color: darkblue;
+}
+
+.talentosImgs {
+    grid-area: ti;
+    overflow: hidden;
+}
+
+div.talentosImgs figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: ;
+}
+
+.talentosWP {
+    grid-area: tw;
+    overflow: hidden;
+}
+
+.nomesGrupos {
+    /*padding: 0.4em;
+    background-color: white;
+    font-size: 1.2em;
+    border-radius: 0.3em;
+    display: flex;*/
+}
+
+img {
+    width: 25%;
+}
+
+img.wallpapers {
+    width: 50%;
+}
+
+.promiseImgs, .adventImgs {
+    display: none;
+}
+
+#Ame, #Ina, #Calli, #Kiara, #Sana, #Irys, #Fauna, #Kronni, #Mumei, #Bae, #Shiori, #Bijou, #Nerissa, #Fuwawa, #Mococo {
+    display: none;
+}
