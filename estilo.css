@@ -66,7 +66,47 @@ aside article.talentosDesc {
     grid-area: td;
 }
 
-section.talentosInfoComen {
+section {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 43.5vh 43.5vh;
+    grid-template-areas: "pri seg ter" "qua qui sex";
+}
+
+section div.primeira {
+    grid-area: pri;
+}
+
+section div.segunda {
+    grid-area: seg;
+}
+
+section div.terceira {
+    grid-area: ter;
+}
+
+section div.quarta {
+    grid-area: qua;
+}
+
+section div.quinta {
+    grid-area: qui;
+}
+
+section div.sexta {
+    grid-area: sex;
+}
+
+section#mythImgs {
+    display: none;
+}
+
+section#adventImgs {
+    display: none;
+}
+
+section#talentosInfoComen {
+    display: revert;
     grid-area: tic;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -137,13 +177,19 @@ img {
     width: 25%;
 }
 
+section#mythImgs img, section#promiseImgs img, section#adventImgs img {
+    display: block;
+    width: 55%;
+    margin: auto;
+}
+
 img.wallpapers {
     width: 50%;
 }
 
-.promiseImgs, .adventImgs {
+/* .promiseImgs, .adventImgs {
     display: none;
-}
+} */
 
 #Ame, #Ina, #Calli, #Kiara, #Sana, #Irys, #Fauna, #Kronni, #Mumei, #Bae, #Shiori, #Bijou, #Nerissa, #Fuwawa, #Mococo {
     display: none;
