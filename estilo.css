@@ -5,7 +5,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 70fr 30fr;
-    grid-template-rows: 8vh 100vh 100vh 8vh;
+    grid-template-rows: 8vh 100vh 195vh 8vh;
     grid-template-areas: "h h" "m a" "tw tw" "f f";
     /*font-family: Helvetica;*/
 }
@@ -163,6 +163,52 @@ div.talentosImgs figure {
 .talentosWP {
     grid-area: tw;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 65vh 65vh 65vh;
+    grid-template-areas: "p1 a1" "p2 a2" "p3 a3";
+}
+
+.papel1 {
+    grid-area: p1;
+    background-image: url(img/Conteudo/holomyth.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.papel2 {
+    grid-area: p2;
+    background-image: url(img/Conteudo/council.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.papel3 {
+    grid-area: p3;
+    background-image: url(img/Conteudo/advent.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.album1 {
+    grid-area: a1;
+    background-image: url(img/Conteudo/thousand.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.album2 {
+    grid-area: a2;
+    background-image: url(img/Conteudo/rise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.album3 {
+    grid-area: a3;
+    background-image: url(img/Conteudo/rebellion.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .nomesGrupos {
