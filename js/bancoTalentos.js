@@ -1,6 +1,6 @@
-const grupos = [ 
-    [ 'Myth', 'Promise','Advent', 'Justice' ],
+const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
+const grupos = [ 
     [ /* Myth */
         ['Gawr Gura', 
             `Gura é amigável e prontamente agradável, e muitas vezes diverte seus espectadores com travessuras tolas. Ela não tem senso de direção, muitas vezes escreve e pronuncia palavras incorretamente, tem problemas para se lembrar de sua própria idade e sempre falha em resolver problemas básicos de matemática, levando os espectadores a chamá-la afetuosamente de "tubarão burro". De forma memorável, um espectador declarou que "Gura tem um coração de ouro e uma cabeça de osso.`,
@@ -55,4 +55,13 @@ const grupos = [
     ]
 ];
 
-export const [ nomesGrupos, myth, promise, advent, justice ]  = grupos;
+const fotos = [
+    [ '../img/perfis/gura.png', '../img/perfis/ame.png' ],
+    [ '../img/perfis/sana.png' ],
+    [ '../img/perifs/shiori.webp' ],
+    [ '../img/peris/liz.png' ]
+]
+
+/* export const [ nomesGrupos, myth, promise, advent, justice ]  = grupos; */
+export const [ Myth, Promise, Advent, Justice ] = fotos;
+export { nomesGrupos };
