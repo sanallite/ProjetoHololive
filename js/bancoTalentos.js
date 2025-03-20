@@ -55,13 +55,39 @@ const grupos = [
     ]
 ];
 
+const pastaFotosPefil =  '../assets/img/perfis';
+
 const fotos = [
-    [ '../img/perfis/gura.png', '../img/perfis/ame.png' ],
-    [ '../img/perfis/sana.png' ],
-    [ '../img/perifs/shiori.webp' ],
-    [ '../img/peris/liz.png' ]
+    [ // Myth
+        `${pastaFotosPefil}/gura.png`, `${pastaFotosPefil}/ame.png`, `${pastaFotosPefil}/ina.png`, 
+        `${pastaFotosPefil}/mori.png`, `${pastaFotosPefil}/kiara.png` 
+    ],
+    
+    [ // Council / Promise
+        `${pastaFotosPefil}/irys.png`, `${pastaFotosPefil}/sana.png`, `${pastaFotosPefil}/fauna.png`,
+        `${pastaFotosPefil}/kronni.png`, `${pastaFotosPefil}/mumei.png`, `${pastaFotosPefil}/baelz.png`
+        
+    ],
+
+    [ // Advent
+        `${pastaFotosPefil}/shiori.webp` 
+        
+    ],
+
+    [ // Justice
+        `${pastaFotosPefil}/liz.png` 
+
+    ]
 ]
 
 /* export const [ nomesGrupos, myth, promise, advent, justice ]  = grupos; */
 export const [ Myth, Promise, Advent, Justice ] = fotos;
+
+export const mapaFotosGrupos = {
+    "Myth": Myth,
+    "Promise": Promise,
+    "Advent": Advent,
+    "Justice": Justice
+}
+
 export { nomesGrupos };
