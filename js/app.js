@@ -1,4 +1,4 @@
-import { nomesGrupos, mapaFotosGrupos, Myth, Promise, Advent, Justice } from "./bancoTalentos.js";
+import { nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth, Promise, Advent, Justice } from "./bancoTalentos.js";
 /* Importação das variáveis no meu banco de dados local */
 
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
@@ -36,12 +36,39 @@ const exibirFotosPefilTalentos = grupo => {
 
     for (let i = 0; i < grupo.length; i++) {
         let imagem = document.createElement('img');
-        imagem.setAttribute('src', `${grupo[i]}`);
-        imagem.className = 'fotoPerfilTalento';
+        imagem.setAttribute('src', `${grupo[i][0]}`);
+        imagem.className = `fotoPerfilTalento ${grupo[i][1]}`;
+        imagem.addEventListener('click', () => {
+            exibirInfoTalentos(mapaTalentos[grupo[i][1]])
+        });
         sectionTalentosImgs.appendChild(imagem);
     }
     /* Para cada elemento do vetor que contém as imagens, será criado um elemento html para exibi-lás */
 }
 
+const exibirInfoTalentos = talento => {
+    const asideTalentos = document.querySelector('.talentosDesc');
+    const descricoesTalentos = document.querySelectorAll('.descTalento');
+
+    for (let i = 0; i < descricoesTalentos.length; i++) {
+        asideTalentos.removeChild(descricoesTalentos[i]);
+    }
+
+    let divInfo = document.createElement('div');
+    divInfo.className = `descTalento ${talento.nome}`;
+
+    let nome = document.createElement('h3');
+    nome.textContent = talento.nome;
+
+    let desc = document.createElement('p');
+    desc.innerHTML = talento.descricao;
+
+    divInfo.appendChild(nome);
+    divInfo.appendChild(desc);
+
+    asideTalentos.appendChild(divInfo);
+}
+
 exibirNomesGrupos();
 exibirFotosPefilTalentos(Myth);
+exibirInfoTalentos(mapaTalentos["Gura"]);
