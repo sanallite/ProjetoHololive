@@ -14,24 +14,26 @@
                 }
             }
         </script>
+        <!-- Definindo o caminho das importações para ter certeza que o script com ESModules rode corretamente. -->
 
         <script type="module" src="./js/app.js"></script>
     </head>
     
     <body>
         <header>
-        <h1>Hololive English</h1>
-            <a href="https://en.hololive.tv" target="_blank">Site Oficial</a>
+            <h1>Hololive English</h1>
+
+            <a href="https://hololivepro.com/en" target="_blank">Site Oficial</a>
         </header>
 
         <aside>
-            <article class="talentosDesc"> 
-            </article>
+            <article class="talentosDesc"></article>
+            <!-- Conteúdo criado dinâmicamente no app.js -->
 
-            <section id="talentosInfoComen">
+            <section id="talentosInfoComentarios">
                 <h2>Informações sobre os talentos</h2>
+
                 <table>
-                    <caption>Por ordem de estréia</caption>
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -40,153 +42,53 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <th>Mori Calliope</th>
-                            <td>4 de abril</td>
-                            <td>1.67m</td>
-                        </tr>
-
-                        <tr>
-                            <th>Takanashi Kiara</td>
-                            <td>6 de julho</td>
-                            <td>1.65m</td>
-                        </tr>
-
-                        <tr>
-                            <th>Ninomae Ina'nis</td>
-                            <td>20 de maio</td>
-                            <td>1.57m</td>
-                        </tr>
-
-                        <tr>
-                            <th>Gawr Gura</td>
-                            <td>20 de junho</td>
-                            <td>1.41m</td>
-                        </tr>
-
-                        <tr>
-                            <th>Watson Amelia</td>
-                            <td>6 de janeiro</td>
-                            <td>1.50m</td>
-                        </tr>
-
-                        <tr>
-                            <th>Irys</th>
-                            <td>7 de março</td>
-                            <td>1.66m</td>
-                        </tr>
-                        <tr>
-                            <th>Tsukumo Sana</th>
-                            <td>10 de junho</td>
-                            <td>1.69m*</td>
-                        </tr>
-                        <tr>
-                            <th>Ceres Fauna</th>
-                            <td>21 de março</td>
-                            <td>1.64m</td>
-                        </tr>
-                        <tr>
-                            <th>Ouro Kronni</th>
-                            <td>14 de março</td>
-                            <td>1.68m</td>
-                        </tr>
-                        <tr>
-                            <th>Nanashi Mumei</th>
-                            <td>4 de agosto</td>
-                            <td>1.56m</td>
-                        </tr>
-                        <tr>
-                            <th>Hakos Baelz</th>
-                            <td>29 de fevereiro</td>
-                            <td>1.49m</td>
-                        </tr>
-                        <tr>
-                            <th>Shiori Novella</th>
-                            <td>2 de maio</td>
-                            <td>1.63m</td>
-                        </tr>
-                        <tr>
-                            <th>Koseki Bijou</th>
-                            <td>14 de abril</td>
-                            <td>1.40m</td>
-                        </tr>
-                        <tr>
-                            <th>Nerissa Ravencroft</th>
-                            <td>21 de novembro</td>
-                            <td>1.75m</td>
-                        </tr>
-                        <tr>
-                            <th>Fuwawa Abyssgard</th>
-                            <td>1 de fevereiro</td>
-                            <td>1.55m</td>
-                        </tr>
-                        <tr>
-                            <th>Mococo Abyssgard</th>
-                            <td>2 de fevereiro</td>
-                            <td>1.55m</td>
-                        </tr>
-                    </tbody>
+                    <tbody class="tabelaInfo"></tbody>
 
                     <tfoot>
-                            <tr>
-                                <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
-                            </tr>
+                        <tr>
+                            <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
+                        </tr>
                     </tfoot>
                 </table>
 
-            <form>
-                <fieldset>
-                    <legend>Comentários</legend>
+                <form>
+                    <fieldset>
+                        <legend>Comentários</legend>
 
-                    <textarea name="Comentários" cols="50" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
-                    <p> <input type="submit" value="Enviar"> </p>
-                </fieldset>
-            </form>
+                        <textarea name="Comentários" cols="50" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
 
-            <div>
-
-            </div>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </fieldset>
+                </form>
             </section>
         </aside>
 
         <main>
-            <nav class="grupos">
-            </nav>
+            <nav class="grupos"></nav>
 
-            <section class="talentosImgs">
-            </section>
+            <section class="talentosImgs"></section>
         </main>
-        <section class="talentosWP">
 
-            <div class="papel1">
-                <!--<img src="img/Conteudo/holomyth.webp" title="HoloMyth drawn by Ina" alt="Gura, Ame, Kiara, Calli, and Ina" class="wallpapers">-->
-            </div>
+        <section class="talentosWallpapers">
+            <div class="papel1"></div>
+            <!-- Exibição de imagens feita pelo css -->
 
-            <div class="album1">
-                <!--<img src="img/Conteudo/thousand.webp" title="Journey Like a Thousand Years" alt="Cover artwork for the song Journey Like a Thousand Years">-->
-            </div>
+            <div class="album1"></div>
 
-            <div class="papel2">
-                <!--<img src="img/Conteudo/council.jpg" title="Hololive Council Wallpaper" alt="Sana, Fauna, Kronni, Mumei and Baelz" class="wallpapers">-->
-            </div>
+            <div class="papel2"></div>
 
-            <div class="album2">
-                <!--<img src="img/Conteudo/rise.png" title="Rise" alt="Cover artwork for the song Rise">-->
-            </div>
+            <div class="album2"></div>
             
-            <div class="papel3">
-                <!--<img src="img/Conteudo/advent.webp" title="Hololive Advent Official Art" alt="Shiori, Bijou, Nerissa, Fuwawa and Mococo" class="wallpapers">-->
-            </div>
+            <div class="papel3"></div>
 
-            <div class="album3">
-                <!--<img src="img/Conteudo/rebellion.jpg" title="Rebellion" alt="Cover artwork for the song Rebellion">-->
-            </div>
+            <div class="album3"></div>
         </section>
 
         <footer>
-            <blockquote>Site criado por Márcio Rodriguês Teodoro<br>
-            Copyright 2016 Cover Corp. Todos os direitos reservados.</blockquote>
+            <blockquote>Site criado por Márcio Teodoro, Sanallite<br>
+            Copyright 2016 Cover Corp. Todos os direitos reservados. - All rights reserved.</blockquote>
         </footer>
-</body>
+    </body>
 </html>
