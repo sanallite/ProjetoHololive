@@ -71,4 +71,4 @@ const exibirInfoTalentos = talento => {
 
 exibirNomesGrupos();
 exibirFotosPefilTalentos(Myth);
-exibirInfoTalentos(mapaTalentos["Gura"]);
+exibirInfoTalentos(mapaTalentos['Gura']);

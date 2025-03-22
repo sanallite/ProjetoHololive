@@ -7,7 +7,7 @@ const talentos = [
         aniversario: '20 de Junho',
         altura: '141cm',
         ilustrador: 'Amashiro Natsuki',
-        nomeFas: 'chumbuds',
+        nomeFas: 'Chumbuds',
         grupo: 'Myth'
     },
     {
@@ -16,7 +16,7 @@ const talentos = [
         aniversario: '06 de Janeiro',
         altura: '150cm',
         ilustrador: 'Nabi',
-        nomeFas: 'teamates',
+        nomeFas: 'Teamates',
         grupo: 'Myth'
     },
     {
@@ -63,12 +63,12 @@ const talentos = [
         aniversario: '10 de Junho',
         altura: '169cm (com limitador, e sem limitador 1.697.840km)',
         ilustrador: 'pako',
-        nomeFas: 'Sanallite',
+        nomeFas: 'Sanallites',
         grupo: 'Council'
     },
     {
         nome: 'Ceres Fauna',
-        descricao: `Na estreia, Hakos Baelz descreveu Fauna como uma mãe natural, uma beleza reconfortante e alguém que dá os melhores carinhos na cabeça. Os fãs também notaram rapidamente sua notável semelhança com Yukihana Lamy em muitos aspectos, desde o tom de voz e a personalidade maternal até o motivo geral da natureza. Fauna parece ser extremamente protetora com seus fãs e Nanashi Mumei ao ponto de possessividade e ciúme extremo, e não hesitará em mudar para um tom mais condescendente quando se depara com algo inaceitável. Devido a seus traços possessivos, Fauna freqüentemente tenta convencer Mumei e os humanos a "voltarem à natureza" sempre que Mumei fica chateado. Fauna também fica embaraçada com bastante facilidade e usa o tique verbal "uuuu" com frequência`,
+        descricao: `Graduada - Na estreia, Hakos Baelz descreveu Fauna como uma mãe natural, uma beleza reconfortante e alguém que dá os melhores carinhos na cabeça. Os fãs também notaram rapidamente sua notável semelhança com Yukihana Lamy em muitos aspectos, desde o tom de voz e a personalidade maternal até o motivo geral da natureza. Fauna parece ser extremamente protetora com seus fãs e Nanashi Mumei ao ponto de possessividade e ciúme extremo, e não hesitará em mudar para um tom mais condescendente quando se depara com algo inaceitável. Devido a seus traços possessivos, Fauna freqüentemente tenta convencer Mumei e os humanos a "voltarem à natureza" sempre que Mumei fica chateado. Fauna também fica embaraçada com bastante facilidade e usa o tique verbal "uuuu" com frequência`,
         aniversario: '21 de Março',
         altura: '164cm',
         ilustrador: 'Tohsaka Asagi',
@@ -149,6 +149,56 @@ const talentos = [
         ilustrador: 'ICOMOCHI',
         nomeFas: 'Ruffians',
         grupo: 'Advent'
+    },
+    {
+        nome: 'Elizabeth Rose Bloodflame',
+        descricao: `A Rainha Escarlate, Elizabeth Rose Bloodflame abre caminho para o mundo e todo o seu povo.<br>
+        Ela não apenas fica na vanguarda durante as missões com suas proezas físicas, mas também captura os corações de todos ao seu redor com sua bela voz para cantar.<br>
+        Ela é altamente autodisciplinada e um pouco dura demais consigo mesma, mas, talvez devido à ênfase de sua cultura na educação e nas maneiras, ela tende a ser um pouco branda com as pessoas ao seu redor.<br>
+        Como resultado, ela passa seus dias estressada com seu trabalho coordenando a Justiça, mas parece que não há nada que uma boa soneca em uma cama confortável não possa consertar.`,
+        aniversario: '25 de Abril',
+        altura: '171cm',
+        ilustrador: 'MEPHISTO',
+        nomeFas: 'Rosarians',
+        grupo: 'Justice'
+    },
+    {
+        nome: 'Gigi Murin',
+        descricao: `Nascida e criada sob a bandeira da Liberdade, Gigi Murin é uma caçadora de espírito livre e gremlin travessa.<br>
+        Enquanto ela é proficiente em perseguir alvos com pura intuição, ela luta com a memorização de direções e tomar decisões calculadas.<br>
+        Ela afirma que prefere não passar muito tempo pensando porque isso faz sua cabeça doer.<br>
+        Essas peculiaridades também estão presentes em sua vida cotidiana, onde ela tende a priorizar seu desejo instintivo por diversão e ser boba sobre qualquer outra coisa.<br>
+        Ela costuma ser a fonte de dores de cabeça para quem está ao seu redor, causando problemas porque ela “achou que seria engraçado.”`,
+        aniversario: '18 de Outubro',
+        altura: '153cm',
+        ilustrador: 'Makihitsuji',
+        nomeFas: 'Grems',
+        grupo: 'Justice'
+    },
+    {
+        nome: 'Cecilia Immergreen',
+        descricao: `Cecilia Immergreen é um autômato antigo, com propensão para flores, chá e criação musical.<br>
+        Elaborada na antiguidade, Cecília foi originalmente feita para ser dedicada à servidão eterna.<br>
+        No entanto, nos últimos tempos, ela começou a relaxar no trabalho, cozinhando preguiçosamente principalmente batatas junto com tudo o mais que encontrava na cozinha.<br>
+        Ela praticamente abandonou seus deveres, fazendo o mínimo e mergulhando principalmente em seus vários hobbies astutos.<br>
+        Com novos interesses na vida, ela assume cada nova experiência com a pura curiosidade de uma jovem.`,
+        aniversario: '11 de Novembro',
+        altura: '162cm',
+        ilustrador: 'DSmile',
+        nomeFas: 'Otomos',
+        grupo: 'Justice'
+    },
+    {
+        nome: 'Raora Panthera',
+        descricao: `A Artista dos Olhos de Deus, Raora Panthera é dotada de proezas investigativas e descritivas.<br>
+        Seus meios de coleta de informações são diversos, utilizando não apenas sua agilidade e habilidades sociais, mas também diversas plataformas de mídia social e outros métodos únicos.<br>
+        As composições faciais que ela desenha com base nas informações que coleta são conhecidas por sua precisão, quase como se ela estivesse olhando diretamente para os criminosos enquanto desenha.<br>
+        No entanto, hoje em dia, seu olhar é direcionado para encontrar novas pizzarias e desfrutar da cultura pop do extremo leste.`,
+        aniversario: '11 de Maio',
+        altura: '158cm',
+        ilustrador: 'Nekojira',
+        nomeFas: 'Chattini',
+        grupo: 'Justice'
     }
 ];
 
@@ -182,29 +232,33 @@ const fotos = [
 export const [ Myth, Promise, Advent, Justice ] = fotos;
 
 export const mapaFotosGrupos = {
-    "Myth": Myth,
-    "Promise": Promise,
-    "Advent": Advent,
-    "Justice": Justice
+    'Myth': Myth,
+    'Promise': Promise,
+    'Advent': Advent,
+    'Justice': Justice
 }
 
 export const mapaTalentos = {
-    "Gura": talentos[0],
-    "Amelia": talentos[1],
-    "Kiara": talentos[2],
-    "Calli": talentos[3],
-    "Ina": talentos[4],
-    "IRyS": talentos[5],
-    "Sana": talentos[6],
-    "Fauna": talentos[7],
-    "Kronni": talentos[8],
-    "Mumei": talentos[9],
-    "Baelz": talentos[10],
-    "Shiori": talentos[11],
-    "Bijou": talentos[12],
-    "Nerissa": talentos[13],
-    "Fuwawa": talentos[14],
-    "Mococo": talentos[15]
+    'Gura': talentos[0],
+    'Amelia': talentos[1],
+    'Kiara': talentos[2],
+    'Calli': talentos[3],
+    'Ina': talentos[4],
+    'IRyS': talentos[5],
+    'Sana': talentos[6],
+    'Fauna': talentos[7],
+    'Kronni': talentos[8],
+    'Mumei': talentos[9],
+    'Baelz': talentos[10],
+    'Shiori': talentos[11],
+    'Bijou': talentos[12],
+    'Nerissa': talentos[13],
+    'Fuwawa': talentos[14],
+    'Mococo': talentos[15],
+    'Elizabeth': talentos[16],
+    'Gigi': talentos[17],
+    'Cecilia': talentos[18],
+    'Raora': talentos[19]
 }
 
 export { nomesGrupos, talentos };
