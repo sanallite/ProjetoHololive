@@ -3,8 +3,7 @@ import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth, Promise, Ad
 
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
-    const navGrupos = document.getElementsByClassName('grupos')[0];
-    /* Pegando o primeiro elemento do resultado, o que tem índice 0. */
+    const navGrupos = document.getElementById('grupos');
 
     nomesGrupos.forEach(element => {
         let botao = document.createElement('button');
@@ -26,7 +25,7 @@ const exibirNomesGrupos = () => {
 const exibirFotosPefilTalentos = grupo => {
 /* Síntaxe de função arrow com apenas um parâmetro */
 
-    const sectionTalentosImgs = document.querySelector('section.talentosImgs');
+    const sectionTalentosImgs = document.querySelector('section#talentosImgs');
     const fotosExibidas = document.querySelectorAll('.fotoPerfilTalento');
 
     for ( let i = 0; i < fotosExibidas.length; i++ ) {
@@ -52,11 +51,11 @@ const exibirFotosPefilTalentos = grupo => {
 
 /* Função para exibir as informações de um talento que inicialmente é a Gura, criando elementos html dinâmicamente, com essa função sendo executada pelo escutador de eventos quando uma foto de perfil dos talentos é clicada. */
 const exibirInfoTalentos = talento => {
-    const asideTalentos = document.querySelector('.talentosDesc');
+    const articleTalentos = document.querySelector('#talentosDesc');
     const descricoesTalentos = document.querySelectorAll('.descTalento');
 
     for (let i = 0; i < descricoesTalentos.length; i++) {
-        asideTalentos.removeChild(descricoesTalentos[i]);
+        articleTalentos.removeChild(descricoesTalentos[i]);
     }
     /* Removendo os elementos com as informações que estavam sendo exibidas na tela, para exibir as informações do talento que tava a foto clicada. */
 
@@ -72,7 +71,7 @@ const exibirInfoTalentos = talento => {
     divInfo.appendChild(nome);
     divInfo.appendChild(desc);
 
-    asideTalentos.appendChild(divInfo);
+    articleTalentos.appendChild(divInfo);
 }
 
 /* Função que cria uma tabela com algumas informações dos talentos. */

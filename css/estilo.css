@@ -1,242 +1,157 @@
 body {
-    /*background: linear-gradient(170deg, pink, darkorchid);
-    background-attachment: fixed;*/
-    /* width: 90%; */
-    margin: auto;
     display: grid;
     grid-template-columns: 70fr 30fr;
-    grid-template-rows: 8vh 100vh 195vh 8vh;
+    grid-template-rows: 8vh 90vh 220vh 8vh;
     grid-template-areas: "h h" "m a" "tw tw" "f f";
-    /*font-family: Helvetica;*/
-}
+    margin: auto;
+}       
 
 header {
-    /*color: black; */
-    background-color: pink;
-    /* border-radius: 0.3em;
-    margin-top: 1em;*/
     grid-area: h;
-    display: grid;
-    grid-template-columns: 85fr 15fr;
-    grid-template-areas: "hh1 ha";
+    display: flex;
+    background-color: pink;
+    justify-content: space-between;
 }
 
 header h1 {
     grid-area: hh1;
-    /*padding: 0.45em;
-    margin: 0;
     display: flex;
-    align-items: center;*/
+    align-items: center;
+    margin: 1rem;
+    background-color: aqua;
 }
 
 header a {
     grid-area: ha;
-    /*padding: 0.9em;
     display: flex;
+    padding: 1rem;
     align-items: center;
-    justify-content: end;
     text-decoration: none;
     font-size: 1.2em;
     color: black;
-    font-weight: bold;*/
+    font-weight: bold;
+    background-color: aliceblue;
 }
 
-header a:hover {
-    /* background-color: darkmagenta; */
-    /*border-radius: inherit;
-    color: violet;*/
-}
-
-main { display: grid;
+main { 
     grid-area: m;
-    grid-template-rows: 5vh 95vh;
+    display: grid;
+    grid-template-rows: 6vh 84vh;
     grid-template-areas: "g" "ti";
     background-color: lightblue;
 }
 
 aside {
     grid-area: a;
+    display: grid;
     background-color: lightseagreen;
-    display: grid;
-    grid-template-rows: 100vh;
+    grid-template-rows: 45vh 45vh;
     grid-template-areas: "td" "tic";
-}
-
-aside article.talentosDesc {
-    grid-area: td;
-}
-
-section {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 43.5vh 43.5vh;
-    grid-template-areas: "pri seg ter" "qua qui sex";
-}
-
-section div.primeira {
-    grid-area: pri;
-}
-
-section div.segunda {
-    grid-area: seg;
-}
-
-section div.terceira {
-    grid-area: ter;
-}
-
-section div.quarta {
-    grid-area: qua;
-}
-
-section div.quinta {
-    grid-area: qui;
-}
-
-section div.sexta {
-    grid-area: sex;
-}
-
-section#mythImgs {
-    display: none;
-}
-
-section#adventImgs {
-    display: none;
-}
-
-section#talentosInfoComen {
-    display: revert;
-    grid-area: tic;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 footer {
     grid-area: f;
 }
 
-#cabecalho {
-    /*height: 10%;
-    background: blue*/
-}
-
-.grupos {
+nav#grupos {
     grid-area: g;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-areas: "h21 h22 h23";
-    /* Cada item dentro das aspas está dentro de uma linha do grid, e esses itens preenchem as três colunas, se colocar cada item entre aspas, eles estarão cada um em uma linha diferente */
-}
-
-.grupos div h2 {
-    margin: 0;
-}
-
-.grupos div:first-of-type {
-    grid-area: h21;
+    display: flex;
+    justify-content: space-between;
     background-color: blue;
 }
 
-.grupos div:nth-of-type(2) {
-    grid-area: h22;
-    background-color: purple;
+button.nomesGrupos {
+    width: 100%;
+    margin: 0.6rem;
 }
 
-.grupos div:last-of-type {
-    grid-area: h23;
-    background-color: darkblue;
+article#talentosDesc {
+    grid-area: td;
 }
 
-.talentosImgs {
-    grid-area: ti;
-    overflow: hidden;
+section#talentosInfoComentarios {
+    grid-area: tic;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-div.talentosImgs figure {
-    margin: 0;
+#talentosInfoComentarios form {
+    margin: 1rem;
+    background-color: wheat;
+}
+
+#talentosInfoComentarios table {
+    background-color: yellowgreen;
+    justify-self: center;
+}
+
+#talentosInfoComentarios h2 {
+    background-color: blueviolet;
+    justify-self: center;
+}
+
+section#talentosImgs {
     display: grid;
-    grid-template-rows: 50vh 50vh;
-    grid-template-columns: ;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 42vh 42vh;
+    grid-template-areas: "pri seg ter" "qua qui sex";
 }
 
-.talentosWP {
+#talentosImgs img {
+    height: 100%;
+    justify-self: center;
+    align-self: start;
+}
+
+section#talentosWallpapers {
     grid-area: tw;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 7fr 3fr;
-    grid-template-rows: 65vh 65vh 65vh;
+    grid-template-columns: 6.5fr 3.5fr;
+    grid-template-rows: 75vh 75vh 75vh;
     grid-template-areas: "p1 a1" "p2 a2" "p3 a3";
 }
 
-.papel1 {
+div.papel1 {
     grid-area: p1;
-    background-image: url(img/Conteudo/holomyth.webp);
+    background-image: url(../assets/img/wallpapers/holomyth.webp);
     background-size: cover;
     background-position: center;
 }
 
-.papel2 {
+div.papel2 {
     grid-area: p2;
-    background-image: url(img/Conteudo/council.jpg);
+    background-image: url(../assets/img/wallpapers/council.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.papel3 {
+div.papel3 {
     grid-area: p3;
-    background-image: url(img/Conteudo/advent.webp);
+    background-image: url(../assets/img/wallpapers/advent.webp);
     background-size: cover;
     background-position: center;
 }
 
-.album1 {
+div.album1 {
     grid-area: a1;
-    background-image: url(img/Conteudo/thousand.webp);
+    background-image: url(../assets/img/capas/thousand.webp);
     background-size: cover;
     background-position: center;
 }
 
-.album2 {
+div.album2 {
     grid-area: a2;
-    background-image: url(img/Conteudo/rise.png);
+    background-image: url(../assets/img/capas/rise.png);
     background-size: cover;
     background-position: center;
 }
 
-.album3 {
+div.album3 {
     grid-area: a3;
-    background-image: url(img/Conteudo/rebellion.jpg);
+    background-image: url(../assets/img/capas/rebellion.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.nomesGrupos {
-    /*padding: 0.4em;
-    background-color: white;
-    font-size: 1.2em;
-    border-radius: 0.3em;
-    display: flex;*/
-}
-
-img {
-    width: 25%;
-}
-
-section#mythImgs img, section#promiseImgs img, section#adventImgs img {
-    display: block;
-    width: 55%;
-    margin: auto;
-}
-
-img.wallpapers {
-    width: 50%;
-}
-
-/* .promiseImgs, .adventImgs {
-    display: none;
-} */
-
-#Ame, #Ina, #Calli, #Kiara, #Sana, #Irys, #Fauna, #Kronni, #Mumei, #Bae, #Shiori, #Bijou, #Nerissa, #Fuwawa, #Mococo {
-    display: none;
 }

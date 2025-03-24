@@ -76,7 +76,7 @@ const talentos = [
         grupo: 'Council / Promise'
     },
     {
-        nome: 'Ouro Kronni',
+        nome: 'Ouro Kronii',
         descricao: `Ouro Kronii é muito confiante, egocêntrica e completamente sem medo de se elogiar. No entanto, ela também se descreve como alguém que geralmente não é uma pessoa feliz, a ponto de listar o "medo existencial" como um hobby. Kronii pode ser brincalhona às vezes, especialmente com seus Kronies, e a combinação de seu humor inexpressivo e piadas secas contrasta com muitos dos outros membros que são mais extrovertidos ou mais gentis com suas palavras.<br>
         Sua voz é poderosa e bem controlada, dando uma vibe de "irmã mais velha", embora sua personalidade real seja um pouco mais próxima de uma "tia legal" ou um personagem de alívio cômico dolorosamente identificável. Sua confiança projetada e auto-elogio podem ser interpretados como um mecanismo de enfrentamento para o sofrimento constante que ela suporta, tanto devido à sua hilariante má sorte quanto ao fato de que os outros adoram provocá-la tanto.`,
         aniversario: '14 de Março',
@@ -212,7 +212,7 @@ const fotos = [
     
     [ // Council / Promise
         [`${pastaFotosPefil}/irys.png`, 'IRyS'], [`${pastaFotosPefil}/sana.png`, 'Sana'], [`${pastaFotosPefil}/fauna.png`, 'Fauna'],
-        [`${pastaFotosPefil}/kronni.png`, 'Kronni'], [`${pastaFotosPefil}/mumei.png`, 'Mumei'], [`${pastaFotosPefil}/baelz.png`, 'Baelz']
+        [`${pastaFotosPefil}/kronii.png`, 'Kronii'], [`${pastaFotosPefil}/mumei.png`, 'Mumei'], [`${pastaFotosPefil}/baelz.png`, 'Baelz']
         
     ],
 
@@ -247,7 +247,7 @@ export const mapaTalentos = {
     'IRyS': talentos[5],
     'Sana': talentos[6],
     'Fauna': talentos[7],
-    'Kronni': talentos[8],
+    'Kronii': talentos[8],
     'Mumei': talentos[9],
     'Baelz': talentos[10],
     'Shiori': talentos[11],
