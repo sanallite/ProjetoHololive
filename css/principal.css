@@ -1,0 +1,68 @@
+/* Folha de estilo príncipal */
+
+body {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    grid-template-rows: 8vh 90vh 75vh 8vh;
+    grid-template-areas: "h h" "m a" "tw tw" "f f";
+    margin: auto;
+}       
+
+header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    grid-area: hh1;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+header a {
+    grid-area: ha;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+main { 
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 6vh 84vh;
+    grid-template-areas: "g" "ti";
+}
+
+footer {
+    grid-area: f;
+}
+
+nav#grupos {
+    grid-area: g;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.nomesGrupos {
+    width: 100%;
+    margin: 0.6rem;
+}
+
+section#talentosImgs {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 42vh 42vh;
+    grid-template-areas: "pri seg ter" "qua qui sex";
+}
+
+#talentosImgs img {
+    height: 100%;
+    justify-self: center;
+    align-self: start;
+}
