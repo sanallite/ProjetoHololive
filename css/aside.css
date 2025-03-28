@@ -2,11 +2,13 @@
 
 aside {
     grid-area: a;
-    display: grid;
-    grid-template-rows: 45vh 45vh;
-    grid-template-areas: "td" "tic";
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+aside#tabela {
+    grid-area: sa;
+    display: grid;
 }
 
 article#talentosDesc {
@@ -16,22 +18,22 @@ article#talentosDesc {
     padding: 1rem;
 }
 
-section#talentosInfoComentarios {
+section#talentosInfo {
     grid-area: tic;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-#talentosInfoComentarios form {
+#talentosInfo form {
     margin: 1rem;
 }
 
-#talentosInfoComentarios table {
+#talentosInfo table {
     justify-self: center;
     border-collapse: collapse;
 }
 
-#talentosInfoComentarios table tr, th, td {
+#talentosInfo table tr, th, td {
     border-style: solid;
     border-width: 1px;
     padding: 0.7rem
@@ -41,6 +43,6 @@ table thead tr, tfoot tr {
     background-color: whitesmoke;
 }
 
-#talentosInfoComentarios h2 {
+#talentosInfo h2 {
     justify-self: center;
 }
