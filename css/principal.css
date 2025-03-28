@@ -3,7 +3,7 @@
 body {
     display: grid;
     grid-template-columns: 70fr 30fr;
-    grid-template-rows: 8vh 90vh 75vh 8vh;
+    grid-template-rows: 8vh 90vh 80vh 8vh;
     grid-template-areas: "h h" "m a" "tw tw" "f f";
     margin: auto;
 }       

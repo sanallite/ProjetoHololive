@@ -5,32 +5,32 @@ section#talentosWallpapers {
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 75vh;
-    grid-template-areas: "p1 p2 p3";
+    grid-template-rows: 75vh 1fr;
+    grid-template-areas: "p1 p2 p3" "bt bt bt";
 }
 
 div.papel1 {
     grid-area: p1;
-    background-image: url(../assets/img/wallpapers/holomyth.webp);
+    background-image: url(../assets/img/wallpapers/justice.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
 div.papel2 {
     grid-area: p2;
-    background-image: url(../assets/img/wallpapers/council.jpg);
+    background-image: url(../assets/img/wallpapers/holomyth.webp);
     background-size: cover;
     background-position: center;
 }
 
 div.papel3 {
     grid-area: p3;
-    background-image: url(../assets/img/wallpapers/advent.webp);
+    background-image: url(../assets/img/wallpapers/council.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
-div.album1 {
+/* div.album1 {
     grid-area: a1;
     background-image: url(../assets/img/capas/thousand.webp);
     background-size: cover;
@@ -49,4 +49,4 @@ div.album3 {
     background-image: url(../assets/img/capas/rebellion.jpg);
     background-size: cover;
     background-position: center;  
-}
+} */
