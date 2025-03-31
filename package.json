@@ -9,8 +9,10 @@
   "author": "Márcio Teodoro",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
     "firebase": "^11.5.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "vite": "^6.2.4"
+  }
 }
