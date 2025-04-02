@@ -1,4 +1,4 @@
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, onSnapshot, query } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
 const adicionarComentario = async (nome, comentario) => {
@@ -34,4 +34,26 @@ const adicionarComentario = async (nome, comentario) => {
     }
 }
 
-export { adicionarComentario }
+const buscarComentarios = async (callback) => {
+    const busca = query(collection(db, 'comentarios'));
+
+    const unsubscribe = onSnapshot(busca, ( querySnapshot ) => {
+        let lista = [];
+
+        querySnapshot.forEach(doc => {
+            lista.push({
+                ...doc.data()
+            })
+        })
+
+        callback(lista);
+    },
+    (erro) => {
+        console.error('Erro na consulta de comentários: '+erro);
+        callback([], erro)
+    });
+
+    return unsubscribe;
+}
+
+export const comentService = { adicionarComentario, buscarComentarios }
