@@ -1,12 +1,17 @@
-import { collection, addDoc, onSnapshot, query } from "firebase/firestore";
-import { db } from "./firebaseConfig";
+/* Acessando e manipulando os comentários no banco de dados. */
 
+import { collection, addDoc, onSnapshot, query, orderBy } from "firebase/firestore";
+import { db } from "./firebaseConfig";
+/* Métodos do Firestore e as definições do banco desse app. */
+
+/* Função assíncrona que tenta adicionar um documento no Firestore e retorna objetos que contém as informações relevantes sobre essa tentativa. Recebe como parâmetro os valores digitados nos campos input e textarea. */
 const adicionarComentario = async (nome, comentario) => {
     try {
         if ( nome.trim() && comentario.trim() ) {
             const docRef = await addDoc(collection(db, 'comentarios'), {
                 nome: nome,
-                comentario: comentario
+                comentario: comentario,
+                dataPublicacao: new Date()
             })
 
             return {
@@ -34,8 +39,8 @@ const adicionarComentario = async (nome, comentario) => {
     }
 }
 
-const buscarComentarios = async (callback) => {
-    const busca = query(collection(db, 'comentarios'));
+const buscarComentarios = async (callbackFn) => {
+    const busca = query(collection(db, 'comentarios'), orderBy('dataPublicacao', 'desc'));
 
     const unsubscribe = onSnapshot(busca, ( querySnapshot ) => {
         let lista = [];
@@ -46,14 +51,14 @@ const buscarComentarios = async (callback) => {
             })
         })
 
-        callback(lista);
+        callbackFn(lista);
     },
     (erro) => {
         console.error('Erro na consulta de comentários: '+erro);
-        callback([], erro)
+        callbackFn([], erro);
     });
 
     return unsubscribe;
 }
 
-export const comentService = { adicionarComentario, buscarComentarios }
+export const commentService = { adicionarComentario, buscarComentarios };

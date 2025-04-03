@@ -79,7 +79,7 @@ const alternarImagens = () => {
 }
 
 /* Estado inicial da página. */
-window.addEventListener('beforeunload', limparIntervalo);
+window.addEventListener('beforeunload', alternarIntervalo);
 /* O intervalo vai ser limpo sempre que a janela for fechada ou recarregada. */
 
 primeiraImagem.addEventListener('dblclick', alternarIntervalo);
