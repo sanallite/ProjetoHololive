@@ -1,6 +1,8 @@
 import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth, Promise, Advent, Justice } from "./bancoTalentos.js";
 /* Importação das variáveis no meu banco de dados local */
 
+import { exibirInfo, exibirUploads } from './youtubeApi.js';
+
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
     const navGrupos = document.getElementById('grupos');
@@ -50,7 +52,7 @@ const exibirFotosPefilTalentos = grupo => {
 }
 
 /* Função para exibir as informações de um talento que inicialmente é a Gura, criando elementos html dinâmicamente, com essa função sendo executada pelo escutador de eventos quando uma foto de perfil dos talentos é clicada. */
-const exibirInfoTalentos = talento => {
+const exibirInfoTalentos = async talento => {
     const articleTalentos = document.querySelector('#talentosDesc');
     const descricoesTalentos = document.querySelectorAll('.descTalento');
 
@@ -58,6 +60,15 @@ const exibirInfoTalentos = talento => {
         articleTalentos.removeChild(descricoesTalentos[i]);
     }
     /* Removendo os elementos com as informações que estavam sendo exibidas na tela, para exibir as informações do talento que tava a foto clicada. */
+
+    const infoCanal = await exibirInfo(talento.canal);
+    const uploadsCanal = await exibirUploads(talento.canal, 1);
+
+    console.log(infoCanal);
+    console.log(uploadsCanal);
+
+    let numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
+    let idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
 
     let divInfo = document.createElement('div');
     divInfo.className = `descTalento ${talento.nome}`;
@@ -68,8 +79,17 @@ const exibirInfoTalentos = talento => {
     let desc = document.createElement('p');
     desc.innerHTML = talento.descricao;
 
+    let inscritos = document.createElement('p');
+    inscritos.textContent = 'Inscritos: '+numeroInscritos;
+
+    let linkLive = document.createElement('a');
+    linkLive.setAttribute('href', `https://youtube.com/watch?v=${idVideoMaisRecente}`);
+    linkLive.setAttribute('target', '_blank');
+    linkLive.textContent = 'Livestream';
+
     divInfo.appendChild(nome);
     divInfo.appendChild(desc);
+    divInfo.append(inscritos, linkLive);
 
     articleTalentos.appendChild(divInfo);
 }

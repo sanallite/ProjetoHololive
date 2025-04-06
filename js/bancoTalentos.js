@@ -8,7 +8,8 @@ const talentos = [
         altura: '141cm',
         ilustrador: 'Amashiro Natsuki',
         nomeFas: 'Chumbuds',
-        grupo: 'Myth'
+        grupo: 'Myth',
+        canal: '@GawrGura'
     },
     {
         nome: 'Amelia Watson',
@@ -17,7 +18,8 @@ const talentos = [
         altura: '150cm',
         ilustrador: 'Nabi',
         nomeFas: 'Teamates',
-        grupo: 'Myth'
+        grupo: 'Myth',
+        canal: '@WatsonAmelia'
     },
     {
         nome: 'Takanashi Kiara',
