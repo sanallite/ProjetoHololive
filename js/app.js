@@ -1,7 +1,8 @@
 import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth, Promise, Advent, Justice } from "./bancoTalentos.js";
-/* Importação das variáveis no meu banco de dados local */
+/* Importação das variáveis no meu banco de dados local. */
 
 import { exibirInfo, exibirUploads } from './youtubeApi.js';
+/* Importando as funções que pegam dados da API do YouTube. */
 
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
@@ -62,13 +63,16 @@ const exibirInfoTalentos = async talento => {
     /* Removendo os elementos com as informações que estavam sendo exibidas na tela, para exibir as informações do talento que tava a foto clicada. */
 
     const infoCanal = await exibirInfo(talento.canal);
+    /* talento.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
     const uploadsCanal = await exibirUploads(talento.canal, 1);
+    /* Essas funções primeiro chamam uma função para verificar se a api foi carregada, para evitar problemas com a assíncronia da API, como tentar acessar uma propriedade de um objeto que não está definido ainda pois a API não terminou de iniciar. */
 
     console.log(infoCanal);
     console.log(uploadsCanal);
 
     let numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
     let idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
+    /* Acessando conteúdos específicos do resultado. */
 
     let divInfo = document.createElement('div');
     divInfo.className = `descTalento ${talento.nome}`;
@@ -128,4 +132,5 @@ const criarTabelaInfo = () => {
 exibirNomesGrupos();
 exibirFotosPefilTalentos(Myth);
 exibirInfoTalentos(mapaTalentos['Gura']);
+/* Como é exibido na inicialização da página a seção com as informações de um talento, a API também já inicia aqui. */
 criarTabelaInfo();

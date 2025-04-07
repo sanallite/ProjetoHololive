@@ -44,6 +44,7 @@ const exibirComentarios = (comentarios, erro = null) => {
 
             const data = document.createElement('p');
             data.textContent = `${String(publicacao.getDay()).padStart(2, '0')} de ${publicacao.toLocaleString('pt-br', { month: 'long' })} de ${publicacao.getFullYear()}`;
+            /* Data formatada do jeito que eu quero. Ex: 06 de abril de 2025. */
 
             container.classList.add('comentario');
             container.append(nome, comentario, data);

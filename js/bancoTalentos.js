@@ -1,3 +1,5 @@
+/* Banco de talentos com os dados das nossas Idols. */
+
 const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
 const talentos = [
@@ -19,7 +21,8 @@ const talentos = [
         ilustrador: 'Nabi',
         nomeFas: 'Teamates',
         grupo: 'Myth',
-        canal: '@WatsonAmelia'
+        canal: '@WatsonAmelia',
+        canalSecreto: '@dooby3d'
     },
     {
         nome: 'Takanashi Kiara',
@@ -28,7 +31,8 @@ const talentos = [
         altura: '165cm',
         ilustrador: 'huke',
         nomeFas: 'KFP',
-        grupo: 'Myth'
+        grupo: 'Myth',
+        canal: '@TakanashiKiara'
     },
     {
         nome: 'Mori Calliope',
@@ -38,7 +42,8 @@ const talentos = [
         altura: '167cm',
         ilustrador: 'Yukisame',
         nomeFas: 'Dead Beats',
-        grupo: 'Myth'
+        grupo: 'Myth',
+        canal: '@MoriCalliope'
     },
     {
         nome: `Ninomae Ina'nis`,
@@ -48,7 +53,8 @@ const talentos = [
         altura: '157cm',
         ilustrador: 'Kuroboshi Kouhaku',
         nomeFas: 'Tentacult',
-        grupo: 'Myth'
+        grupo: 'Myth',
+        canal: '@NinomaeInanis'
     },
     {
         nome: 'IRyS',
@@ -57,7 +63,8 @@ const talentos = [
         altura: '166cm',
         ilustrador: 'redjuice',
         nomeFas: 'IRyStocrats',
-        grupo: 'Project IRyS / Promise'
+        grupo: 'Project IRyS / Promise',
+        canal: '@IRyS'
     },
     {
         nome: 'Tsukumo Sana',
@@ -66,7 +73,9 @@ const talentos = [
         altura: '169cm (com limitador, e sem limitador 1.697.840km)',
         ilustrador: 'pako',
         nomeFas: 'Sanallites',
-        grupo: 'Council'
+        grupo: 'Council',
+        canal: '@TsukumoSana',
+        canalSecreto: '@notNamie'
     },
     {
         nome: 'Ceres Fauna',
@@ -75,7 +84,9 @@ const talentos = [
         altura: '164cm',
         ilustrador: 'Tohsaka Asagi',
         nomeFas: 'Saplings',
-        grupo: 'Council / Promise'
+        grupo: 'Council / Promise',
+        canal: '@CeresFauna',
+        canalSecreto: '@niminightmare'
     },
     {
         nome: 'Ouro Kronii',
@@ -85,7 +96,8 @@ const talentos = [
         altura: '168cm',
         ilustrador: 'WADARCO',
         nomeFas: 'Kronies',
-        grupo: 'Council / Promise'
+        grupo: 'Council / Promise',
+        canal: '@OuroKronii'
     },
     {
         nome: 'Nanashi Mumei',
@@ -95,7 +107,9 @@ const talentos = [
         altura: '156cm',
         ilustrador: 'azure',
         nomeFas: 'Hoomans',
-        grupo: 'Council / Promise'
+        grupo: 'Council / Promise',
+        canal: '@NanashiMumei',
+        canalSecreto: '@shachimu'
     },
     {
         nome: 'Hakos Baelz',
@@ -104,7 +118,8 @@ const talentos = [
         altura: '149cm',
         ilustrador: 'Mika Pikazo',
         nomeFas: 'Brats',
-        grupo: 'Council / Promise'
+        grupo: 'Council / Promise',
+        canal: '@HakosBaelz'
     },
     {
         nome: 'Shiori Novella',
@@ -113,7 +128,8 @@ const talentos = [
         altura: '163cm',
         ilustrador: 'KAYAHARA',
         nomeFas: 'Novelites',
-        grupo: 'Advent'
+        grupo: 'Advent',
+        canal: '@ShioriNovella'
     },
     {
         nome: 'Koseki Bijou',
@@ -123,7 +139,8 @@ const talentos = [
         altura: '140cm',
         ilustrador: 'Kitada mo',
         nomeFas: 'Pebbles',
-        grupo: 'Advent'
+        grupo: 'Advent',
+        canal: '@KosekiBijou'
     },
     {
         nome: 'Nerissa Ravencroft',
@@ -132,7 +149,8 @@ const talentos = [
         altura: '175cm',
         ilustrador: 'ebplus',
         nomeFas: 'Jailbirds',
-        grupo: 'Advent'
+        grupo: 'Advent',
+        canal: '@NerissaRavencroft'
     },
     {
         nome: 'Fuwawa Abyssgard',
@@ -141,7 +159,8 @@ const talentos = [
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
         nomeFas: 'Ruffians',
-        grupo: 'Advent'
+        grupo: 'Advent',
+        canal: '@FUWAMOCOch'
     },
     {
         nome: 'Mococo Abyssgard',
@@ -150,7 +169,8 @@ const talentos = [
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
         nomeFas: 'Ruffians',
-        grupo: 'Advent'
+        grupo: 'Advent',
+        canal: '@FUWAMOCOch'
     },
     {
         nome: 'Elizabeth Rose Bloodflame',
@@ -162,7 +182,8 @@ const talentos = [
         altura: '171cm',
         ilustrador: 'MEPHISTO',
         nomeFas: 'Rosarians',
-        grupo: 'Justice'
+        grupo: 'Justice',
+        canal: '@holoen_erbloodflame'
     },
     {
         nome: 'Gigi Murin',
@@ -175,7 +196,8 @@ const talentos = [
         altura: '153cm',
         ilustrador: 'Makihitsuji',
         nomeFas: 'Grems',
-        grupo: 'Justice'
+        grupo: 'Justice',
+        canal: '@holoen_gigimurin'
     },
     {
         nome: 'Cecilia Immergreen',
@@ -188,7 +210,8 @@ const talentos = [
         altura: '162cm',
         ilustrador: 'DSmile',
         nomeFas: 'Otomos',
-        grupo: 'Justice'
+        grupo: 'Justice',
+        canal: '@holoen_ceciliaimmergreen'
     },
     {
         nome: 'Raora Panthera',
@@ -200,7 +223,8 @@ const talentos = [
         altura: '158cm',
         ilustrador: 'Nekojira',
         nomeFas: 'Chattini',
-        grupo: 'Justice'
+        grupo: 'Justice',
+        canal: '@holoen_raorapanthera'
     }
 ];
 
@@ -230,8 +254,8 @@ const fotos = [
     ]
 ]
 
-/* export const [ nomesGrupos, myth, promise, advent, justice ]  = grupos; */
 export const [ Myth, Promise, Advent, Justice ] = fotos;
+/* Desestruturando o array matriz de fotos para cada grupo e então criando um objeto abaixo para mapear esses vetores. */
 
 export const mapaFotosGrupos = {
     'Myth': Myth,
@@ -262,5 +286,6 @@ export const mapaTalentos = {
     'Cecilia': talentos[18],
     'Raora': talentos[19]
 }
+/* Mapeando cada item do vetor para acessar com mais facilidade as informações dos talentos. */
 
 export { nomesGrupos, talentos };
