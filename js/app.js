@@ -62,6 +62,9 @@ const exibirInfoTalentos = async talento => {
     }
     /* Removendo os elementos com as informações que estavam sendo exibidas na tela, para exibir as informações do talento que tava a foto clicada. */
 
+    articleTalentos.textContent = 'Carregando...';
+    /* A cada chamada da função, após a remoção dos elementos filhos será exibido um texto para indicar que estamos esperando as resposta da API. */
+
     const infoCanal = await exibirInfo(talento.canal);
     /* talento.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
     const uploadsCanal = await exibirUploads(talento.canal, 1);
@@ -70,8 +73,10 @@ const exibirInfoTalentos = async talento => {
     console.log(infoCanal);
     console.log(uploadsCanal);
 
-    let numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
-    let idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
+    articleTalentos.textContent = '';
+
+    const numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
+    const idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
     /* Acessando conteúdos específicos do resultado. */
 
     let divInfo = document.createElement('div');
@@ -83,17 +88,37 @@ const exibirInfoTalentos = async talento => {
     let desc = document.createElement('p');
     desc.innerHTML = talento.descricao;
 
-    let inscritos = document.createElement('p');
-    inscritos.textContent = 'Inscritos: '+numeroInscritos;
+    let info = document.createElement('p');
+    info.innerHTML = `
+        Aniversário: ${talento.aniversario}<br>
+        Altura: ${talento.altura}<br>
+        Nome dos fãs: ${talento.nomeFas}<br>
+        Grupo: ${talento.grupo}<br>
+        Ilustrador(a): ${talento.ilustrador}
+        Inscritos: ${Intl.NumberFormat('pt-br').format(numeroInscritos)}<br>
+    `
 
-    let linkLive = document.createElement('a');
-    linkLive.setAttribute('href', `https://youtube.com/watch?v=${idVideoMaisRecente}`);
-    linkLive.setAttribute('target', '_blank');
-    linkLive.textContent = 'Livestream';
+    let infoLive = document.createElement('h3');
+    infoLive.textContent = 'Vídeo mais recente:'
 
-    divInfo.appendChild(nome);
-    divInfo.appendChild(desc);
-    divInfo.append(inscritos, linkLive);
+    let frameVideo = document.createElement('iframe');
+    frameVideo.setAttribute('src', `https://youtube.com/embed/${idVideoMaisRecente}`);
+    frameVideo.setAttribute('width', '100%');
+    frameVideo.setAttribute('height', '320px');
+    frameVideo.setAttribute('allowfullscreen', true);
+    frameVideo.setAttribute('frameborder', 0);
+    frameVideo.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope');
+
+    divInfo.append(nome, desc, info, infoLive, frameVideo);
+
+    if ( talento?.canalSecreto ) {
+        let canalSecreto = document.createElement('a');
+        canalSecreto.setAttribute('href', `https://youtube.com/${talento.canalSecreto}`);
+        canalSecreto.setAttribute('target', '_blank');
+        canalSecreto.textContent = 'Canal Secreto';
+
+        divInfo.appendChild(canalSecreto);
+    }
 
     articleTalentos.appendChild(divInfo);
 }
@@ -112,13 +137,15 @@ const criarTabelaInfo = () => {
         let colunaAniversario = document.createElement('td');
         colunaAniversario.textContent = element.aniversario;
 
+        let colunaAltura = document.createElement('td');
         if ( element.nome === 'Tsukumo Sana' ) {
-            element.altura = '169cm*';
+            colunaAltura.textContent = '169cm*';
         }
         /* Simplificando a exibição da altura na tabela, com os detalhes sendo exibidos no tfoot e na tela de descrição da Sana. */
 
-        let colunaAltura = document.createElement('td');
-        colunaAltura.textContent = element.altura;
+        else {
+            colunaAltura.textContent = element.altura;
+        }
         
         linha.append(colunaNome, colunaAniversario, colunaAltura);
         /* Colocando vários elementos como filhos do elemento linha. */
