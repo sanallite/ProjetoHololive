@@ -1,4 +1,4 @@
-import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth, Promise, Advent, Justice } from "./bancoTalentos.js";
+import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth } from "./bancoTalentos.js";
 /* Importação das variáveis no meu banco de dados local. */
 
 import { exibirInfo, exibirUploads } from './youtubeApi.js';
@@ -119,6 +119,12 @@ const exibirInfoTalentos = async talento => {
 
         divInfo.appendChild(canalSecreto);
     }
+
+    let linkPag2 = document.createElement('a');
+    linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.canal}`);
+    linkPag2.textContent = 'Mais Detalhes';
+
+    divInfo.appendChild(linkPag2);
 
     articleTalentos.appendChild(divInfo);
 }

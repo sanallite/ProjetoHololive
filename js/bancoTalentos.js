@@ -1,5 +1,7 @@
 /* Banco de talentos com os dados das nossas Idols. */
 
+const pastaFotosPefil =  '../assets/img/perfis';
+
 const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
 const talentos = [
@@ -11,7 +13,12 @@ const talentos = [
         ilustrador: 'Amashiro Natsuki',
         nomeFas: 'Chumbuds',
         grupo: 'Myth',
-        canal: '@GawrGura'
+        canal: '@GawrGura',
+        outfit1: `${pastaFotosPefil}/gura.png`,
+        outfit2: `${pastaFotosPefil}/gura2.png`,
+        outfit3: `${pastaFotosPefil}/gura3.png`,
+        outfit4: `${pastaFotosPefil}/gura4.png`,
+        outfit5: `${pastaFotosPefil}/gura5.png`
     },
     {
         nome: 'Amelia Watson',
@@ -22,7 +29,12 @@ const talentos = [
         nomeFas: 'Teamates',
         grupo: 'Myth',
         canal: '@WatsonAmelia',
-        canalSecreto: '@dooby3d'
+        canalSecreto: '@dooby3d',
+        outfit1: `${pastaFotosPefil}/ame.png`,
+        outfit2: `${pastaFotosPefil}/ame2.png`,
+        outfit3: `${pastaFotosPefil}/ame3.png`,
+        outfit4: `${pastaFotosPefil}/ame4.png`,
+        outfit5: `${pastaFotosPefil}/ame5.png`
     },
     {
         nome: 'Takanashi Kiara',
@@ -32,7 +44,14 @@ const talentos = [
         ilustrador: 'huke',
         nomeFas: 'KFP',
         grupo: 'Myth',
-        canal: '@TakanashiKiara'
+        canal: '@TakanashiKiara',
+        outfit1: `${pastaFotosPefil}/kiara.png`,
+        outfit2: `${pastaFotosPefil}/kiara2.png`,
+        outfit3: `${pastaFotosPefil}/kiara3.png`,
+        outfit4: `${pastaFotosPefil}/kiara4.png`,
+        outfit5: `${pastaFotosPefil}/kiara5.png`,
+        outfit6: `${pastaFotosPefil}/kiara6.png`,
+        outfit7: `${pastaFotosPefil}/kiara7.png`
     },
     {
         nome: 'Mori Calliope',
@@ -43,7 +62,15 @@ const talentos = [
         ilustrador: 'Yukisame',
         nomeFas: 'Dead Beats',
         grupo: 'Myth',
-        canal: '@MoriCalliope'
+        canal: '@MoriCalliope',
+        outfit1: `${pastaFotosPefil}/mori.png`,
+        outfit2: `${pastaFotosPefil}/mori2.png`,
+        outfit3: `${pastaFotosPefil}/mori3.png`,
+        outfit4: `${pastaFotosPefil}/mori4.png`,
+        outfit5: `${pastaFotosPefil}/mori5.png`,
+        outfit6: `${pastaFotosPefil}/mori6.png`,
+        outfit7: `${pastaFotosPefil}/mori7.png`,
+        outfit8: `${pastaFotosPefil}/mori8.png`,
     },
     {
         nome: `Ninomae Ina'nis`,
@@ -54,7 +81,13 @@ const talentos = [
         ilustrador: 'Kuroboshi Kouhaku',
         nomeFas: 'Tentacult',
         grupo: 'Myth',
-        canal: '@NinomaeInanis'
+        canal: '@NinomaeInanis',
+        outfit1: `${pastaFotosPefil}/ina.png`,
+        outfit2: `${pastaFotosPefil}/ina2.png`,
+        outfit3: `${pastaFotosPefil}/ina3.png`,
+        outfit4: `${pastaFotosPefil}/ina4.png`,
+        outfit5: `${pastaFotosPefil}/ina5.png`,
+        outfit6: `${pastaFotosPefil}/ina6.png`,
     },
     {
         nome: 'IRyS',
@@ -64,7 +97,12 @@ const talentos = [
         ilustrador: 'redjuice',
         nomeFas: 'IRyStocrats',
         grupo: 'Project IRyS / Promise',
-        canal: '@IRyS'
+        canal: '@IRyS',
+        outfit1: `${pastaFotosPefil}/irys1.png`,
+        outfit2: `${pastaFotosPefil}/irys.png`,
+        outfit3: `${pastaFotosPefil}/irys3.png`,
+        outfit4: `${pastaFotosPefil}/irys4.png`,
+        outfit5: `${pastaFotosPefil}/irys5.png`,
     },
     {
         nome: 'Tsukumo Sana',
@@ -227,8 +265,6 @@ const talentos = [
         canal: '@holoen_raorapanthera'
     }
 ];
-
-const pastaFotosPefil =  '../assets/img/perfis';
 
 const fotos = [
     [ // Myth
