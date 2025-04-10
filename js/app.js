@@ -1,8 +1,8 @@
 import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth } from "./bancoTalentos.js";
 /* Importação das variáveis no meu banco de dados local. */
 
-import { exibirInfo, exibirUploads } from './youtubeApi.js';
-/* Importando as funções que pegam dados da API do YouTube. */
+import { exibirUploads } from './youtubeApi.js';
+/* Importando uma função que pega dados da API do YouTube. */
 
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
@@ -18,6 +18,9 @@ const exibirNomesGrupos = () => {
         botao.addEventListener('click', () => {
             exibirFotosPefilTalentos(mapaFotosGrupos[element]);
             /* Usando notação de colchetes para acessar uma propriedade do objeto que mapeia todos os vetores que contém as fotos de perfil dos talentos. Esse valor será o parâmetro recebido pela função do escutador de evento, que iterará sobre o vetor. Ex: mapaFotosGrupos["Myth"] retorna o vetor Myth. */
+
+            window.localStorage.setItem('grupo', element);
+            /* Armazenando o nome do grupo. */
         });
         /* Cada botão criado terá um escutador de eventos, ao ser clicado executará uma função anônima, que chama outra com um parâmetro diferente de acordo com o elemento do array, que representa um dos grupos. */
     })
@@ -44,6 +47,9 @@ const exibirFotosPefilTalentos = grupo => {
 
         imagem.addEventListener('click', () => {
             exibirInfoTalentos(mapaTalentos[grupo[i][1]]);
+
+            window.localStorage.setItem('talento', grupo[i][1]);
+            /* Armazenando o nome do talento. */
         });
         /* Quando uma das imagens for clicada será chamada uma função que envia como parâmetro uma propriedade do objeto mapaTalentos, com o valor dessa propriedade sendo um objeto que contém os dados do talento em outro array. Ex: mapaTalentos[grupo[i][1]] = mapaTalentos['Gura'] */
 
@@ -65,19 +71,15 @@ const exibirInfoTalentos = async talento => {
     articleTalentos.textContent = 'Carregando...';
     /* A cada chamada da função, após a remoção dos elementos filhos será exibido um texto para indicar que estamos esperando as resposta da API. */
 
-    const infoCanal = await exibirInfo(talento.canal);
-    /* talento.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
     const uploadsCanal = await exibirUploads(talento.canal, 1);
-    /* Essas funções primeiro chamam uma função para verificar se a api foi carregada, para evitar problemas com a assíncronia da API, como tentar acessar uma propriedade de um objeto que não está definido ainda pois a API não terminou de iniciar. */
+    /* Essa função primeiro chama uma função para verificar se a api foi carregada, para evitar problemas com a assíncronia da API, como tentar acessar uma propriedade de um objeto que não está definido ainda pois a API não terminou de iniciar. */
 
-    console.log(infoCanal);
     console.log(uploadsCanal);
 
     articleTalentos.textContent = '';
 
-    const numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
     const idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
-    /* Acessando conteúdos específicos do resultado. */
+    /* Acessando uma parte específica do resultado. */
 
     let divInfo = document.createElement('div');
     divInfo.className = `descTalento ${talento.nome}`;
@@ -87,16 +89,6 @@ const exibirInfoTalentos = async talento => {
 
     let desc = document.createElement('p');
     desc.innerHTML = talento.descricao;
-
-    let info = document.createElement('p');
-    info.innerHTML = `
-        Aniversário: ${talento.aniversario}<br>
-        Altura: ${talento.altura}<br>
-        Nome dos fãs: ${talento.nomeFas}<br>
-        Grupo: ${talento.grupo}<br>
-        Ilustrador(a): ${talento.ilustrador}
-        Inscritos: ${Intl.NumberFormat('pt-br').format(numeroInscritos)}<br>
-    `
 
     let infoLive = document.createElement('h3');
     infoLive.textContent = 'Vídeo mais recente:'
@@ -109,7 +101,7 @@ const exibirInfoTalentos = async talento => {
     frameVideo.setAttribute('frameborder', 0);
     frameVideo.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope');
 
-    divInfo.append(nome, desc, info, infoLive, frameVideo);
+    divInfo.append(nome, desc, infoLive, frameVideo);
 
     if ( talento?.canalSecreto ) {
         let canalSecreto = document.createElement('a');
@@ -121,7 +113,7 @@ const exibirInfoTalentos = async talento => {
     }
 
     let linkPag2 = document.createElement('a');
-    linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.canal}`);
+    linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
     linkPag2.textContent = 'Mais Detalhes';
 
     divInfo.appendChild(linkPag2);
@@ -163,7 +155,13 @@ const criarTabelaInfo = () => {
 
 /* Estado inicial da página */
 exibirNomesGrupos();
-exibirFotosPefilTalentos(Myth);
-exibirInfoTalentos(mapaTalentos['Gura']);
-/* Como é exibido na inicialização da página a seção com as informações de um talento, a API também já inicia aqui. */
 criarTabelaInfo();
+
+const nomeArmazenado = localStorage.getItem('talento');
+const grupoArmazenado = localStorage.getItem('grupo');
+
+exibirInfoTalentos(mapaTalentos[nomeArmazenado] || mapaTalentos['Gura']);
+/* Como é exibido na inicialização da página a seção com as informações de um talento, a API também já inicia aqui. */
+
+exibirFotosPefilTalentos(mapaFotosGrupos[grupoArmazenado] || Myth);
+/* Primeiro foram pegos os itens do armazenamento local, essas funções usam os valores armazenados como seus parâmetros OU (||) um valor que é usado como padrão, isso elimina duas estruturas if/else para verificar se as constantes tem valores definidos e válidos. Isso mesmo se eu editar os itens locais manualmente, se por exemplo talento tiver o valor 'Namie', que não é uma propriedade existente nos objetos que fazem o mapeamento, o valor padrão é invocado. */

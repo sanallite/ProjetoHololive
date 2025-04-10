@@ -1,4 +1,6 @@
 import { talentos, mapaTalentos } from "./bancoTalentos";
+import { exibirInfo } from "./youtubeApi";
+/* Importando uma função que pega dados da API do YouTube. */
 
 const parametros = new URLSearchParams(window.location.search);
 
@@ -8,6 +10,8 @@ const mainContainer = document.querySelector('main');
 const thumbnails = document.querySelector('div.thumbnails');
 const fotoPrincipal = document.querySelector('div.fotoPrincipal');
 const botaoVoltarPagina = document.querySelector('main nav button');
+const articleDesc = document.querySelector('#imagensDesc article');
+const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
 
 const criarElementoImagem = (img, container) => {
     const elemento = document.createElement('img');
@@ -20,6 +24,19 @@ const criarElementoImagem = (img, container) => {
             fotoPrincipalAtual.setAttribute('src', img);
         })
     }
+}
+
+const criarLinhaTabela = (chave, valor) => {
+    const coluna1 = document.createElement('td');
+    const coluna2 = document.createElement('td');
+    const linha = document.createElement('tr');
+
+    coluna1.textContent = chave;
+    coluna2.textContent = valor;
+
+    linha.append(coluna1, coluna2);
+
+    tabelaDetalhes.appendChild(linha);
 }
 
 const exibirThumbnails = () => {
@@ -55,11 +72,29 @@ const exibirThumbnails = () => {
     }
 }
 
+const exibirDescDetalhes = async () => {
+    articleDesc.textContent = talentoAtual.descricao;
+
+    const infoCanal = await exibirInfo(talentoAtual.canal);
+    /* talentoAtual.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
+    /* Essa função primeiro chama uma função para verificar se a api foi carregada, para evitar problemas com a assíncronia da API, como tentar acessar uma propriedade de um objeto que não está definido ainda pois a API não terminou de iniciar. */
+
+    const numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
+    /* Acessando uma parte específica do resultado. */
+
+    criarLinhaTabela('Aniversário:', talentoAtual.aniversario);
+    criarLinhaTabela('Altura:', talentoAtual.altura);
+    criarLinhaTabela('Ilustrador(a):', talentoAtual.ilustrador);
+    criarLinhaTabela('Nome dos fãs:', talentoAtual.nomeFas);
+    criarLinhaTabela('Grupo:', talentoAtual.grupo);
+    criarLinhaTabela('Inscritos:', Intl.NumberFormat('pt-br').format(numeroInscritos));
+}
+
 if ( parametros.has('t') ) {
-    const arrobaTalento = parametros.get('t');
+    const nomeTalento = parametros.get('t');
     
     for ( let i = 0; i < talentos.length; i++ ) {
-        if ( talentos[i].canal === arrobaTalento ) {
+        if ( talentos[i].nome === nomeTalento ) {
             talentoAtual = talentos[i];
         }
     }
@@ -72,7 +107,10 @@ if ( parametros.has('t') ) {
         }, 3000);
     }
 
+    document.title = `Hololive English - ${talentoAtual.nome}`;
+
     exibirThumbnails();
+    exibirDescDetalhes();
 }
 
 else {

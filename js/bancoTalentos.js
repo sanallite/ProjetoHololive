@@ -113,7 +113,10 @@ const talentos = [
         nomeFas: 'Sanallites',
         grupo: 'Council',
         canal: '@TsukumoSana',
-        canalSecreto: '@notNamie'
+        canalSecreto: '@notNamie',
+        outfit1: `${pastaFotosPefil}/sana.png`,
+        outfit2: `${pastaFotosPefil}/sana2.webp`,
+        outfit3: `${pastaFotosPefil}/sana3.webp`,
     },
     {
         nome: 'Ceres Fauna',
@@ -124,7 +127,11 @@ const talentos = [
         nomeFas: 'Saplings',
         grupo: 'Council / Promise',
         canal: '@CeresFauna',
-        canalSecreto: '@niminightmare'
+        canalSecreto: '@niminightmare',
+        outfit1: `${pastaFotosPefil}/fauna.png`,
+        outfit2: `${pastaFotosPefil}/fauna2.png`,
+        outfit3: `${pastaFotosPefil}/fauna3.png`,
+        outfit4: `${pastaFotosPefil}/fauna4.png`,
     },
     {
         nome: 'Ouro Kronii',
@@ -135,7 +142,11 @@ const talentos = [
         ilustrador: 'WADARCO',
         nomeFas: 'Kronies',
         grupo: 'Council / Promise',
-        canal: '@OuroKronii'
+        canal: '@OuroKronii',
+        outfit1: `${pastaFotosPefil}/kronii.png`,
+        outfit2: `${pastaFotosPefil}/kronii2.png`,
+        outfit3: `${pastaFotosPefil}/kronii3.png`,
+        outfit4: `${pastaFotosPefil}/kronii4.png`,
     },
     {
         nome: 'Nanashi Mumei',
@@ -147,7 +158,11 @@ const talentos = [
         nomeFas: 'Hoomans',
         grupo: 'Council / Promise',
         canal: '@NanashiMumei',
-        canalSecreto: '@shachimu'
+        canalSecreto: '@shachimu',
+        outfit1: `${pastaFotosPefil}/mumei.png`,
+        outfit2: `${pastaFotosPefil}/mumei2.png`,
+        outfit3: `${pastaFotosPefil}/mumei3.png`,
+        outfit4: `${pastaFotosPefil}/mumei4.png`,
     },
     {
         nome: 'Hakos Baelz',
@@ -157,7 +172,11 @@ const talentos = [
         ilustrador: 'Mika Pikazo',
         nomeFas: 'Brats',
         grupo: 'Council / Promise',
-        canal: '@HakosBaelz'
+        canal: '@HakosBaelz',
+        outfit1: `${pastaFotosPefil}/baelz.png`,
+        outfit2: `${pastaFotosPefil}/baelz2.png`,
+        outfit3: `${pastaFotosPefil}/baelz3.png`,
+        outfit4: `${pastaFotosPefil}/baelz4.png`,
     },
     {
         nome: 'Shiori Novella',
@@ -167,7 +186,10 @@ const talentos = [
         ilustrador: 'KAYAHARA',
         nomeFas: 'Novelites',
         grupo: 'Advent',
-        canal: '@ShioriNovella'
+        canal: '@ShioriNovella',
+        outfit1: `${pastaFotosPefil}/shiori.png`,
+        outfit2: `${pastaFotosPefil}/shiori2.png`,
+        outfit3: `${pastaFotosPefil}/shiori3.png`,
     },
     {
         nome: 'Koseki Bijou',
@@ -178,7 +200,10 @@ const talentos = [
         ilustrador: 'Kitada mo',
         nomeFas: 'Pebbles',
         grupo: 'Advent',
-        canal: '@KosekiBijou'
+        canal: '@KosekiBijou',
+        outfit1: `${pastaFotosPefil}/bijou.png`,
+        outfit2: `${pastaFotosPefil}/bijou2.png`,
+        outfit3: `${pastaFotosPefil}/bijou3.png`,
     },
     {
         nome: 'Nerissa Ravencroft',
@@ -188,7 +213,10 @@ const talentos = [
         ilustrador: 'ebplus',
         nomeFas: 'Jailbirds',
         grupo: 'Advent',
-        canal: '@NerissaRavencroft'
+        canal: '@NerissaRavencroft',
+        outfit1: `${pastaFotosPefil}/nerissa.png`,
+        outfit2: `${pastaFotosPefil}/nerissa2.png`,
+        outfit3: `${pastaFotosPefil}/nerissa3.png`,
     },
     {
         nome: 'Fuwawa Abyssgard',
@@ -198,7 +226,10 @@ const talentos = [
         ilustrador: 'ICOMOCHI',
         nomeFas: 'Ruffians',
         grupo: 'Advent',
-        canal: '@FUWAMOCOch'
+        canal: '@FUWAMOCOch',
+        outfit1: `${pastaFotosPefil}/fuwawa.png`,
+        outfit2: `${pastaFotosPefil}/fuwawa2.png`,
+        outfit3: `${pastaFotosPefil}/fuwawa3.png`,
     },
     {
         nome: 'Mococo Abyssgard',
@@ -208,7 +239,10 @@ const talentos = [
         ilustrador: 'ICOMOCHI',
         nomeFas: 'Ruffians',
         grupo: 'Advent',
-        canal: '@FUWAMOCOch'
+        canal: '@FUWAMOCOch',
+        outfit1: `${pastaFotosPefil}/mococo.png`,
+        outfit2: `${pastaFotosPefil}/mococo2.png`,
+        outfit3: `${pastaFotosPefil}/mococo3.png`,
     },
     {
         nome: 'Elizabeth Rose Bloodflame',
@@ -221,7 +255,9 @@ const talentos = [
         ilustrador: 'MEPHISTO',
         nomeFas: 'Rosarians',
         grupo: 'Justice',
-        canal: '@holoen_erbloodflame'
+        canal: '@holoen_erbloodflame',
+        outfit1: `${pastaFotosPefil}/liz.png`,
+        outfit2: `${pastaFotosPefil}/liz2.png`,
     },
     {
         nome: 'Gigi Murin',
@@ -235,7 +271,9 @@ const talentos = [
         ilustrador: 'Makihitsuji',
         nomeFas: 'Grems',
         grupo: 'Justice',
-        canal: '@holoen_gigimurin'
+        canal: '@holoen_gigimurin',
+        outfit1: `${pastaFotosPefil}/gigi.png`,
+        outfit2: `${pastaFotosPefil}/gigi2.png`,
     },
     {
         nome: 'Cecilia Immergreen',
@@ -249,7 +287,9 @@ const talentos = [
         ilustrador: 'DSmile',
         nomeFas: 'Otomos',
         grupo: 'Justice',
-        canal: '@holoen_ceciliaimmergreen'
+        canal: '@holoen_ceciliaimmergreen',
+        outfit1: `${pastaFotosPefil}/ceci.png`,
+        outfit2: `${pastaFotosPefil}/ceci2.png`,
     },
     {
         nome: 'Raora Panthera',
@@ -262,7 +302,9 @@ const talentos = [
         ilustrador: 'Nekojira',
         nomeFas: 'Chattini',
         grupo: 'Justice',
-        canal: '@holoen_raorapanthera'
+        canal: '@holoen_raorapanthera',
+        outfit1: `${pastaFotosPefil}/raora.png`,
+        outfit2: `${pastaFotosPefil}/raora2.png`
     }
 ];
 
