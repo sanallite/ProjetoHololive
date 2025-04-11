@@ -103,15 +103,6 @@ const exibirInfoTalentos = async talento => {
 
     divInfo.append(nome, desc, infoLive, frameVideo);
 
-    if ( talento?.canalSecreto ) {
-        let canalSecreto = document.createElement('a');
-        canalSecreto.setAttribute('href', `https://youtube.com/${talento.canalSecreto}`);
-        canalSecreto.setAttribute('target', '_blank');
-        canalSecreto.textContent = 'Canal Secreto';
-
-        divInfo.appendChild(canalSecreto);
-    }
-
     let linkPag2 = document.createElement('a');
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
     linkPag2.textContent = 'Mais Detalhes';

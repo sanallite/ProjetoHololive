@@ -14,11 +14,13 @@ const talentos = [
         nomeFas: 'Chumbuds',
         grupo: 'Myth',
         canal: '@GawrGura',
-        outfit1: `${pastaFotosPefil}/gura.png`,
-        outfit2: `${pastaFotosPefil}/gura2.png`,
-        outfit3: `${pastaFotosPefil}/gura3.png`,
-        outfit4: `${pastaFotosPefil}/gura4.png`,
-        outfit5: `${pastaFotosPefil}/gura5.png`
+        outfits: [
+            `${pastaFotosPefil}/gura.png`,
+            `${pastaFotosPefil}/gura2.png`,
+            `${pastaFotosPefil}/gura3.png`,
+            `${pastaFotosPefil}/gura4.png`,
+            `${pastaFotosPefil}/gura5.png`,
+        ]
     },
     {
         nome: 'Amelia Watson',
@@ -30,11 +32,13 @@ const talentos = [
         grupo: 'Myth',
         canal: '@WatsonAmelia',
         canalSecreto: '@dooby3d',
-        outfit1: `${pastaFotosPefil}/ame.png`,
-        outfit2: `${pastaFotosPefil}/ame2.png`,
-        outfit3: `${pastaFotosPefil}/ame3.png`,
-        outfit4: `${pastaFotosPefil}/ame4.png`,
-        outfit5: `${pastaFotosPefil}/ame5.png`
+        outfits: [
+            `${pastaFotosPefil}/ame.png`,
+            `${pastaFotosPefil}/ame2.png`,
+            `${pastaFotosPefil}/ame3.png`,
+            `${pastaFotosPefil}/ame4.png`,
+            `${pastaFotosPefil}/ame5.png`,
+        ]
     },
     {
         nome: 'Takanashi Kiara',
@@ -45,13 +49,15 @@ const talentos = [
         nomeFas: 'KFP',
         grupo: 'Myth',
         canal: '@TakanashiKiara',
-        outfit1: `${pastaFotosPefil}/kiara.png`,
-        outfit2: `${pastaFotosPefil}/kiara2.png`,
-        outfit3: `${pastaFotosPefil}/kiara3.png`,
-        outfit4: `${pastaFotosPefil}/kiara4.png`,
-        outfit5: `${pastaFotosPefil}/kiara5.png`,
-        outfit6: `${pastaFotosPefil}/kiara6.png`,
-        outfit7: `${pastaFotosPefil}/kiara7.png`
+        outfits: [
+            `${pastaFotosPefil}/kiara.png`,
+            `${pastaFotosPefil}/kiara2.png`,
+            `${pastaFotosPefil}/kiara3.png`,
+            `${pastaFotosPefil}/kiara4.png`,
+            `${pastaFotosPefil}/kiara5.png`,
+            `${pastaFotosPefil}/kiara6.png`,
+            `${pastaFotosPefil}/kiara7.png`,
+        ]
     },
     {
         nome: 'Mori Calliope',
@@ -63,14 +69,16 @@ const talentos = [
         nomeFas: 'Dead Beats',
         grupo: 'Myth',
         canal: '@MoriCalliope',
-        outfit1: `${pastaFotosPefil}/mori.png`,
-        outfit2: `${pastaFotosPefil}/mori2.png`,
-        outfit3: `${pastaFotosPefil}/mori3.png`,
-        outfit4: `${pastaFotosPefil}/mori4.png`,
-        outfit5: `${pastaFotosPefil}/mori5.png`,
-        outfit6: `${pastaFotosPefil}/mori6.png`,
-        outfit7: `${pastaFotosPefil}/mori7.png`,
-        outfit8: `${pastaFotosPefil}/mori8.png`,
+        outfits: [
+            `${pastaFotosPefil}/mori.png`,
+            `${pastaFotosPefil}/mori2.png`,
+            `${pastaFotosPefil}/mori3.png`,
+            `${pastaFotosPefil}/mori4.png`,
+            `${pastaFotosPefil}/mori5.png`,
+            `${pastaFotosPefil}/mori6.png`,
+            `${pastaFotosPefil}/mori7.png`,
+            `${pastaFotosPefil}/mori8.png`,
+        ]
     },
     {
         nome: `Ninomae Ina'nis`,
@@ -82,12 +90,14 @@ const talentos = [
         nomeFas: 'Tentacult',
         grupo: 'Myth',
         canal: '@NinomaeInanis',
-        outfit1: `${pastaFotosPefil}/ina.png`,
-        outfit2: `${pastaFotosPefil}/ina2.png`,
-        outfit3: `${pastaFotosPefil}/ina3.png`,
-        outfit4: `${pastaFotosPefil}/ina4.png`,
-        outfit5: `${pastaFotosPefil}/ina5.png`,
-        outfit6: `${pastaFotosPefil}/ina6.png`,
+        outfits: [
+            `${pastaFotosPefil}/ina.png`,
+            `${pastaFotosPefil}/ina2.png`,
+            `${pastaFotosPefil}/ina3.png`,
+            `${pastaFotosPefil}/ina4.png`,
+            `${pastaFotosPefil}/ina5.png`,
+            `${pastaFotosPefil}/ina6.png`,
+        ] 
     },
     {
         nome: 'IRyS',
@@ -98,11 +108,13 @@ const talentos = [
         nomeFas: 'IRyStocrats',
         grupo: 'Project IRyS / Promise',
         canal: '@IRyS',
-        outfit1: `${pastaFotosPefil}/irys1.png`,
-        outfit2: `${pastaFotosPefil}/irys.png`,
-        outfit3: `${pastaFotosPefil}/irys3.png`,
-        outfit4: `${pastaFotosPefil}/irys4.png`,
-        outfit5: `${pastaFotosPefil}/irys5.png`,
+        outfits: [
+            `${pastaFotosPefil}/irys1.png`,
+            `${pastaFotosPefil}/irys.png`,
+            `${pastaFotosPefil}/irys3.png`,
+            `${pastaFotosPefil}/irys4.png`,
+            `${pastaFotosPefil}/irys5.png`,
+        ] 
     },
     {
         nome: 'Tsukumo Sana',
@@ -114,9 +126,11 @@ const talentos = [
         grupo: 'Council',
         canal: '@TsukumoSana',
         canalSecreto: '@notNamie',
-        outfit1: `${pastaFotosPefil}/sana.png`,
-        outfit2: `${pastaFotosPefil}/sana2.webp`,
-        outfit3: `${pastaFotosPefil}/sana3.webp`,
+        outfits: [
+            `${pastaFotosPefil}/sana.png`,
+            `${pastaFotosPefil}/sana2.webp`,
+            `${pastaFotosPefil}/sana3.webp`,
+        ] 
     },
     {
         nome: 'Ceres Fauna',
@@ -128,10 +142,12 @@ const talentos = [
         grupo: 'Council / Promise',
         canal: '@CeresFauna',
         canalSecreto: '@niminightmare',
-        outfit1: `${pastaFotosPefil}/fauna.png`,
-        outfit2: `${pastaFotosPefil}/fauna2.png`,
-        outfit3: `${pastaFotosPefil}/fauna3.png`,
-        outfit4: `${pastaFotosPefil}/fauna4.png`,
+        outfits: [
+            `${pastaFotosPefil}/fauna.png`,
+            `${pastaFotosPefil}/fauna2.png`,
+            `${pastaFotosPefil}/fauna3.png`,
+            `${pastaFotosPefil}/fauna4.png`,
+        ] 
     },
     {
         nome: 'Ouro Kronii',
@@ -143,10 +159,12 @@ const talentos = [
         nomeFas: 'Kronies',
         grupo: 'Council / Promise',
         canal: '@OuroKronii',
-        outfit1: `${pastaFotosPefil}/kronii.png`,
-        outfit2: `${pastaFotosPefil}/kronii2.png`,
-        outfit3: `${pastaFotosPefil}/kronii3.png`,
-        outfit4: `${pastaFotosPefil}/kronii4.png`,
+        outfits: [
+            `${pastaFotosPefil}/kronii.png`,
+            `${pastaFotosPefil}/kronii2.png`,
+            `${pastaFotosPefil}/kronii3.png`,
+            `${pastaFotosPefil}/kronii4.png`,
+        ]
     },
     {
         nome: 'Nanashi Mumei',
@@ -159,10 +177,12 @@ const talentos = [
         grupo: 'Council / Promise',
         canal: '@NanashiMumei',
         canalSecreto: '@shachimu',
-        outfit1: `${pastaFotosPefil}/mumei.png`,
-        outfit2: `${pastaFotosPefil}/mumei2.png`,
-        outfit3: `${pastaFotosPefil}/mumei3.png`,
-        outfit4: `${pastaFotosPefil}/mumei4.png`,
+        outfits: [
+            `${pastaFotosPefil}/mumei.png`,
+            `${pastaFotosPefil}/mumei2.png`,
+            `${pastaFotosPefil}/mumei3.png`,
+            `${pastaFotosPefil}/mumei4.png`,
+        ]
     },
     {
         nome: 'Hakos Baelz',
@@ -173,10 +193,12 @@ const talentos = [
         nomeFas: 'Brats',
         grupo: 'Council / Promise',
         canal: '@HakosBaelz',
-        outfit1: `${pastaFotosPefil}/baelz.png`,
-        outfit2: `${pastaFotosPefil}/baelz2.png`,
-        outfit3: `${pastaFotosPefil}/baelz3.png`,
-        outfit4: `${pastaFotosPefil}/baelz4.png`,
+        outfits: [
+            `${pastaFotosPefil}/baelz.png`,
+            `${pastaFotosPefil}/baelz2.png`,
+            `${pastaFotosPefil}/baelz3.png`,
+            `${pastaFotosPefil}/baelz4.png`,
+        ]
     },
     {
         nome: 'Shiori Novella',
@@ -187,9 +209,11 @@ const talentos = [
         nomeFas: 'Novelites',
         grupo: 'Advent',
         canal: '@ShioriNovella',
-        outfit1: `${pastaFotosPefil}/shiori.png`,
-        outfit2: `${pastaFotosPefil}/shiori2.png`,
-        outfit3: `${pastaFotosPefil}/shiori3.png`,
+        outfits: [
+            `${pastaFotosPefil}/shiori.png`,
+            `${pastaFotosPefil}/shiori2.png`,
+            `${pastaFotosPefil}/shiori3.png`,
+        ]
     },
     {
         nome: 'Koseki Bijou',
@@ -201,9 +225,11 @@ const talentos = [
         nomeFas: 'Pebbles',
         grupo: 'Advent',
         canal: '@KosekiBijou',
-        outfit1: `${pastaFotosPefil}/bijou.png`,
-        outfit2: `${pastaFotosPefil}/bijou2.png`,
-        outfit3: `${pastaFotosPefil}/bijou3.png`,
+        outfits: [
+            `${pastaFotosPefil}/bijou.png`,
+            `${pastaFotosPefil}/bijou2.png`,
+            `${pastaFotosPefil}/bijou3.png`,
+        ] 
     },
     {
         nome: 'Nerissa Ravencroft',
@@ -214,9 +240,11 @@ const talentos = [
         nomeFas: 'Jailbirds',
         grupo: 'Advent',
         canal: '@NerissaRavencroft',
-        outfit1: `${pastaFotosPefil}/nerissa.png`,
-        outfit2: `${pastaFotosPefil}/nerissa2.png`,
-        outfit3: `${pastaFotosPefil}/nerissa3.png`,
+        outfits: [
+            `${pastaFotosPefil}/nerissa.png`,
+            `${pastaFotosPefil}/nerissa2.png`,
+            `${pastaFotosPefil}/nerissa3.png`,
+        ] 
     },
     {
         nome: 'Fuwawa Abyssgard',
@@ -227,9 +255,11 @@ const talentos = [
         nomeFas: 'Ruffians',
         grupo: 'Advent',
         canal: '@FUWAMOCOch',
-        outfit1: `${pastaFotosPefil}/fuwawa.png`,
-        outfit2: `${pastaFotosPefil}/fuwawa2.png`,
-        outfit3: `${pastaFotosPefil}/fuwawa3.png`,
+        outfits: [
+            `${pastaFotosPefil}/fuwawa.png`,
+            `${pastaFotosPefil}/fuwawa2.png`,
+            `${pastaFotosPefil}/fuwawa3.png`,
+        ]
     },
     {
         nome: 'Mococo Abyssgard',
@@ -240,9 +270,11 @@ const talentos = [
         nomeFas: 'Ruffians',
         grupo: 'Advent',
         canal: '@FUWAMOCOch',
-        outfit1: `${pastaFotosPefil}/mococo.png`,
-        outfit2: `${pastaFotosPefil}/mococo2.png`,
-        outfit3: `${pastaFotosPefil}/mococo3.png`,
+        outfits: [
+            `${pastaFotosPefil}/mococo.png`,
+            `${pastaFotosPefil}/mococo2.png`,
+            `${pastaFotosPefil}/mococo3.png`,
+        ]
     },
     {
         nome: 'Elizabeth Rose Bloodflame',
@@ -256,8 +288,10 @@ const talentos = [
         nomeFas: 'Rosarians',
         grupo: 'Justice',
         canal: '@holoen_erbloodflame',
-        outfit1: `${pastaFotosPefil}/liz.png`,
-        outfit2: `${pastaFotosPefil}/liz2.png`,
+        outfits: [
+            `${pastaFotosPefil}/liz.png`,
+            `${pastaFotosPefil}/liz2.png`,
+        ]
     },
     {
         nome: 'Gigi Murin',
@@ -272,8 +306,10 @@ const talentos = [
         nomeFas: 'Grems',
         grupo: 'Justice',
         canal: '@holoen_gigimurin',
-        outfit1: `${pastaFotosPefil}/gigi.png`,
-        outfit2: `${pastaFotosPefil}/gigi2.png`,
+        outfits: [
+            `${pastaFotosPefil}/gigi.png`,
+            `${pastaFotosPefil}/gigi2.png`,
+        ]
     },
     {
         nome: 'Cecilia Immergreen',
@@ -288,8 +324,10 @@ const talentos = [
         nomeFas: 'Otomos',
         grupo: 'Justice',
         canal: '@holoen_ceciliaimmergreen',
-        outfit1: `${pastaFotosPefil}/ceci.png`,
-        outfit2: `${pastaFotosPefil}/ceci2.png`,
+        outfits: [
+            `${pastaFotosPefil}/ceci.png`,
+            `${pastaFotosPefil}/ceci2.png`,
+        ]
     },
     {
         nome: 'Raora Panthera',
@@ -303,8 +341,10 @@ const talentos = [
         nomeFas: 'Chattini',
         grupo: 'Justice',
         canal: '@holoen_raorapanthera',
-        outfit1: `${pastaFotosPefil}/raora.png`,
-        outfit2: `${pastaFotosPefil}/raora2.png`
+        outfits: [
+            `${pastaFotosPefil}/raora.png`,
+            `${pastaFotosPefil}/raora2.png`,
+        ] 
     }
 ];
 

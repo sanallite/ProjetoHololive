@@ -11,6 +11,7 @@ const thumbnails = document.querySelector('div.thumbnails');
 const fotoPrincipal = document.querySelector('div.fotoPrincipal');
 const botaoVoltarPagina = document.querySelector('main nav button');
 const articleDesc = document.querySelector('#imagensDesc article');
+const asideHistoria = document.querySelector('#historiaDetalhes aside');
 const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
 
 const criarElementoImagem = (img, container) => {
@@ -40,35 +41,10 @@ const criarLinhaTabela = (chave, valor) => {
 }
 
 const exibirThumbnails = () => {
-    criarElementoImagem(talentoAtual.outfit1, thumbnails);
-    criarElementoImagem(talentoAtual.outfit1, fotoPrincipal);
+    criarElementoImagem(talentoAtual.outfits[0], fotoPrincipal);
 
-    if ( talentoAtual?.outfit2 ) {
-        criarElementoImagem(talentoAtual.outfit2, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit3 ) {
-        criarElementoImagem(talentoAtual.outfit3, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit4 ) {
-        criarElementoImagem(talentoAtual.outfit4, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit5 ) {
-        criarElementoImagem(talentoAtual.outfit5, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit6 ) {
-        criarElementoImagem(talentoAtual.outfit6, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit7 ) {
-        criarElementoImagem(talentoAtual.outfit7, thumbnails);
-    }
-
-    if ( talentoAtual?.outfit18 ) {
-        criarElementoImagem(talentoAtual.outfit8, thumbnails);
+    for ( let i = 0; i < talentoAtual.outfits.length; i++ ) {
+        criarElementoImagem(talentoAtual.outfits[i], thumbnails);
     }
 }
 
@@ -88,6 +64,16 @@ const exibirDescDetalhes = async () => {
     criarLinhaTabela('Nome dos fãs:', talentoAtual.nomeFas);
     criarLinhaTabela('Grupo:', talentoAtual.grupo);
     criarLinhaTabela('Inscritos:', Intl.NumberFormat('pt-br').format(numeroInscritos));
+
+    if ( talentoAtual?.canalSecreto ) {
+        let link = document.createElement('a');
+
+        link.setAttribute('href', `https://youtube.com/${talentoAtual.canalSecreto}`);
+        link.setAttribute('target', '_blank');
+
+        link.textContent = 'Canal Secreto';
+        asideHistoria.appendChild(link);
+    }
 }
 
 if ( parametros.has('t') ) {
