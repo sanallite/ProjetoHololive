@@ -4,6 +4,14 @@ const pastaFotosPefil =  '../assets/img/perfis';
 
 const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
+const idAboveBelow = 'ilLEj-SCCn8?si=DFoGkchdxtYOkHYa';
+const idBauDol = 'aThUfmKQgaY?si=EtFcsbwRIZU7AJJC';
+const idSirens = 'SxRbAEjDS9k?si=kbXTJvapX-w8QWGX';
+const idRebellion = 'pYNYhSsR8EE?si=o5lFrYN0DK6Xj1ks';
+const idNotAPhase = 'xxzw7-sCdnQ?si=oeyk2Ve9NTIVhDxm';
+const idRise = 'jHibTDJlTJw?si=Ifp_zzk0k00DICTT';
+/* Ids de clipes de música, que são exibidos na página do talento. */
+
 const talentos = [
     {
         nome: 'Gawr Gura',
@@ -20,6 +28,12 @@ const talentos = [
             `${pastaFotosPefil}/gura3.png`,
             `${pastaFotosPefil}/gura4.png`,
             `${pastaFotosPefil}/gura5.png`,
+        ],
+        clipes: [
+            'nCQ_zZIiGLA?si=WI0q2qHolutgEzlU', // reflect
+            'aetXqd9B8WE?si=7QjbZlZy3G-lpwy8', // q
+            'qNIhngowViI?si=vQgxPuCiIllfCO6w', // king
+            'pKJErsN-ylU?si=_qlkgTD9CEVQGm0y', // journey like a thousand years
         ]
     },
     {
@@ -38,6 +52,12 @@ const talentos = [
             `${pastaFotosPefil}/ame3.png`,
             `${pastaFotosPefil}/ame4.png`,
             `${pastaFotosPefil}/ame5.png`,
+        ],
+        clipes: [
+            'NOrfhrL0D9k?si=zKZs_U4Ckg77_E5S', // ookami blue
+            'fYVweqOW31w?si=ayHzzHuoO1NwaZGC', // chiku taku
+            'VupT9JCJaOY?si=MuX4TAbnnXvM1sNM', // myth or treat
+            'zbgWUK_tidI?si=NQ7wK6otg-mKtEnj', // non-fiction
         ]
     },
     {
@@ -57,6 +77,12 @@ const talentos = [
             `${pastaFotosPefil}/kiara5.png`,
             `${pastaFotosPefil}/kiara6.png`,
             `${pastaFotosPefil}/kiara7.png`,
+        ],
+        clipes: [
+            'QI96hnhcr2E?si=jHsyrn1MUwhbxYtY', // do u
+            '6L4NNkF2Knc?si=M2ckWbBOauIn7diV', // chimera
+            'LIOTD5ndZEE?si=zwHF08cfKoFQaYbn', // mirage
+            '4ytZJoWR2mI?si=aFKFh42lIKLjEWn9', // reunion
         ]
     },
     {
@@ -78,6 +104,12 @@ const talentos = [
             `${pastaFotosPefil}/mori6.png`,
             `${pastaFotosPefil}/mori7.png`,
             `${pastaFotosPefil}/mori8.png`,
+        ],
+        clipes: [
+            'BXB26PzV31k?si=swExk-s6maoKuCnk', // end of a life
+            'J7tp_0lFI0I?si=mXjy2aFnrQr4PokW', // overkill
+            'X_4pIzwShRw?si=ItrwxXOrm3K-iT32', // seeing stars
+            'S2dWTOCdnEA?si=ZG6X7bJuBdcQx7HG', // the show goes on
         ]
     },
     {
@@ -97,7 +129,13 @@ const talentos = [
             `${pastaFotosPefil}/ina4.png`,
             `${pastaFotosPefil}/ina5.png`,
             `${pastaFotosPefil}/ina6.png`,
-        ] 
+        ],
+        clipes: [
+            '8ZdLXELdF9Q?si=uH3edpRY0QImxrpH', // violet
+            'XzkNg89Cq9Y?si=cudpaW5ZkaM9szmw', // meconopsis
+            'LtTO1HMGjqA?si=6fEX1zHRY7KSnC4N', // temari
+            '0wO8d70KSXw?si=cF7eWat0hxHJp5ko', // odysee
+        ]
     },
     {
         nome: 'IRyS',
@@ -114,7 +152,13 @@ const talentos = [
             `${pastaFotosPefil}/irys3.png`,
             `${pastaFotosPefil}/irys4.png`,
             `${pastaFotosPefil}/irys5.png`,
-        ] 
+        ],
+        clipes: [
+            'jHibTDJlTJw?si=Ifp_zzk0k00DICTT', // sparks of joy
+            'fevB6h3-kfE?si=RbHMBej0-_aaIDwq', // gravity
+            'dFZ1oTSFuIE?si=Li8lYXx8G5f8CDk6', // twilight
+            'EXM0EE_NpQc?si=o53R3eEzgTEPUgGa', // diamond girlfriend
+        ]
     },
     {
         nome: 'Tsukumo Sana',
@@ -130,7 +174,13 @@ const talentos = [
             `${pastaFotosPefil}/sana.png`,
             `${pastaFotosPefil}/sana2.webp`,
             `${pastaFotosPefil}/sana3.webp`,
-        ] 
+        ],
+        clipes: [
+            'R8y1aWMlPOs?si=A6aAcs2bm01KdXSl', // astro girl
+            'uFJHdT_ie9U?si=GZgdygJsmeBwBPsY', // ochane kirou
+            'U-9M-BjFYMc?si=157VmwrZRQof_F62', // hikaru nara
+            idRise
+        ]
     },
     {
         nome: 'Ceres Fauna',
@@ -147,6 +197,12 @@ const talentos = [
             `${pastaFotosPefil}/fauna2.png`,
             `${pastaFotosPefil}/fauna3.png`,
             `${pastaFotosPefil}/fauna4.png`,
+        ],
+        clipes: [
+            '0RMVJTLZOzQ?si=TjzPQ0JHv2VsfHGA', // let me stay here
+            'IdgKmhbsZt0?si=Em9kqh_FB5Xp4RGV', // (cover em jp)
+            'bbJqGGRQ32k?si=0wfx5UP71lOxpV35', // suki yuki maji magic
+            idNotAPhase
         ] 
     },
     {
@@ -164,6 +220,12 @@ const talentos = [
             `${pastaFotosPefil}/kronii2.png`,
             `${pastaFotosPefil}/kronii3.png`,
             `${pastaFotosPefil}/kronii4.png`,
+        ],
+        clipes: [
+            '6W749jRBg-4?si=I1A-vVfz-zLkFhoo', // daydream
+            'sTxcH54jhPk?si=dun8eiHjFduicMJQ', // souten ni moyu
+            'O5h6haVYSYQ?si=wERcSVwOurYMmZRH', // suki suki daisuki
+            idRise
         ]
     },
     {
@@ -182,6 +244,12 @@ const talentos = [
             `${pastaFotosPefil}/mumei2.png`,
             `${pastaFotosPefil}/mumei3.png`,
             `${pastaFotosPefil}/mumei4.png`,
+        ],
+        clipes: [
+            'Py21QCndbxc?si=i9eVxNgc5AG1fftu', // a new start
+            'oA0CpI0vCK4?si=oJWZgMx58xsQOwXw', // mumei
+            'Apgmr-SggVQ?si=N_rxXTMvbJ5LHcOy', // idol
+            idNotAPhase
         ]
     },
     {
@@ -198,6 +266,12 @@ const talentos = [
             `${pastaFotosPefil}/baelz2.png`,
             `${pastaFotosPefil}/baelz3.png`,
             `${pastaFotosPefil}/baelz4.png`,
+        ],
+        clipes: [
+            'na6bysYNuS0?si=RBomPVz8vVPmrBfx', // play dice
+            '7WXVFl-N6-o?si=HzESP4nM5rZcxvAH', // r x r x r x
+            'xnX8Lk-iSCo?si=2kCi_AHuPOQH8dpE', // psycho
+            'lcVyYmVOi1U?si=TmkJPGW-p0CC1TgJ', // our promise
         ]
     },
     {
@@ -213,6 +287,12 @@ const talentos = [
             `${pastaFotosPefil}/shiori.png`,
             `${pastaFotosPefil}/shiori2.png`,
             `${pastaFotosPefil}/shiori3.png`,
+        ],
+        clipes: [
+            'xEuupOGazwg?si=RbtQ3Wybl5l0adyP', // dark night
+            'QvXPvj61crA?si=vpsgJFmhNG-tnVkh', // hoshi wo wataru
+            'zI_kkSCX8vM?si=RysmGclF4Y2elfNT', // rainy boots
+            idSirens
         ]
     },
     {
@@ -229,7 +309,13 @@ const talentos = [
             `${pastaFotosPefil}/bijou.png`,
             `${pastaFotosPefil}/bijou2.png`,
             `${pastaFotosPefil}/bijou3.png`,
-        ] 
+        ],
+        clipes: [
+            'Akn_Gdi05Ys?si=8oNDFNXtFV3EFppP', // kyoumen no nami
+            'NfhJK602XdE?si=1HRKBUnPqGQODLYi', // love it
+            'M3pjFfKBonI?si=9N1XTkrED082kMWg', // prism no mahou
+            idRebellion,
+        ]
     },
     {
         nome: 'Nerissa Ravencroft',
@@ -244,7 +330,13 @@ const talentos = [
             `${pastaFotosPefil}/nerissa.png`,
             `${pastaFotosPefil}/nerissa2.png`,
             `${pastaFotosPefil}/nerissa3.png`,
-        ] 
+        ],
+        clipes: [
+            'RWU3o_kDixc?si=DQ4InEmrx22bxnQF', // love me love me love me,
+            'WLMlYZdynxE?si=EIA5I5hS4ppve6cr', // sweetest scarlet
+            'x_fkTc7Hlp0?si=4QP73aCAfc1TxTH-', // say my name
+            idRebellion
+        ]
     },
     {
         nome: 'Fuwawa Abyssgard',
@@ -259,6 +351,12 @@ const talentos = [
             `${pastaFotosPefil}/fuwawa.png`,
             `${pastaFotosPefil}/fuwawa2.png`,
             `${pastaFotosPefil}/fuwawa3.png`,
+        ],
+        clipes: [
+            idBauDol,
+            '-wzgy7uTuSk?si=vKKtIQRFI2TrDGmt', // lifetime showtime
+            'B9qgXaihce8?si=jI55Sf4G4xcqPncj', // identity
+            idSirens
         ]
     },
     {
@@ -274,6 +372,12 @@ const talentos = [
             `${pastaFotosPefil}/mococo.png`,
             `${pastaFotosPefil}/mococo2.png`,
             `${pastaFotosPefil}/mococo3.png`,
+        ],
+        clipes: [
+            idBauDol,
+            'XYmZUh_YAq0?si=NezhwB-Wylkpm-6F', // cute na kanojo
+            'D8YflSQi1Vk?si=K47dg-JvGFmrxM_T', // white love
+            idSirens
         ]
     },
     {
@@ -291,6 +395,12 @@ const talentos = [
         outfits: [
             `${pastaFotosPefil}/liz.png`,
             `${pastaFotosPefil}/liz2.png`,
+        ],
+        clipes: [
+            'zZXW_iXIrss?si=Fcjs1LNdx_6uSYUm', // otonablue
+            'QAPasXCYkPU?si=IpfcTcIL314J0yKh', // love-song
+            'jqFPgcMt_Jo?si=M2eckEF-cy68lBT7', // mephisto,
+            idAboveBelow,
         ]
     },
     {
@@ -309,6 +419,12 @@ const talentos = [
         outfits: [
             `${pastaFotosPefil}/gigi.png`,
             `${pastaFotosPefil}/gigi2.png`,
+        ],
+        clipes: [
+            'bmT_cEfOTJE?si=lxmY-ie1mjSOUxkp', //hitomania
+            'B_N1uEAHk10?si=IOfMVzrnjGJY05S0', //igaku
+            't3tIj88yzLM?si=4r4dIONOxHIY4Z79', // kyu-kurarin
+            idAboveBelow
         ]
     },
     {
@@ -327,6 +443,12 @@ const talentos = [
         outfits: [
             `${pastaFotosPefil}/ceci.png`,
             `${pastaFotosPefil}/ceci2.png`,
+        ],
+        clipes: [
+            'twto2g0FwTQ?si=-Cf5g-zJwDQ0dyTR', // forgotten worlds
+            'QDhCNXYgdJc?si=zMk9I6ex9eGQtTvF', // above below far-east
+            'tBzZss_kh_0?si=fmeLnwdvCzwwUFCP', // snow halation
+            idAboveBelow,
         ]
     },
     {
@@ -344,7 +466,13 @@ const talentos = [
         outfits: [
             `${pastaFotosPefil}/raora.png`,
             `${pastaFotosPefil}/raora2.png`,
-        ] 
+        ],
+        clipes: [
+            'UwIhbV_wuKI?si=qmSWYmmBGLDCtc7r', // hibana
+            'pqqhKj6Sh-E?si=ADX7fBjFDxyxAMew', // echo
+            'ILpEFrK1F5I?si=cFeGNrhlq48s5A2A', // matryoshika
+            idAboveBelow
+        ]
     }
 ];
 
