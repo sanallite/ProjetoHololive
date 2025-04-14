@@ -1,7 +1,17 @@
+header a {
+    text-decoration: none;
+    color: black;
+}
+
 div.fotoPrincipal img {
     height: 500px;
 }
 
 div.thumbnails img {
     height: 100px;
+}
+
+section#clipes div {
+    display: flex;
+    flex-wrap: wrap;
 }

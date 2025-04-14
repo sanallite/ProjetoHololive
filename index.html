@@ -16,6 +16,7 @@
         <script src="./js/carrossel.js" defer></script>
         <script type="module" src="./js/comentarioController.js" defer></script>
         <script type="module" src="js/youtubeApi.js"></script>
+        <script type="module" src="./js/playerAudio.js"></script>
     </head>
     
     <body>
@@ -88,6 +89,20 @@
                 </table>
             </section>
         </aside>
+
+        <section id="musicas">
+            <audio class="player" preload="auto"></audio>
+
+            <div class="controles">
+                <button class="play">Play</button>
+                <button class="pause">Pause</button>
+                <button class="proxima">Próxima</button>
+                <button class="anterior">Anterior</button>
+            </div>
+
+            <span>Now Playing:</span>
+            <p class="nome"></p>
+        </section>
 
         <footer>
             <blockquote>Site criado por Márcio Teodoro, Sanallite<br>

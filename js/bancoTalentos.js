@@ -1,6 +1,7 @@
 /* Banco de talentos com os dados das nossas Idols. */
 
 const pastaFotosPefil =  '../assets/img/perfis';
+const pastaMusicas = '../assets/audio';
 
 const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
@@ -154,7 +155,7 @@ const talentos = [
             `${pastaFotosPefil}/irys5.png`,
         ],
         clipes: [
-            'jHibTDJlTJw?si=Ifp_zzk0k00DICTT', // sparks of joy
+            'y2vrlxmOp7U?si=3xFYEFeif2ls5Dab', // sparks of joy
             'fevB6h3-kfE?si=RbHMBej0-_aaIDwq', // gravity
             'dFZ1oTSFuIE?si=Li8lYXx8G5f8CDk6', // twilight
             'EXM0EE_NpQc?si=o53R3eEzgTEPUgGa', // diamond girlfriend
@@ -498,6 +499,25 @@ const fotos = [
         [`${pastaFotosPefil}/liz.png`, 'Elizabeth'], [`${pastaFotosPefil}/gigi.png`, 'Gigi'], [`${pastaFotosPefil}/ceci.png`, 'Cecilia'],
         [`${pastaFotosPefil}/raora.png`, 'Raora']
     ]
+];
+
+export const musicas = [
+    {
+        nome: 'Journey Like a Thousand Years',
+        src: `${pastaMusicas}/journeythousand.mp3`,
+    },
+    {
+        nome: 'Non-Fiction',
+        src: `${pastaMusicas}/nonfiction.mp3`,
+    },
+    {
+        nome: 'ReUnion',
+        src: `${pastaMusicas}/reunion.mp3`,
+    },
+    {
+        nome: 'Rise',
+        src: `${pastaMusicas}/rise.mp3`
+    }
 ]
 
 export const [ Myth, Promise, Advent, Justice ] = fotos;
@@ -508,7 +528,7 @@ export const mapaFotosGrupos = {
     'Promise': Promise,
     'Advent': Advent,
     'Justice': Justice
-}
+};
 
 export const mapaTalentos = {
     'Gura': talentos[0],
@@ -531,7 +551,7 @@ export const mapaTalentos = {
     'Gigi': talentos[17],
     'Cecilia': talentos[18],
     'Raora': talentos[19]
-}
+};
 /* Mapeando cada item do vetor para acessar com mais facilidade as informações dos talentos. */
 
 export { nomesGrupos, talentos };

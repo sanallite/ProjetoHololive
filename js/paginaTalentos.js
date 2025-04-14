@@ -13,6 +13,7 @@ const botaoVoltarPagina = document.querySelector('main nav button');
 const articleDesc = document.querySelector('#imagensDesc article');
 const asideHistoria = document.querySelector('#historiaDetalhes aside');
 const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
+const secaoClipes = document.querySelector('section#clipes div');
 
 const criarElementoImagem = (img, container) => {
     const elemento = document.createElement('img');
@@ -76,6 +77,20 @@ const exibirDescDetalhes = async () => {
     }
 }
 
+const criarEmbedClipes = () => {
+    for (let index = 0; index < talentoAtual.clipes.length; index++) {
+        let frame = document.createElement('iframe');
+        frame.src = `https://youtube.com/embed/${talentoAtual.clipes[index]}`;
+        frame.allowFullscreen = true;
+        frame.setAttribute('frameborder', 0);
+        frame.setAttribute('width', '400px');
+        frame.setAttribute('height', '240px');
+        frame.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope');
+
+        secaoClipes.appendChild(frame);
+    }
+}
+
 if ( parametros.has('t') ) {
     const nomeTalento = parametros.get('t');
     
@@ -97,6 +112,7 @@ if ( parametros.has('t') ) {
 
     exibirThumbnails();
     exibirDescDetalhes();
+    criarEmbedClipes();
 }
 
 else {
