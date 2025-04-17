@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hololive English</title>
     <link rel="stylesheet" href="../css/paginaTalentos.css">
+    <link rel="stylesheet" href="../css/playerAudio.css">
 
     <script src="https://apis.google.com/js/api.js"></script>
     <!-- Importando a biblioteca de APIs do Google -->
 
     <script type="module" src="../js/paginaTalentos.js"></script>
+    <script type="module" src="../js/playerAudio.js"></script>
 </head>
 <body>
     <header>
@@ -48,6 +50,24 @@
             <h3>Clipes de Música</h3>
 
             <div></div>
+        </section>
+
+        <section id="musicas">
+            <audio class="player" preload="auto"></audio>
+
+            <div class="controles">
+                <button class="play">Play</button>
+                <button class="pause">Pause</button>
+                <button class="proxima">Próxima</button>
+                <button class="anterior">Anterior</button>
+            </div>
+
+            <div class="progresso">
+                <div class="barraProgresso"></div>
+            </div>
+
+            <p>Now Playing:</p>
+            <p class="nome"></p>
         </section>
     </main>
     <footer>

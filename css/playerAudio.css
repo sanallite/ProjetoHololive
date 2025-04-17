@@ -1,0 +1,17 @@
+#musicas div.progresso {
+    width: 30%;
+    height: 6px;
+    background-color: #ddd;
+    cursor: pointer;
+    margin: 1rem
+}
+
+#musicas div.barraProgresso {
+    width: 0%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+#musicas button.hidden {
+    display: none;
+}
