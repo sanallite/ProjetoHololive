@@ -4,6 +4,8 @@ import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth } from "./ba
 import { exibirUploads } from './youtubeApi.js';
 /* Importando uma função que pega dados da API do YouTube. */
 
+const playerMusica = document.querySelector('audio.player');
+
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
     const navGrupos = document.getElementById('grupos');
@@ -32,14 +34,19 @@ const exibirFotosPefilTalentos = grupo => {
 /* Síntaxe de função arrow com apenas um parâmetro */
 
     const sectionTalentosImgs = document.querySelector('section#talentosImgs');
-    const fotosExibidas = document.querySelectorAll('.fotoPerfilTalento');
+    const fotosExibidas = document.querySelectorAll('section#talentosImgs div.fotoContainer');
 
     for ( let i = 0; i < fotosExibidas.length; i++ ) {
         sectionTalentosImgs.removeChild(fotosExibidas[i]);
     }
-    /* Iterando sobre cada elemento encontrado pelo querySelectorAll, e então removendo esses elementos como filhos do contâiner que contêm as fotos de perfil, para que assim cada vez que for chamada a função pelo escutador de eventos, as fotos que estavam sendo exibidas antes sejam removidas */
+    /* Iterando sobre cada elemento encontrado pelo querySelectorAll, e então removendo esses elementos como filhos da seção que contêm as fotos de perfil, para que assim cada vez que for chamada a função pelo escutador de eventos, as fotos que estavam sendo exibidas antes sejam removidas */
 
     for (let i = 0; i < grupo.length; i++) {
+        let container = document.createElement('div');
+        container.classList.add('fotoContainer');
+
+        let nome = document.createElement('p');
+
         let imagem = document.createElement('img');
         imagem.setAttribute('src', `${grupo[i][0]}`);
         imagem.className = `fotoPerfilTalento ${grupo[i][1]}`;
@@ -53,7 +60,23 @@ const exibirFotosPefilTalentos = grupo => {
         });
         /* Quando uma das imagens for clicada será chamada uma função que envia como parâmetro uma propriedade do objeto mapaTalentos, com o valor dessa propriedade sendo um objeto que contém os dados do talento em outro array. Ex: mapaTalentos[grupo[i][1]] = mapaTalentos['Gura'] */
 
-        sectionTalentosImgs.appendChild(imagem);
+        imagem.addEventListener('pointerover', () => { 
+            nome.classList.add('nomeTalento');
+            nome.textContent = mapaTalentos[grupo[i][1]].nome;
+
+            container.appendChild(nome);
+        });
+
+        imagem.addEventListener('pointerout', () => {
+            let nomes = document.querySelectorAll('#talentosImgs p.nomeTalento');
+            
+            for (let i = 0; i < nomes.length; i++) {
+                container.removeChild(nomes[i]);
+            }
+        })
+
+        container.appendChild(imagem);
+        sectionTalentosImgs.appendChild(container);
     }
     /* Para cada elemento do vetor que contém as imagens, será criado um elemento html para exibi-lás */
 }
@@ -106,6 +129,10 @@ const exibirInfoTalentos = async talento => {
     let linkPag2 = document.createElement('a');
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
     linkPag2.textContent = 'Mais Detalhes';
+
+    linkPag2.addEventListener('click', () => {
+        sessionStorage.setItem('tempoAtualMusica', playerMusica.currentTime);
+    })
 
     divInfo.appendChild(linkPag2);
 

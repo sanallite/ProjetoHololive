@@ -2,7 +2,6 @@
 
 import { musicas } from "./bancoTalentos";
 
-const secaoPlayer = document.querySelector('section#musicas');
 const player = document.querySelector('audio.player');
 const botaoPlay = document.querySelector('button.play');
 const botaoPause = document.querySelector('button.pause');
@@ -13,20 +12,32 @@ const barra = document.querySelector('section#musicas div.progresso');
 const barraProgresso = document.querySelector('section#musicas div.barraProgresso');
 
 let indiceAtual = Number(sessionStorage.getItem('musicaAtual')) || 0;
+let tempoAtual = Number(sessionStorage.getItem('tempoAtualMusica')) || 0;
+let nomeInicial = sessionStorage.getItem('nomeMusica') || "";
+
+const alternarBotoes = () => {
+    if ( player.paused ) {
+        botaoPause.classList.add('hidden');
+        botaoPlay.classList.remove('hidden');
+    }
+
+    else {
+        botaoPlay.classList.add('hidden');
+        botaoPause.classList.remove('hidden');
+    }
+}
 
 const tocar = () => {
     player.play();
     nomeMusica.textContent = musicas[indiceAtual].nome;
-    botaoPlay.classList.add('hidden');
-    botaoPause.classList.remove('hidden');
+    alternarBotoes();
 
     sessionStorage.setItem('musicaAtual', indiceAtual);
-    console.log(sessionStorage.getItem('musicaAtual'));
+    sessionStorage.setItem('nomeMusica', musicas[indiceAtual].nome);
 }
 const pausar = () => {
     player.pause();
-    botaoPause.classList.add('hidden');
-    botaoPlay.classList.remove('hidden');
+    alternarBotoes();
 }
 
 const anterior = () => {
@@ -57,17 +68,16 @@ const proxima = () => {
     tocar();
 }
 
+nomeMusica.textContent = nomeInicial;
 player.setAttribute('src', musicas[indiceAtual].src);
+player.volume = 0.25;
+player.currentTime = tempoAtual;
+alternarBotoes();
 
 botaoPlay.addEventListener('click', tocar);
 botaoPause.addEventListener('click', pausar);
 botaoAnterior.addEventListener('click', anterior);
 botaoProxima.addEventListener('click', proxima);
-
-player.addEventListener('loadedmetadata', () => {
-    player.volume = 0.3;
-    tocar();
-})
 
 player.addEventListener('ended', () => {
     proxima();
@@ -101,4 +111,8 @@ document.addEventListener('keydown', (event) => {
             pausar();
         }
     }
+});
+
+window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('tempoAtualMusica', player.currentTime || 0);
 });

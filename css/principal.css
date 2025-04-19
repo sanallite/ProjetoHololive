@@ -3,7 +3,7 @@
 body {
     display: grid;
     grid-template-columns: 70fr 30fr;
-    grid-template-rows: 8vh 100vh 80vh 90vh 12vh 8vh;
+    grid-template-rows: 8vh 90vh 80vh 90vh 12vh 8vh;
     grid-template-areas: "h h" "m a" "tw tw" "sc sa" "s s" "f f";
     margin: auto;
 }       
@@ -35,7 +35,7 @@ header a {
 main { 
     grid-area: m;
     display: grid;
-    grid-template-rows: 6vh 94vh;
+    grid-template-rows: 6vh 84vh;
     grid-template-areas: "g" "ti";
 }
 
@@ -57,14 +57,25 @@ button.nomesGrupos {
 section#talentosImgs {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 47vh 47vh;
+    grid-template-rows: 42vh 42vh;
     grid-template-areas: "pri seg ter" "qua qui sex";
+}
+
+#talentosImgs div {
+    position: relative;
+    justify-self: center;
+}
+
+#talentosImgs p.nomeTalento {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 #talentosImgs img {
     height: 100%;
-    justify-self: center;
-    align-self: start;
 }
 
 section#comentarios {
