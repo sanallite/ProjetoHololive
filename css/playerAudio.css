@@ -15,3 +15,8 @@
 #musicas button.hidden {
     display: none;
 }
+
+#musicas img.capa {
+    width: 6em;
+    height: 6em;
+}

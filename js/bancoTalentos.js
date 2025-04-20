@@ -2,6 +2,7 @@
 
 const pastaFotosPefil =  '../assets/img/perfis';
 const pastaMusicas = '../assets/audio';
+const pastaCapas = '../assets/img/capas';
 
 const nomesGrupos =  [ 'Myth', 'Promise','Advent', 'Justice' ];
 
@@ -23,6 +24,7 @@ const talentos = [
         nomeFas: 'Chumbuds',
         grupo: 'Myth',
         canal: '@GawrGura',
+        canalSecreto: '@senzawa',
         outfits: [
             `${pastaFotosPefil}/gura.png`,
             `${pastaFotosPefil}/gura2.png`,
@@ -33,7 +35,7 @@ const talentos = [
         clipes: [
             'nCQ_zZIiGLA?si=WI0q2qHolutgEzlU', // reflect
             'aetXqd9B8WE?si=7QjbZlZy3G-lpwy8', // q
-            'qNIhngowViI?si=vQgxPuCiIllfCO6w', // king
+            'twUFbqyul_M?si=d7XiMH3Kj7bE2yZd', // ash again
             'pKJErsN-ylU?si=_qlkgTD9CEVQGm0y', // journey like a thousand years
         ]
     },
@@ -505,18 +507,22 @@ export const musicas = [
     {
         nome: 'Journey Like a Thousand Years',
         src: `${pastaMusicas}/journeythousand.mp3`,
+        capa: `${pastaCapas}/thousand.webp`,
     },
     {
         nome: 'Non-Fiction',
         src: `${pastaMusicas}/nonfiction.mp3`,
+        capa: `${pastaCapas}/nonfiction.jpg`,
     },
     {
         nome: 'ReUnion',
         src: `${pastaMusicas}/reunion.mp3`,
+        capa: `${pastaCapas}/reunion.jpg`,
     },
     {
         nome: 'Rise',
-        src: `${pastaMusicas}/rise.mp3`
+        src: `${pastaMusicas}/rise.mp3`,
+        capa: `${pastaCapas}/rise.png`,
     }
 ]
 

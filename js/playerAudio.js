@@ -10,10 +10,11 @@ const botaoAnterior = document.querySelector('button.anterior');
 const nomeMusica = document.querySelector('section#musicas p.nome');
 const barra = document.querySelector('section#musicas div.progresso');
 const barraProgresso = document.querySelector('section#musicas div.barraProgresso');
+const imagemCapa = document.querySelector('section#musicas img.capa');
 
 let indiceAtual = Number(sessionStorage.getItem('musicaAtual')) || 0;
 let tempoAtual = Number(sessionStorage.getItem('tempoAtualMusica')) || 0;
-let nomeInicial = sessionStorage.getItem('nomeMusica') || "";
+let nomeInicial = musicas[indiceAtual].nome || "";
 
 const alternarBotoes = () => {
     if ( player.paused ) {
@@ -30,10 +31,10 @@ const alternarBotoes = () => {
 const tocar = () => {
     player.play();
     nomeMusica.textContent = musicas[indiceAtual].nome;
+    imagemCapa.setAttribute('src', musicas[indiceAtual].capa);
     alternarBotoes();
 
     sessionStorage.setItem('musicaAtual', indiceAtual);
-    sessionStorage.setItem('nomeMusica', musicas[indiceAtual].nome);
 }
 const pausar = () => {
     player.pause();
@@ -69,9 +70,13 @@ const proxima = () => {
 }
 
 nomeMusica.textContent = nomeInicial;
+
 player.setAttribute('src', musicas[indiceAtual].src);
 player.volume = 0.25;
 player.currentTime = tempoAtual;
+
+imagemCapa.setAttribute('src', musicas[indiceAtual].capa);
+
 alternarBotoes();
 
 botaoPlay.addEventListener('click', tocar);

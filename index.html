@@ -68,6 +68,16 @@
         </section>
 
         <aside id="tabela">
+            <section id="infoPlayer">
+                <h3>Informações sobre o player de música:</h3>
+
+                <p>
+                    Clique na barra de progresso para avançar ou retroceder.<br>
+                    Você pode pausar/tocar a música apertando Space.<br>
+                    O progresso dá música é salvo conforme você navega entre as páginas, mas sem autoplay.
+                </p>  
+            </section>
+
             <section id="talentosInfo">
                 <h2>Informações sobre os talentos</h2>
 
@@ -92,21 +102,27 @@
         </aside>
 
         <section id="musicas">
-            <audio class="player" preload="auto"></audio>
-
-            <div class="controles">
-                <button class="play">Play</button>
-                <button class="pause">Pause</button>
-                <button class="proxima">Próxima</button>
-                <button class="anterior">Anterior</button>
+            <div class="capa">
+                <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
             </div>
 
-            <div class="progresso">
-                <div class="barraProgresso"></div>
-            </div>
+            <div class="player">
+                <audio class="player" preload="auto"></audio>
 
-            <p>Now Playing:</p>
-            <p class="nome"></p>
+                <div class="controles">
+                    <button class="play">Play</button>
+                    <button class="pause">Pause</button>
+                    <button class="proxima">Próxima</button>
+                    <button class="anterior">Anterior</button>
+                </div>
+
+                <div class="progresso">
+                    <div class="barraProgresso"></div>
+                </div>
+
+                <p>Now Playing:</p>
+                <p class="nome"></p>
+            </div>
         </section>
 
         <footer>
