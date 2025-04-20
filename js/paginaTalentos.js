@@ -12,6 +12,7 @@ const fotoPrincipal = document.querySelector('div.fotoPrincipal');
 const botaoVoltarPagina = document.querySelector('main nav button');
 const articleDesc = document.querySelector('#imagensDesc article');
 const asideHistoria = document.querySelector('#historiaDetalhes aside');
+const articleHistoria = document.querySelector('#historiaDetalhes article');
 const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
 const secaoClipes = document.querySelector('section#clipes div');
 
@@ -51,6 +52,7 @@ const exibirThumbnails = () => {
 
 const exibirDescDetalhes = async () => {
     articleDesc.textContent = talentoAtual.descricao;
+    articleHistoria.innerHTML = talentoAtual.historia || "";
 
     const infoCanal = await exibirInfo(talentoAtual.canal);
     /* talentoAtual.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
