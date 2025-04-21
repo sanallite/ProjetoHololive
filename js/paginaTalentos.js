@@ -1,4 +1,8 @@
-import { talentos, mapaTalentos } from "./bancoTalentos";
+/* Scripts da página dos talentos. */
+
+import { talentos } from "./bancoTalentos";
+/* Importando o objeto com as informações dos talentos. */
+
 import { exibirInfo } from "./youtubeApi";
 /* Importando uma função que pega dados da API do YouTube. */
 
@@ -16,6 +20,7 @@ const articleHistoria = document.querySelector('#historiaDetalhes article');
 const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
 const secaoClipes = document.querySelector('section#clipes div');
 
+/* Função auxiliar para criar elementos img. */
 const criarElementoImagem = (img, container) => {
     const elemento = document.createElement('img');
     elemento.setAttribute('src', img);
@@ -27,8 +32,10 @@ const criarElementoImagem = (img, container) => {
             fotoPrincipalAtual.setAttribute('src', img);
         })
     }
+    /* Se a imagem for do tipo thumbnail, quando ela for clicada, a imagem princípal vai receber o caminho da imagem clicada. */
 }
 
+/* Função auxiliar para criar linhas na tabela. */
 const criarLinhaTabela = (chave, valor) => {
     const coluna1 = document.createElement('td');
     const coluna2 = document.createElement('td');
@@ -42,6 +49,7 @@ const criarLinhaTabela = (chave, valor) => {
     tabelaDetalhes.appendChild(linha);
 }
 
+/* Função que chama a função que cria imagens conforme os itens do objeto outfits do talento atual.. */
 const exibirThumbnails = () => {
     criarElementoImagem(talentoAtual.outfits[0], fotoPrincipal);
 
@@ -50,6 +58,7 @@ const exibirThumbnails = () => {
     }
 }
 
+/* Função que pega as informações do talento, tanto do banco de dados local, quanto da API do YouTube, e exibe os valores em três seções separadas, a descrição, história e a tabela de informações. */
 const exibirDescDetalhes = async () => {
     articleDesc.textContent = talentoAtual.descricao;
     articleHistoria.innerHTML = talentoAtual.historia || "";
@@ -77,8 +86,10 @@ const exibirDescDetalhes = async () => {
         link.textContent = 'Canal Secreto';
         asideHistoria.appendChild(link);
     }
+    /* Os talentos graduados/afiliados tem um canal "secreto", quem sabe, sabe. */
 }
 
+/* Função para criar iframes com os vídeo-clipes dos talentos. */
 const criarEmbedClipes = () => {
     for (let index = 0; index < talentoAtual.clipes.length; index++) {
         let frame = document.createElement('iframe');
@@ -93,6 +104,7 @@ const criarEmbedClipes = () => {
     }
 }
 
+/* Verificação inicial da página. */
 if ( parametros.has('t') ) {
     const nomeTalento = parametros.get('t');
     
@@ -100,6 +112,7 @@ if ( parametros.has('t') ) {
         if ( talentos[i].nome === nomeTalento ) {
             talentoAtual = talentos[i];
         }
+        /* Pegando o valor do parâmetro e buscando uma correspondência no array de objetos. */
     }
 
     if ( !talentoAtual ) {
@@ -112,6 +125,7 @@ if ( parametros.has('t') ) {
 
     document.title = `Hololive English - ${talentoAtual.nome}`;
 
+    /* Exibindo o conteúdo relacionado ao talento atual. */
     exibirThumbnails();
     exibirDescDetalhes();
     criarEmbedClipes();
@@ -119,6 +133,7 @@ if ( parametros.has('t') ) {
 
 else {
     window.location.assign('../index.html');
+    /* Caso a página for acessada sem parâmetros, será feito o redirecionamento. */
 }
 
 botaoVoltarPagina.addEventListener('click', () => {

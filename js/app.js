@@ -1,3 +1,5 @@
+/* Scripts da página principal. */
+
 import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth } from "./bancoTalentos.js";
 /* Importação das variáveis no meu banco de dados local. */
 
@@ -66,6 +68,7 @@ const exibirFotosPefilTalentos = grupo => {
 
             container.appendChild(nome);
         });
+        /* Adicionando um texto "flutuante" para mostrar o nome de cada talento, apenas quando o mouse passsar sobre ou o elemento receber um toque */
 
         imagem.addEventListener('pointerout', () => {
             let nomes = document.querySelectorAll('#talentosImgs p.nomeTalento');
@@ -74,6 +77,7 @@ const exibirFotosPefilTalentos = grupo => {
                 container.removeChild(nomes[i]);
             }
         })
+        /* Quando o elemento não está no focado do apontador, o elemento que exibe o nome é removidos */
 
         container.appendChild(imagem);
         sectionTalentosImgs.appendChild(container);

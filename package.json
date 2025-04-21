@@ -1,17 +1,17 @@
 {
   "name": "sanallite-hololive",
   "version": "0.1.0",
-  "description": "Site para aprender front-end",
+  "description": "Projeto front-end, meio full stack",
   "main": "./js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Márcio Teodoro",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "firebase": "^11.5.0"
   },
-  "type": "module",
   "devDependencies": {
     "vite": "^6.2.4"
   }
