@@ -43,8 +43,8 @@ const exibirComentarios = (comentarios, erro = null) => {
             /* Convertendo o timestamp do Firebase em uma data válida para usar os métodos do JS */
 
             const data = document.createElement('p');
-            data.textContent = `${String(publicacao.getDay()).padStart(2, '0')} de ${publicacao.toLocaleString('pt-br', { month: 'long' })} de ${publicacao.getFullYear()}`;
-            /* Data formatada do jeito que eu quero. Ex: 06 de abril de 2025. */
+            data.textContent = `${String(publicacao.getDate()).padStart(2, '0')} de ${publicacao.toLocaleString('pt-br', { month: 'long' })} de ${publicacao.getFullYear()}`;
+            /* Data formatada dojeito que eu quero. Ex: 06 de abril de 2025. */ 
 
             container.classList.add('comentario');
             container.append(nome, comentario, data);

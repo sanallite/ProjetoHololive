@@ -79,7 +79,7 @@ section#talentosImgs {
 }
 
 section#comentarios {
-    background-color: palegoldenrod;
+    overflow: auto;
 }
 
 section#musicas {
