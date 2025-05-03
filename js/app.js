@@ -132,7 +132,7 @@ const exibirInfoTalentos = async talento => {
 
     let linkPag2 = document.createElement('a');
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
-    linkPag2.textContent = 'Mais Detalhes';
+    linkPag2.textContent = 'Ir para página do talento';
 
     linkPag2.addEventListener('click', () => {
         sessionStorage.setItem('tempoAtualMusica', playerMusica.currentTime);
@@ -182,7 +182,7 @@ criarTabelaInfo();
 const nomeArmazenado = localStorage.getItem('talento');
 const grupoArmazenado = localStorage.getItem('grupo');
 
-exibirInfoTalentos(mapaTalentos[nomeArmazenado] || mapaTalentos['Gura']);
+exibirInfoTalentos(mapaTalentos[nomeArmazenado] || mapaTalentos['Calli']);
 /* Como é exibido na inicialização da página a seção com as informações de um talento, a API também já inicia aqui. */
 
 exibirFotosPefilTalentos(mapaFotosGrupos[grupoArmazenado] || Myth);

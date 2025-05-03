@@ -60,7 +60,7 @@ const exibirThumbnails = () => {
 
 /* Função que pega as informações do talento, tanto do banco de dados local, quanto da API do YouTube, e exibe os valores em três seções separadas, a descrição, história e a tabela de informações. */
 const exibirDescDetalhes = async () => {
-    articleDesc.textContent = talentoAtual.descricao;
+    articleDesc.innerHTML = talentoAtual.descricao;
     articleHistoria.innerHTML = talentoAtual.historia || "";
 
     const infoCanal = await exibirInfo(talentoAtual.canal);
@@ -87,6 +87,10 @@ const exibirDescDetalhes = async () => {
         asideHistoria.appendChild(link);
     }
     /* Os talentos graduados/afiliados tem um canal "secreto", quem sabe, sabe. */
+
+    if ( talentoAtual?.dataGraduacao ) {
+        criarLinhaTabela('Graduação:', talentoAtual.dataGraduacao)
+    }
 }
 
 /* Função para criar iframes com os vídeo-clipes dos talentos. */

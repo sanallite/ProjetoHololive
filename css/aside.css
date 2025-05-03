@@ -4,6 +4,7 @@ aside {
     grid-area: a;
     padding-right: 1rem;
     padding-left: 1rem;
+    overflow-y: auto;
 }
 
 aside#tabela {
@@ -17,6 +18,11 @@ article#talentosDesc {
     background-color: rgb(190, 239, 255);
     border-radius: 0.5rem;
     padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#talentosDesc summary {
+    cursor: pointer;
 }
 
 section#talentosInfo {

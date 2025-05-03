@@ -17,7 +17,14 @@ const idRise = 'jHibTDJlTJw?si=Ifp_zzk0k00DICTT';
 const talentos = [
     {
         nome: 'Gawr Gura',
-        descricao: `Gura é amigável e prontamente agradável, e muitas vezes diverte seus espectadores com travessuras tolas. Ela não tem senso de direção, muitas vezes escreve e pronuncia palavras incorretamente, tem problemas para se lembrar de sua própria idade e sempre falha em resolver problemas básicos de matemática, levando os espectadores a chamá-la afetuosamente de "tubarão burro". De forma memorável, um espectador declarou que "Gura tem um coração de ouro e uma cabeça de osso.`,
+        descricao: `<p>Graduada - Gura é amigável e simpática, e frequentemente diverte seus espectadores com palhaçadas tolas. Ela não tem senso de direção, frequentemente escreve e pronuncia palavras errado, tem dificuldade para se lembrar da própria idade e falha constantemente em resolver problemas básicos de matemática, levando os espectadores a chamá-la carinhosamente de "tubarão burro". De forma memorável, um espectador declarou que "Gura tem um coração de ouro e uma cabeça de osso".</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Às vezes, ela também pode ser preguiçosa. Muitas vezes, esquece de alimentos perecíveis até que eles comecem a apodrecer e come papinha de bebê "porque não precisa cozinhar... [ou] mastigar".</p>
+
+        <p>No entanto, apesar de suas péssimas habilidades em matemática e ortografia, Gura é perspicaz, inteligente e possui vasto conhecimento sobre fatos sobre tubarões. Quando questionada sobre o motivo de não estar "boing boing", ela se desculpou afirmando que era "hidrodinâmica". Sua habilidade com jogos de ritmo acelerado é excepcional, e ela é extremamente ambiciosa. Ela também ocasionalmente faz piadas obscenas e está familiarizada com a cultura moderna de memes, à qual faz referência com frequência.</p>
+        </details>`,
         aniversario: '20 de Junho',
         altura: '141cm',
         ilustrador: 'Amashiro Natsuki',
@@ -25,6 +32,7 @@ const talentos = [
         grupo: 'Myth',
         canal: '@GawrGura',
         canalSecreto: '@senzawa',
+        dataGraduacao: '01 de Maio de 2025',
         outfits: [
             `${pastaFotosPefil}/gura.png`,
             `${pastaFotosPefil}/gura2.png`,
@@ -51,10 +59,10 @@ const talentos = [
         
             <p>O canal da Gura no YouTube e a sua conta no Twitter foram criados em 16 de julho de 2020.</p>
             
-            <p>Em 8 de setembro de 2020, Gawr Gura foi revelada pela primeira vez em um pequeno vídeo promocional ao lado dos outros quatro membros do hololive -Myth-. Um anúncio simultâneo foi feito na conta do Twitter da Hololive japonesa e na conta do Twitter em inglês do hololive. Ao mesmo tempo, Gura fez seu primeiro tweet, famoso pela letra "a".</p>
+            <p>Em 8 de setembro de 2020, Gawr Gura foi revelada pela primeira vez em um pequeno vídeo promocional ao lado dos outros quatro membros da hololive -Myth-. Um anúncio simultâneo foi feito na conta do Twitter da Hololive japonesa e na conta do Twitter em inglês da hololive. Ao mesmo tempo, Gura fez seu primeiro tweet, famoso pela letra "a".</p>
 
             <h3>Estréia</h3>
-            <p>A estreia de Gura foi agendada para 12 de setembro de 2020, às 14h PDT, embora ela tenha se atrasado 12 minutos e 32 segundos para sua estreia devido a um problema técnico. Ela foi a quarta das cinco integrantes originais do hololive inglês a estrear no mesmo dia. Mais de 45.000 espectadores assistiram ao evento, no qual ela impressionou os espectadores com uma versão do single pop urbano de Tatsuro Yamashita, "Ride on Time", de 1980.</p>
+            <p>A estreia de Gura foi agendada para 12 de setembro de 2020, às 14h PDT, embora ela tenha se atrasado 12 minutos e 32 segundos para sua estreia devido a um problema técnico. Ela foi a quarta das cinco integrantes originais da hololive inglês a estrear no mesmo dia. Mais de 45.000 espectadores assistiram ao evento, no qual ela impressionou os espectadores com uma versão do single pop urbano de Tatsuro Yamashita, "Ride on Time", de 1980.</p>
 
             <p>Em uma análise semestral de sua estreia, ela descreveu estar tão nervosa que conseguia sentir o coração batendo na cabeça e ter problemas estomacais, pois estava nervosa demais para comer antes da transmissão. Antes da transmissão, ela assistiu aos vídeos de estreia de vários streamers da hololive japonesa para se preparar.</p>
             
@@ -71,7 +79,18 @@ const talentos = [
     },
     {
         nome: 'Amelia Watson',
-        descricao: `Afiliada - Amelia é uma garota bastante excêntrica que costuma ser vista se misturando ou provocando suas colegas membros da holoMyth. Ela geralmente é gentil, solidária e doce, como mostrado quando frequentemente assiste aos streams de seus colegas e muitas vezes ajuda Gura de bom grado no Minecraft. No entanto, Amelia também gosta de brincar com os outros membros e, às vezes, até fazer comentários obscenos, como nomear uma de suas minas no Minecraft "Gura's Backdoor".`,
+        descricao: `<p>Afiliada - Amelia é uma garota excêntrica, brincalhona e cheia de personalidade, conhecida por provocar seus colegas da holoMyth de forma carinhosa. gentil e prestativa, ela frequentemente apoia os membros da hololive, assistindo às transmissões dos colegas e ajudando — especialmente Gura — em jogos como Minecraft. Sua fama de solucionadora de problemas técnicos rendeu o meme "Amelia Tech Tips", em alusão ao canal Linus Tech Tips.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Apesar de seu lado doce, Amelia também é travessa, com um humor carregado de piadas de duplo sentido discretas, como nomear uma mina "Gura's Backdoor" com um emoticon sugestivo. Em jogos competitivos como Apex Legends e Valorant, seu lado mais caótico aflora no chamado "Modo Gremlin": gananciosa, barulhenta, antidesportiva e hilariamente dramática, o que lhe rendeu o apelido de "Gamer de Verdade" — tanto pela dedicação quanto pelo comportamento levemente tóxico.</p>
+
+        <p>Esse modo inclui uma voz caricata, descrita como um misto de chiado agudo e brinquedo moribundo, usada com frequência ao trollar o próprio chat. Em uma ocasião memorável, ela escureceu propositalmente os shaders do Minecraft e fingiu ter “consertado” o problema, gerando risadas e confusão. Apesar de tentar conter esse lado, seus impulsos gremlin são difíceis de controlar.</p>
+
+        <p>Entre suas piadas mais emblemáticas está o infame “Groundpound a sua mãe!”, dito em tom grave durante uma transmissão e que virou marca registrada. Amelia parece não ter filtro — ou melhor, tem um, mas frequentemente ignora o que ele filtra.</p>
+
+        <p>Sua mistura de gentileza, irreverência e imprevisibilidade faz dela uma figura extremamente carismática e divertida, cativando o público com sua química única entre caos e ternura.</p>
+        </details>`,
         aniversario: '06 de Janeiro',
         altura: '150cm',
         ilustrador: 'Nabi',
@@ -79,6 +98,7 @@ const talentos = [
         grupo: 'Myth',
         canal: '@WatsonAmelia',
         canalSecreto: '@dooby3d',
+        dataGraduacao: '30 de Setembro de 2024',
         outfits: [
             `${pastaFotosPefil}/ame.png`,
             `${pastaFotosPefil}/ame2.png`,
@@ -105,10 +125,10 @@ const talentos = [
 
             <p>O canal do Ame no YouTube e a conta no Twitter foram criados em 16 de julho.</p>
 
-            <p>Em 8 de setembro de 2020, Watson Amelia foi revelada pela primeira vez em um pequeno vídeo promocional ao lado dos outros quatro membros do hololive -Myth-. Um anúncio simultâneo foi feito na conta do Twitter da Hololive japonesa e na conta do Twitter em inglês do Hololive. Seu primeiro tweet foi feito no mesmo dia.</p>
+            <p>Em 8 de setembro de 2020, Watson Amelia foi revelada pela primeira vez em um pequeno vídeo promocional ao lado dos outros quatro membros da hololive -Myth-. Um anúncio simultâneo foi feito na conta do Twitter da Hololive japonesa e na conta do Twitter em inglês da hololive. Seu primeiro tweet foi feito no mesmo dia.</p>
 
             <h3>Estréia</h3>
-            <p>Ame fez sua transmissão de estreia em 12 de setembro de 2020. Ela foi o quinto e último membro do hololive -Myth- a estrear.</p>
+            <p>Ame fez sua transmissão de estreia em 12 de setembro de 2020. Ela foi o quinto e último membro da hololive -Myth- a estrear.</p>
 
             <p>Ame dormiu apenas algumas horas nas 36 horas anteriores à sua transmissão, tendo ficado acordada para assistir às estreias dos membros anteriores e preparar o conteúdo para o seu próprio. Ela pretendia abrir com um vídeo elaborado descrevendo suas origens na década de 1920, mas não foi concluído a tempo. Ame começou com um sotaque britânico antes de revelar que era uma farsa (uma manobra sugerida pela empresária Enma para apaziguar os espectadores que esperavam que um personagem no estilo Sherlock Holmes fosse britânico). Ela cantou Puru Puru Pururin, uma música de inserção do anime Welcome to the NHK. Ela concluiu a transmissão de estreia com uma experiência surreal na qual injetou no espectador "Watson Concoction", resultando em alucinações bizarras.</p>
 
@@ -131,7 +151,17 @@ const talentos = [
     },
     {
         nome: 'Takanashi Kiara',
-        descricao: `Kiara é entusiasmada, amigável e aberta com seus sentimentos. Ela se preocupa muito com seus amigos e familiares e sente muita falta deles enquanto está no exterior. Embora enérgica e às vezes caótica por natureza, e ansiosa para colaborar com outros membros, ela é secretamente bastante tímida. Ela às vezes tem cérebro de pássaro, sendo esquecida ou tendo um curto período de atenção. Ela prefere videogames com objetivos fixos, como RPGs, em vez de jogos de mundo aberto como Minecraft.`,
+        descricao: `<p>Kiara é conhecida por sua energia vibrante, atitude positiva e afeto aberto por amigos e fãs. Comunicativa e extrovertida, não hesita em liderar colaborações e assumir o papel de apresentadora quando necessário. Sua personalidade marcante também se reflete em suas músicas originais, como “SPARKS” e “HINOTORI”, ambas repletas de ritmo acelerado e mensagens encorajadoras.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Apesar da confiança que demonstra em público, Kiara é secretamente tímida e propensa a distrações e esquecimentos. Prefere jogos com objetivos definidos, como RPGs, a experiências mais abertas. Sua dedicação aos colegas é constante, mencionando e elogiando seus genmates com frequência — em especial Calliope, com quem compartilha uma dinâmica divertida e flertadora que reforça o vínculo entre ambas.</p>
+
+        <p>Seu relacionamento com a base de fãs, os KFP, é caloroso e caótico: entre demonstrações de carinho e gratidão, não é raro ver Kiara despachando-os, em tom de brincadeira, para a famigerada “Sala de Sempre”. Embora muitas vezes vista como tola e ousada — como mostrado em um gráfico onde foi classificada como “máxima obscenidade e pouca inteligência” —, Kiara surpreende com momentos de empatia e clareza emocional.</p>
+
+        <p>Descrita por Amelia como alguém de “voz adorável e atitude positiva”, e por Calliope como uma cantora talentosa e trabalhadora incansável, Kiara também se destaca por sua fluência em japonês e seu esforço constante em tudo o que faz.</p>
+        </details>
+`,
         aniversario: '06 de Julho',
         altura: '165cm',
         ilustrador: 'huke',
@@ -184,8 +214,16 @@ const talentos = [
     },
     {
         nome: 'Mori Calliope',
-        descricao: `Calliope está igualmente empolgada com o rap e com a "colheita". Suas armas favoritas incluem sua foice (apelidada de "Ricky") e o mangual, uma arma medieval feita de uma bola de metal com pontas em uma corrente.<br>
-        Calliope é conhecido por ter uma das vozes mais graves do hololive, ainda mais do que Nekomata Okayu, Tokoyami Towa e A-chan. Embora fluente em inglês, Calliope muitas vezes não consegue entender os modos de fala atuais, como o uso de contrações ou gírias modernas. Ela é facilmente perturbada pelo romance, levando alguns a chamá-la de "tsundereaper".`,
+        descricao: `<p>Calliope, a aprendiz da Ceifadora, combina uma atitude descolada com uma seriedade surpreendente. Em suas transmissões e músicas, ela mostra confiança e dedicação, mas também revela um lado tímido ao interagir com novas pessoas, especialmente senpais. Sua postura relaxada contrasta com momentos de conversa profunda com o público, o que lhe rendeu o respeito tanto dos fãs quanto de outras integrantes da hololive.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Durante colaborações com suas colegas do holoMyth, Calli exibe um lado mais brincalhão e leve, oferecendo aos espectadores uma faceta mais descontraída. Por trás das câmeras, é notoriamente dedicada: trabalha duro em músicas e projetos, muitas vezes sem dormir, sempre recompensando os fãs com lançamentos bem produzidos e emocionantes.</p>
+
+        <p>Apaixonada por rap e pela “colheita”, suas armas favoritas incluem uma foice chamada Ricky e um mangual medieval. É reconhecida por ter uma das vozes mais graves da hololive, superando até nomes como Okayu, Towa e A-chan. Apesar de fluente em inglês, frequentemente se confunde com gírias e expressões modernas, o que, combinado à sua tendência a se emocionar com romances, levou fãs a apelidá-la carinhosamente de “tsundereaper”.</p>
+
+        <p>Fora do palco, Calli é cabeça de vento e esquecida — como contou Kiara, ela é do tipo que perde o celular mesmo quando ele está no bolso da jaqueta. Ainda assim, sua ética de trabalho impressiona, mesmo que às vezes vá além do saudável.</p>
+        </details>`,
         aniversario: '04 de Abril',
         altura: '167cm',
         ilustrador: 'Yukisame',
@@ -211,7 +249,7 @@ const talentos = [
         historia: `<h3>Audição</h3>
             <p>Em 23 de abril de 2020, após o sucesso do grupo de VTubers Hololive, em japonês, a Cover Corporation anunciou audições para membros que falam inglês. A rodada inicial de audições durou até 24 de maio.</p>
 
-            <p>Mori Calliope ouviu falar da Hololive pela primeira vez depois de ver clipes no YouTube, particularmente a infame história do band-aid de Natsuiro Matsuri. Ela ouviu falar da audição do hololive em inglês por meio de amigos. Ela começou a assistir aos vídeos da Hololive nos intervalos do trabalho para se familiarizar com os outros membros e ficou animada com a possibilidade de se juntar a eles. Calli já havia passado vários anos fazendo música para um público de no máximo vinte pessoas.</p>
+            <p>Mori Calliope ouviu falar da Hololive pela primeira vez depois de ver clipes no YouTube, particularmente a infame história do band-aid de Natsuiro Matsuri. Ela ouviu falar da audição da hololive em inglês por meio de amigos. Ela começou a assistir aos vídeos da Hololive nos intervalos do trabalho para se familiarizar com os outros membros e ficou animada com a possibilidade de se juntar a eles. Calli já havia passado vários anos fazendo música para um público de no máximo vinte pessoas.</p>
 
             <p>Calli fez o teste descrevendo suas melhores características e habilidades e adotando um tom profissional. Ela atribui seu sucesso ao seu trabalho árduo e à sua disposição para arriscar em novas oportunidades. Após ser selecionada, Calli levou algum tempo para aceitar o sucesso.</p>
 
@@ -239,8 +277,16 @@ const talentos = [
     },
     {
         nome: `Ninomae Ina'nis`,
-        descricao: `Ina é uma garota gentil, pacífica e pé no chão, tanto que reverte o estresse e a insanidade de seus espectadores, em vez de encorajá-los, apesar de seu papel Lovecraftiano como "a donzela que fala pelos antigos deuses".<br>
-        Ela é atenciosa e gentil; Takanashi Kiara relata que, quando ela está deprimida, Ina é sempre a primeira a enviar uma mensagem para ela. Em total contraste com o gremlin salgado Amelia, Ina tem paciência quase infinita e é amplamente considerada o membro mais bem-comportado de sua geração.`,
+        descricao: `<p>Ina é uma garota gentil, pacífica, de fala mansa e pé no chão, com um temperamento tranquilo, tanto que ela reverte o estresse e a insanidade em seus espectadores em vez de encorajá-los, apesar de seu papel lovecraftiano como "a donzela que fala pelos deuses antigos". Ela é muito carinhosa e consciente com seus companheiros, capaz de falar extensivamente sobre cada um e suas respectivas peculiaridades.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Ela é atenciosa e gentil; Takanashi Kiara conta que, quando ela está triste, Ina é sempre a primeira a mandar mensagem. Em completo contraste com a gremlin irritadiça Amelia, Ina tem uma paciência quase infinita e é amplamente considerada a integrante mais bem-comportada de sua geração.</p>
+
+        <p>Ina é muito engajada na cultura popular, com gostos extremamente diversos, apreciando uma grande variedade de gêneros em um conjunto igualmente amplo de mídias, seja anime mecha, pop rock, FPS, entre outros. Uma característica notável de Ina é seu talento artístico significativo, ilustrando diversos conteúdos promocionais para a HoloEN, bem como a maioria dos recursos que utiliza para suas atividades no VTuber.</p>
+
+        <p>Ina é famosa pelo uso de trocadilhos e pelas piadas secas de "tiozão".</p>
+        </summary>`,
         aniversario: '20 de Maio',
         altura: '157cm',
         ilustrador: 'Kuroboshi Kouhaku',
@@ -288,7 +334,9 @@ const talentos = [
     },
     {
         nome: 'IRyS',
-        descricao: `IryS é uma garota doce e um tanto tímida que mantém a positividade perto de seu coração, olhando para o lado bom das coisas enquanto encoraja os outros a fazerem o mesmo. Ao mesmo tempo, ela costuma exibir um lado mais "sádico", com uma tendência à violência e (muitas vezes sem querer) dizendo coisas questionáveis. A dualidade de sua personalidade é frequentemente ridicularizada por seus fãs como a dicotomia entre seus lados angelicais e demoníacos.`,
+        descricao: `<p>IRyS é uma garota doce, um tanto tímida, que mantém a positividade em seu coração, enxergando o lado bom das coisas e incentivando os outros a fazerem o mesmo. Ao mesmo tempo, ela frequentemente demonstra um lado mais "sádico", com uma propensão à violência e (muitas vezes sem querer) dizendo coisas questionáveis. A dualidade de sua personalidade é frequentemente ridicularizada por seus fãs como a dicotomia entre seus lados angelical e demoníaco. IRyS não consegue evitar falar de vez em quando com nuances pervertidas, mesmo sem querer.</p>
+
+        <p>Sua voz é aguda, suave e calma, semelhante à de Yukihana Lamy, embora ela possa produzir um tom mais poderoso e profundo ao cantar, semelhante à capacidade vocal de Tokoyami Towa.</p>`,
         aniversario: '07 de Março',
         altura: '166cm',
         ilustrador: 'redjuice',
@@ -354,7 +402,16 @@ const talentos = [
     },
     {
         nome: 'Tsukumo Sana',
-        descricao: `Graduada - Tsukumo Sana tinha uma atitude alegre e às vezes infantil, e estava sempre transbordando de entusiasmo borbulhante, não importa o que estivesse fazendo. Ela tinha interesse em astronomia e astrologia e frequentemente fazia referências ao espaço. Ela gostava de seus colegas hololive -membros do Conselho, e constantemente os adorava sempre que tinha a chance. Sana gostou de compartilhar curiosidades, principalmente aquelas com grandes números. Ela também pode ter uma tendência a exagerar, já que a idade e a altura irrestrita que ela escreveu em sua estreia estavam erradas em uma ordem de magnitude.`,
+        descricao: `<p>Graduada - Tsukumo Sana era vibrante, descontraída e curiosa, com uma teimosia determinada que a levava a perseguir seus objetivos com entusiasmo contagiante. Sua personalidade infantil e efervescente se manifestava tanto em seu jeito de falar quanto em sua abordagem lúdica aos jogos, sempre repleta de trocadilhos e piadas sutis — até mesmo suas colegas, como Ina’nis, por vezes eram pegas de surpresa.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Apaixonada por astronomia e astrologia, Sana recheava suas transmissões com referências ao espaço e curiosidades numéricas exageradas, como sua altura e idade “oficiais”, deliberadamente absurdas. Era também afetuosa com suas colegas da hololive Council, mimando-as sempre que podia, e possuía um talento artístico notável.</p>
+
+        <p>Apesar de ser a personificação do espaço, Sana mantinha uma atitude surpreendentemente realista. Quando enfrentou desafios pessoais, como a perda de seu animal de estimação, comunicou-se com maturidade e honestidade com seus Sanallites, lembrando-os da importância de respeitar o próprio tempo. Seu equilíbrio entre brincadeiras cósmicas e empatia genuína deixou uma marca calorosa entre fãs e colegas.</p>
+
+        <p>Descrita por Baelz como “uma ドM (masoquista) por excelência, com habilidades artísticas insanas e um coração do tamanho do universo”, Sana irradiava generosidade e alegria por onde passava — mesmo que, acidentalmente, destruísse o planeta de vez em quando.</p>
+        </details>`,
         aniversario: '10 de Junho',
         altura: '169cm (com limitador, e sem limitador 1.697.840km)',
         ilustrador: 'pako',
@@ -362,6 +419,7 @@ const talentos = [
         grupo: 'Council',
         canal: '@TsukumoSana',
         canalSecreto: '@notNamie',
+        dataGraduacao: '31 de Julho de 2022',
         outfits: [
             `${pastaFotosPefil}/sana.png`,
             `${pastaFotosPefil}/sana2.webp`,
@@ -412,7 +470,14 @@ const talentos = [
     },
     {
         nome: 'Ceres Fauna',
-        descricao: `Graduada - Na estreia, Hakos Baelz descreveu Fauna como uma mãe natural, uma beleza reconfortante e alguém que dá os melhores carinhos na cabeça. Os fãs também notaram rapidamente sua notável semelhança com Yukihana Lamy em muitos aspectos, desde o tom de voz e a personalidade maternal até o motivo geral da natureza. Fauna parece ser extremamente protetora com seus fãs e Nanashi Mumei ao ponto de possessividade e ciúme extremo, e não hesitará em mudar para um tom mais condescendente quando se depara com algo inaceitável. Devido a seus traços possessivos, Fauna freqüentemente tenta convencer Mumei e os humanos a "voltarem à natureza" sempre que Mumei fica chateado. Fauna também fica embaraçada com bastante facilidade e usa o tique verbal "uuuu" com frequência`,
+        descricao: `<p>Graduada - Fauna é uma menina de fala mansa com uma aura reconfortante e maternal, embora tenha dito que tende a se considerar mais como uma irmã mais velha. Ela tem um talento inato para chamar a atenção de quem está ao seu redor, apesar de sua voz suave. Sua aura e voz reconfortantes são uma ótima combinação durante suas transmissões de ASMR, que frequentemente incluem uma variedade de segmentos, desde limpeza de ouvidos até longas discussões off-topic. Como a personificação da natureza, Fauna tem sido capaz de encantar e se firmar facilmente nos corações de seus jovens e colegas membros do Conselho, tanto com sua beleza física quanto com sua personalidade.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Em sua estreia, Hakos Baelz descreveu Fauna como uma mãe nata, uma beleza encantadora e alguém que dá os melhores tapinhas na cabeça. Os fãs também notaram rapidamente sua semelhança impressionante com Yukihana Lamy em muitos aspectos, desde o tom de voz e a personalidade maternal até sua inspiração natural em geral.</p>
+
+        <p>Fauna parece ser extremamente protetora com seus fãs e com Nanashi Mumei, a ponto de demonstrar possessividade e ciúme extremo, e não hesita em adotar um tom mais condescendente quando se depara com algo inaceitável. Devido aos seus traços possessivos, Fauna frequentemente tenta convencer Mumei e os humanos a "retornar à natureza" sempre que Mumei fica chateada. Fauna também se envergonha com bastante facilidade e usa o tique verbal "uuuu" com frequência.</p>
+        </details>`,
         aniversario: '21 de Março',
         altura: '164cm',
         ilustrador: 'Tohsaka Asagi',
@@ -420,6 +485,7 @@ const talentos = [
         grupo: 'Council / Promise',
         canal: '@CeresFauna',
         canalSecreto: '@niminightmare',
+        dataGraduacao: '03 de Janeiro de 2025',
         outfits: [
             `${pastaFotosPefil}/fauna.png`,
             `${pastaFotosPefil}/fauna2.png`,
@@ -469,8 +535,16 @@ const talentos = [
     },
     {
         nome: 'Ouro Kronii',
-        descricao: `Ouro Kronii é muito confiante, egocêntrica e completamente sem medo de se elogiar. No entanto, ela também se descreve como alguém que geralmente não é uma pessoa feliz, a ponto de listar o "medo existencial" como um hobby. Kronii pode ser brincalhona às vezes, especialmente com seus Kronies, e a combinação de seu humor inexpressivo e piadas secas contrasta com muitos dos outros membros que são mais extrovertidos ou mais gentis com suas palavras.<br>
-        Sua voz é poderosa e bem controlada, dando uma vibe de "irmã mais velha", embora sua personalidade real seja um pouco mais próxima de uma "tia legal" ou um personagem de alívio cômico dolorosamente identificável. Sua confiança projetada e auto-elogio podem ser interpretados como um mecanismo de enfrentamento para o sofrimento constante que ela suporta, tanto devido à sua hilariante má sorte quanto ao fato de que os outros adoram provocá-la tanto.`,
+        descricao: `<p>Ouro Kronii é autoconfiante, sarcástica e afiada, com um senso de humor seco que a diferencia de muitas de suas colegas mais efusivas. Não hesita em se elogiar — frequentemente de forma exagerada — mas por trás de seu narcisismo performático há uma autoconsciência surpreendente e, às vezes, uma melancolia assumida. Ela mesma já listou “medo existencial” como hobby.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Com uma voz grave e envolvente, Kronii transmite a presença de uma “irmã mais velha” ou até de uma “tia descolada” — um contraste intencional com sua verdadeira natureza, muitas vezes marcada por frustrações cômicas, falta de sorte e reações explosivas em jogos. Seu alcance vocal, porém, vai muito além disso, transitando entre o tom solene e o agudo com facilidade quando provocado.</p>
+
+        <p>Apesar de sua fachada arrogante, Kronii é brincalhona com seu público e demonstra carinho à sua maneira, inclusive sendo receptiva com colegas da hololive Council. Seu "gap moe" — aquele contraste encantador entre imagem e atitude — aparece nos momentos de nervosismo ou vulnerabilidade, revelando um lado inesperadamente fofo.</p>
+
+        <p>Famosa por conselhos como “simplesmente seja melhor”, ela costuma provocar seus espectadores com ironia, mas recebe a mesma energia de volta quando precisa de ajuda. Ceres Fauna a descreveu como descolada, hilária e perfeita para ler histórias para dormir, enquanto Hakos Baelz brincou chamando-a de “vovó tsundere” — um resumo justo para alguém que oscila entre o sarcasmo mordaz e o carinho contido.</p>
+        </details>`,
         aniversario: '14 de Março',
         altura: '168cm',
         ilustrador: 'WADARCO',
@@ -492,7 +566,7 @@ const talentos = [
         historia: `<h3>Audição</h3>
             <p>Após o sucesso da hololive English em 2020 e 2021, a COVER Corporation anunciou audições para um segundo lote de membros de 12 de fevereiro a 26 de março de 2021. As contas do Twitter para os cinco novos membros foram criadas em junho de 2021 e as contas do YouTube foram criadas em 26 de julho de 2021.</p>
 
-            <p>Os vídeos teaser para a nova geração começaram no canal oficial da hololive em inglês no YouTube em agosto de 2021. Em 1º de agosto, "Prelude" revelou uma história de deuses criando os quatro conceitos de espaço, natureza, tempo e civilização. Em 14 de agosto, "Omen" descreveu a criação de avatares desses quatro conceitos mais o da força primordial do Caos, revelando cinco silhuetas. Em 17 de agosto, "Council" revelou os cinco novos membros do hololive em inglês e anunciou uma grande estreia agendada para o próximo fim de semana. Embora o termo tradicional "geração" não tenha sido oficialmente usado para se referir aos novos membros, que foram chamados de "hololive English Generation 2" pelos fãs, os novos membros formaram um grupo conhecido como "-Council-".</p>
+            <p>Os vídeos teaser para a nova geração começaram no canal oficial da hololive em inglês no YouTube em agosto de 2021. Em 1º de agosto, "Prelude" revelou uma história de deuses criando os quatro conceitos de espaço, natureza, tempo e civilização. Em 14 de agosto, "Omen" descreveu a criação de avatares desses quatro conceitos mais o da força primordial do Caos, revelando cinco silhuetas. Em 17 de agosto, "Council" revelou os cinco novos membros da hololive em inglês e anunciou uma grande estreia agendada para o próximo fim de semana. Embora o termo tradicional "geração" não tenha sido oficialmente usado para se referir aos novos membros, que foram chamados de "hololive English Generation 2" pelos fãs, os novos membros formaram um grupo conhecido como "-Council-".</p>
 
             <p>Após a conclusão do PV de estreia de Council, as contas do Twitter e do YouTube de todos os cinco novos membros foram reveladas, e cada um fez seu primeiro tweet. O Twitter rapidamente restringiu as contas de Kronii e Nanashi Mumei devido ao aumento repentino de seguidores.</p>
 
@@ -517,8 +591,16 @@ const talentos = [
     },
     {
         nome: 'Nanashi Mumei',
-        descricao: `Na estreia, Mumei deu a impressão de uma garota alegre e gentil, de fala mansa e um tanto inocente, especialmente quando comparada a seus colegas. Ela era inicialmente muito tímida e muitas vezes visivelmente nervosa durante as transmissões.<br>
-        No entanto, conforme ela ganhou confiança no streaming, uma personalidade diferente surgiu. Os fluxos de Mumei são agora caracterizados pela dualidade entre um tom de energia relativamente baixa, relaxante e confortável para outro lado mais espontâneo e enérgico; com ela frequentemente demonstrando tendências psicopáticas nesses momentos. Embora a disparidade entre seus pensamentos macabros e sua voz fofa tenha surpreendido muitos no início, a linha que separa esses dois lados se tornou um ponto indistinto – com a apreciação de Mumei pelo grotesco e “amaldiçoado” sendo totalmente abraçada pelos Hoomans hoje.`,
+        descricao: `<p>Graduada - Mumei estreou como uma garota doce, tímida e de fala mansa, contrastando com suas colegas. Com o tempo, revelou uma persona marcada por uma dualidade curiosa: um lado calmo e relaxante, e outro caótico e psicopata, muitas vezes expressando humor macabro e fascínio pelo grotesco. Essa dicotomia se manifesta especialmente em seus desenhos, que tendem ao sombrio e perturbador, mesmo com temas inocentes — algo que os fãs atribuem ao fardo de carregar os pecados da civilização.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Apesar disso, Mumei demonstra grande carinho pelos fãs. Durante suas transmissões comemorativas, emocionou-se com o apoio recebido e deixou claro que valoriza profundamente o tempo dedicado a acompanhá-la, mesmo mais do que dinheiro. Ela frequentemente expressa gratidão, encoraja os fãs a descansarem e celebra quando se sentem inspirados por ela.</p>
+
+        <p>Embora tenha momentos de alta energia (sobretudo com cafeína), se define como alguém de "baixa energia" e desajeitada, recorrendo a ruídos e cantorias improvisadas para lidar com o silêncio. Ela admite ter atenção curta e dificuldades com multitarefa, o que reforça sua imagem levemente caótica.</p>
+
+        <p>Reconhecida por sua voz fofa — descrita como a mais adorável da hololive -Council- por Hakos Baelz — Mumei também surpreende com gritos agudos e uma extensão vocal inesperada. Seu jeito gentil despertou instintos protetores em fãs e colegas como Ceres Fauna, embora seu comportamento imprevisível tenha invertido essa dinâmica com o tempo.</p>
+        </details>`,
         aniversario: '04 de Agosto',
         altura: '156cm',
         ilustrador: 'azure',
@@ -526,6 +608,7 @@ const talentos = [
         grupo: 'Council / Promise',
         canal: '@NanashiMumei',
         canalSecreto: '@shachimu',
+        dataGraduacao: '27 de Abril de 2025',
         outfits: [
             `${pastaFotosPefil}/mumei.png`,
             `${pastaFotosPefil}/mumei2.png`,
@@ -541,7 +624,7 @@ const talentos = [
         historia: `<h3>Audição</h3>
             <p>Após o sucesso da hololive English em 2020 e 2021, a COVER Corporation anunciou audições para um segundo lote de membros ingleses de 12 de fevereiro a 26 de março de 2021. As contas do Twitter para os cinco novos membros foram criadas em junho de 2021 e as contas do YouTube foram criadas em 26 de julho de 2021.</p>
 
-            <p>Os vídeos teaser para a nova geração começaram no canal oficial da hololive em inglês no YouTube em agosto de 2021. Em 1º de agosto, "Prelude" revelou uma história de deuses criando os quatro conceitos de espaço, natureza, tempo e civilização. Em 14 de agosto, "Omen" descreveu a criação de avatares desses quatro conceitos mais o da força primordial do Caos, revelando cinco silhuetas. Em 17 de agosto, "Council" revelou os cinco novos membros do hololive em inglês e anunciou uma grande estreia agendada para o próximo fim de semana. Embora o termo tradicional "geração" não tenha sido oficialmente usado para se referir aos novos membros, que foram chamados de "hololive English Generation 2" pelos fãs, os novos membros formaram um grupo conhecido como "-Council-".</p>
+            <p>Os vídeos teaser para a nova geração começaram no canal oficial da hololive em inglês no YouTube em agosto de 2021. Em 1º de agosto, "Prelude" revelou uma história de deuses criando os quatro conceitos de espaço, natureza, tempo e civilização. Em 14 de agosto, "Omen" descreveu a criação de avatares desses quatro conceitos mais o da força primordial do Caos, revelando cinco silhuetas. Em 17 de agosto, "Council" revelou os cinco novos membros da hololive em inglês e anunciou uma grande estreia agendada para o próximo fim de semana. Embora o termo tradicional "geração" não tenha sido oficialmente usado para se referir aos novos membros, que foram chamados de "hololive English Generation 2" pelos fãs, os novos membros formaram um grupo conhecido como "-Council-".</p>
 
             <p>Após a conclusão do PV de estreia de Council, as contas do Twitter e do YouTube de todos os cinco novos membros foram reveladas, e cada um fez seu primeiro tweet. O Twitter rapidamente restringiu as contas de Nanashi Mumei e Ouro Kronii devido ao aumento repentino de seguidores.</p>
 
@@ -557,14 +640,29 @@ const talentos = [
             
             <h3>Aposentadoria</h3>
             <p>Em 27 de março de 2025, Mumei anunciou que se formará na hololive em 28 de abril de 2025, devido a desalinhamentos internos com a agência e problemas de saúde crônicos.</p>
-            
+
+            <p>Em 26 de abril, Mumei realizou sua última transmissão ao vivo de bate-papo, na qual recebeu ligações e votos de felicidades dos membros da hololive. A transmissão atingiu 55.760 espectadores no pico e recebeu US$ 39.817,47 em doações do Superchat. Ela também lançou um cover de One Voice.</p>
+
+            <p>Em 27 de abril, ela realizou sua transmissão final, um evento de formatura 3D pré-gravado. A transmissão atingiu 124.095 espectadores no pico e recebeu mais US$ 22.639 em receita do Superchat. O evento incluiu uma apresentação do single de 2023 de Mumei, "mumei", com todos os membros atuais da hololive English. A transmissão foi posteriormente sujeita a uma remoção de direitos autorais pela Sony Music Entertainment.</p>
+
             <p>Fonte:
             <a href="https://virtualyoutuber.fandom.com/wiki/Nanashi_Mumei">Virtual YouTuber Wiki | Fandom</a>
             </p>`
     },
     {
         nome: 'Hakos Baelz',
-        descricao: `Hakos Baelz é barulhenta, imprevisível e caótico=a. Apesar disso, ela parece ter talento para liderar as discussões e manter as coisas o mais organizadas possível, como visto na primeira reunião do hololive -Council-. Ceres Fauna até a descreveu como uma líder nata, e Baelz eventualmente abraçou o papel de "Líder do -Conselho-". Em contraste com sua natureza caótica, ela fala com bastante carinho dos outros membros do Conselho, e é considerada por eles adorável por sua vez. Baelz também pode ser facilmente perturbada se as coisas não acontecerem do jeito dela.`,
+        descricao: `<p>Hakos Baelz pode carregar o título de "Caos" no lore da hololive Council, mas na prática é frequentemente a mais centrada de seu grupo — mesmo que viva cercada pelo caos gerado pelos outros. Extrovertida e energética, com uma risada contagiante e presença vibrante, ela surpreende ao revelar um lado introvertido e discreto em interações mais próximas, o que torna suas trocas sociais frequentemente desajeitadas, mas encantadoras.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Baelz cultiva um senso de humor único, como demonstra seu hábito de escrever de cabeça para baixo — um aceno brincalhão à sua origem australiana, que inspirou inúmeras fanarts e piadas internas entre fãs. Apesar disso, ela possui pouca familiaridade com referências da cultura pop mais ampla, o que rendeu o apelido de “zoomer” e fez dela uma espécie de contraponto moderno a talentos como Noir Vesper.</p>
+
+        <p>Seu relacionamento com IRyS é marcado por uma química caótica e imprevisível, oscilando entre rivalidade e camaradagem em um ciclo constante de “casamento” e “divórcio” encenado com humor. Apesar de suas brigas fictícias, a afinidade entre as duas é evidente.</p>
+
+        <p>Baelz também demonstra forte orgulho por sua cultura natal, chegando a criar o programa "BAE-GEMITE" para introduzir outros membros ao famigerado vegemite. Ainda que cheia de energia e disposição para a brincadeira, ela também pode ser vulnerável, como visto em sua aracnofobia declarada — algo que não combinou bem com os hábitos culinários inusitados de Haachama.</p>
+
+        <p>Em essência, Baelz é um caos cuidadosamente equilibrado entre ousadia e sensibilidade — uma figura central que transita entre o papel de encrenqueira e de alvo das travessuras alheias com um charme que conquista.</p>
+        </details>`,
         aniversario: '29 de Fevereiro',
         altura: '149cm',
         ilustrador: 'Mika Pikazo',
@@ -595,7 +693,7 @@ const talentos = [
             <h3>Estréia</h3>
             <p>A estreia de Hakos Baelz foi originalmente agendada para 22 de agosto, no horário do Japão. Uma colaboração do grupo -Council- em seu canal foi provisoriamente agendada para duas horas depois. No entanto, as estreias do -Council- foram adiadas por 24 horas devido a problemas técnicos não especificados, que os membros, brincando, atribuíram à "maldição EN", uma tendência percebida dos membros da hololive English de sofrerem com problemas técnicos inesperados. As estreias foram remarcadas para o mesmo horário no domingo, 22 de agosto (horário dos EUA/Europa) ou na segunda-feira, 23 de agosto (horário do Japão).</p>
 
-            <p>A transmissão de estreia de Baelz ocorreu na segunda-feira, 23 de agosto de 2021, às 8h JST (22 de agosto de 2021, às 15h PDT ou meia-noite BST). Ela é a quinta e última integrante do hololive -Council- a estrear. Sua transmissão de estreia atingiu um pico de mais de 90.000 espectadores, e ela já havia alcançado 135.000 inscritos no YouTube quando a transmissão começou. Ela encerrou a transmissão cantando Fuwa Fuwa Time, uma popular música de inserção do anime K-On!, na qual ela personificou os personagens Mio e Yui daquela série. Uma transmissão colaborativa do hololive -Council- foi agendada em seu canal uma hora depois.</p>
+            <p>A transmissão de estreia de Baelz ocorreu na segunda-feira, 23 de agosto de 2021, às 8h JST (22 de agosto de 2021, às 15h PDT ou meia-noite BST). Ela é a quinta e última integrante da hololive -Council- a estrear. Sua transmissão de estreia atingiu um pico de mais de 90.000 espectadores, e ela já havia alcançado 135.000 inscritos no YouTube quando a transmissão começou. Ela encerrou a transmissão cantando Fuwa Fuwa Time, uma popular música de inserção do anime K-On!, na qual ela personificou os personagens Mio e Yui daquela série. Uma transmissão colaborativa da hololive -Council- foi agendada em seu canal uma hora depois.</p>
             
             <h3>Promise</h3>
             <p>Em 9 de outubro de 2023, IRyS, Ceres Fauna, Ouro Kronii, Nanashi Mumei e Hakos Baelz anunciaram que formariam a nova unidade "hololive English -Promise-". Combinando o grupo Council com Project: HOPE. Embora não declarado na colaboração 3D, o encerramento do "Project: HOPE" foi anunciado no site da hololive logo depois.</p>
@@ -613,7 +711,9 @@ const talentos = [
     },
     {
         nome: 'Shiori Novella',
-        descricao: `Impulsionada por sua sede de conhecimento, Shiori Novella é “The Archiver”. Ela transforma suas histórias favoritas e memórias preciosas em marcadores e os salva. Por infortúnio, descobriu-se que ela obteve conhecimento proibido em uma de suas histórias e foi presa. Mas para ela, essa experiência em si é apenas uma história fascinante. Para continuar sua busca por mais histórias, ela planejou e executou uma fuga da prisão.`,
+        descricao: `<p>Shiori pode ser melhor descrita como alegre e nerd. Ela é bondosa, embora frequentemente provoque aqueles com quem tem proximidade, especialmente seus genmates. Suas transmissões são em sua maioria aconchegantes e tranquilas, embora ela frequentemente se empolgue com coisas aleatórias.</p>
+
+        <p>Shiori é bem conhecida entre os fãs por suas tangentes — discussões divagantes sobre qualquer assunto estranho que lhe venha à cabeça. Podem ser desde traumas de infância a gravidez e canibalismo. Os fãs brincam que seu gerente ("Henmama") está perdendo o sono e/ou a sanidade tentando evitar que Shiori fique muito desequilibrada. Um dos emotes disponíveis para os membros do canal de Shiori no YouTube é o emote "bonk", para ser usado sempre que os espectadores acharem que ela merece ser controlada.</p>`,
         aniversario: '02 de Maio',
         altura: '163cm',
         ilustrador: 'KAYAHARA',
@@ -638,7 +738,7 @@ const talentos = [
 
             <p>As contas do YouTube e do Twitter de Shiori Novella foram criadas originalmente em 11 de maio de 2023, embora não contivessem nenhum conteúdo naquele momento.</p>
 
-            <p>A terceira geração do hololive em inglês, -Advent-, foi inicialmente anunciada na conta do Twitter da hololive em inglês com um pequeno vídeo em 22 de julho de 2023. Isso foi seguido por outro vídeo teaser em 23 de julho, mostrando cinco novos personagens.</p>
+            <p>A terceira geração da hololive em inglês, -Advent-, foi inicialmente anunciada na conta do Twitter da hololive em inglês com um pequeno vídeo em 22 de julho de 2023. Isso foi seguido por outro vídeo teaser em 23 de julho, mostrando cinco novos personagens.</p>
 
             <p>Em 25 de julho, o canal do YouTube da hololive em inglês postou um vídeo intitulado Wanted!, revelando os cinco membros do -Advent- e anunciando suas próximas estreias. Ao mesmo tempo, Shiori também postou um pequeno vídeo teaser e fez seu primeiro tweet, consistindo em uma única imagem.</p>
 
@@ -649,7 +749,7 @@ const talentos = [
             <h3>Estréia</h3>
             <p>A transmissão de estreia de Shiori ocorreu em 30 de julho de 2023, das 12h às 12h45 (sábado, 29 de julho, das 20h às 20h45 PDT). A transmissão atingiu mais de 126.000 espectadores simultâneos no pico. Ela também alcançou mais de 200.000 inscritos no YouTube durante a transmissão. Shiori também revelou que pode tirar o casaco.</p>
 
-            <p>Seguindo a tradição do hololive, isso foi seguido pelo grupo colaborativo Generation, composto por todos os membros. Isso, por sua vez, foi seguido pelo lançamento da primeira música do grupo, "Rebellion".</p>
+            <p>Seguindo a tradição da hololive, isso foi seguido pelo grupo colaborativo Generation, composto por todos os membros. Isso, por sua vez, foi seguido pelo lançamento da primeira música do grupo, "Rebellion".</p>
             
             <h3>Em 2025</h3>
             <p>Em 6 de janeiro de 2025, Shiori atingiu 600.000 inscritos em seu canal do YouTube.</p>
@@ -668,8 +768,14 @@ const talentos = [
     },
     {
         nome: 'Koseki Bijou',
-        descricao: `Formada a partir da cristalização de todas as formas de emoção humana, Koseki Bijou é “A Jóia das Emoções”. Ao longo de anos e anos, emoções de beleza e sujeira se entrelaçaram nela sob imensa pressão, resultando em um brilho incomparável.
-        <br>Seu brilho antigo e místico causou conflitos entre as massas de gananciosos, que lutaram pela posse dela. Isso a levou a ser presa em segredo, longe do alcance dos humanos.`,
+        descricao: `<p>Biboo é animada, amigável e, muitas vezes, se empolga facilmente. Ela tem um vasto conhecimento de memes da Geração Z (o que muitas vezes deixa seus colegas um pouco mais velhos e outros membros da hololive um tanto perplexos) e frequentemente diverte seus colegas e espectadores com suas travessuras infantis. Devido a essas travessuras bobas, ela acaba soltando piadas que levam os espectadores a provocá-la carinhosamente. Ela é conhecida por "colecionar mães", usando sua fofura para fazer com que outros membros concordem em ser sua mãe.</p>
+
+        <details>
+        <summary>Ler mais</summary>
+        <p>Ela também é conhecida por suas habilidades em RPGs e jogos de ação (muitas vezes criando desafios para tornar jogos difíceis que ela já terminou ainda mais difíceis) e demonstrou conhecimento em mods de jogos, como quando substituiu Sans de Undertale por Mori Calliope em sua audição hololive.</p>
+
+        <p>Apesar de sua propensão a memes e jogos de ação, ela é uma das integrantes mais "seiso" da hololive English; ela se recusa conscientemente a xingar durante as transmissões, dizendo literalmente "bip" no lugar de um palavrão, mesmo ao ler textos de mídia que contenham palavrões. Ela também usa consistentemente "dang it!" para expressar frustração em vez de linguagem mais áspera e, consequentemente, tornou-se conhecida por manter a calma e a compostura mesmo diante de desafios de jogos que deixariam a maioria dos outros membros de qualquer ramo irremediavelmente enfurecidos e chateados. Um de seus emotes de bate-papo é até mesmo um "BEEP" em letras maiúsculas e, embora não seja uma regra oficial do canal, ela pede que Pebbles também se abstenha de palavrões no bate-papo durante as transmissões, se possível.</p>
+        </details>`,
         aniversario: '14 de Abril',
         altura: '140cm',
         ilustrador: 'Kitada mo',
@@ -781,7 +887,13 @@ const talentos = [
     },
     {
         nome: 'Fuwawa Abyssgard',
-        descricao: `A fofa irmã gêmea mais velha dos Cães de Guarda Demoníacos, que foram selados na Cela por serem um pé no saco, Fuwawa Abyssgard é "The Fluffy One". Seu dever é cuidar com calma de sua irmã gêmea mais nova, Mococo, e de seu animal de estimação, Pero, mas essa calma pode durar pouco. No final das contas, ela é uma garota animada e barulhenta que adora conversar e brincar.`,
+        descricao: `<p>Apesar da reputação das irmãs mais velhas de serem confiáveis, Fuwawa é meio cabeça de vento. Ela é boba por natureza e costuma dizer coisas estranhas. Ela é ruim em ortografia e matemática, descuidada e frequentemente desastrada em videogames. No entanto, isso não é problema, pois ela é excepcionalmente fofa.</p>
+
+        <p>Ela é bondosa e gentil. No entanto, Fuwawa às vezes parece ser a "gêmea má" e, ocasionalmente... Ela pode ser um pouco egoísta às vezes e, ocasionalmente, demonstra um lado "yandere".</p>
+
+        <p>Ela se importa muito com sua irmã gêmea Mococo. Mococo diz que Fuwawa é confiável e a ajuda a se acalmar. No entanto, Fuwawa também parece ter um complexo de irmã.</p>
+
+        <p>Ambas as irmãs são especialmente talentosas em canto e dança, são trabalhadoras e nunca desistem.</p>`,
         aniversario: '01 de Fevereiro',
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
@@ -815,7 +927,7 @@ const talentos = [
             <h3>Estréia</h3>
             <p>Fuwawa e Mococo fizeram sua transmissão de estreia em 31 de julho, das 12h45 às 13h30 JST (domingo, 30 de julho de 2023, das 20h45 às 21h30 PDT). Sua estreia atingiu mais de 119.000 espectadores no pico. Durante a transmissão, elas também deram uma prévia de sua primeira música original, "Lifetime Showtime". A transmissão foi seguida pelo lançamento de seu primeiro cover, "KAIBUTSU".</p>
 
-            <p>Fuwawa e Mococo foram os últimos membros do hololive -Advent- a estrear. Seguindo a tradição da hololive, isso foi seguido pelo grupo de colaboração Generation, com todos os membros, e pelo lançamento de sua primeira música em grupo, "Rebellion".</p>
+            <p>Fuwawa e Mococo foram os últimos membros da hololive -Advent- a estrear. Seguindo a tradição da hololive, isso foi seguido pelo grupo de colaboração Generation, com todos os membros, e pelo lançamento de sua primeira música em grupo, "Rebellion".</p>
             
             <h3>Em 2025</h3>
             <p>Em 15 de janeiro de 2025, Fuwawa estreou seu terceiro traje 2D. Fuwawa tem dois penteados, cabelo mais curto e ondulado com tranças nas laterais e twintails, ambos decorados com fitas pretas e grampos brancos, um em forma de asa de morcego. Fuwawa usa uma alça, xadrez, top azul com alças pretas cruzadas nas laterais. Ela tem uma saia branca de tábua. Fuwawa usa meias assimétricas brancas, a maior tem uma liga com um coração azul curto e uma fita preta. Seus sapatos são pretos e as tiras do tornozelo têm asas curtas de morcego. Fuwawa também pode usar um suéter azul com fitas brancas decorativas à direita e aberturas nas mangas também amarradas com fitas, uma bolsa branca em forma de Pero e óculos de armação branca.</p>
@@ -832,7 +944,11 @@ const talentos = [
     },
     {
         nome: 'Mococo Abyssgard',
-        descricao: `A irmã gêmea mais nova e peluda dos Cães de Guarda Demoníacos, que foram selados na Cela por serem um pé no saco, Mococo Abyssgard é "The Fuzzy One". A indisciplinada Mococo passava todo o tempo presa assistindo anime e jogando, muitas vezes atraindo sua irmã gêmea mais velha, Fuwawa, e seu animal de estimação, Pero, para travessuras mais caóticas. Há rumores de que ela participou da fuga da prisão só por diversão.`,
+        descricao: `<p>Mococo, a irmã mais nova, é enérgica, otimista e especialmente amigável. Ela tem uma atitude positiva e anima os espectadores com suas Mococo Pup Talks. Ela é gentil com os outros, embora ocasionalmente possa causar problemas quando fica superexcitada. Ela também é muito sensível e bastante carente. Ela fica incomodada quando as pessoas a chamam por apelidos estranhos.</p>
+
+        <p>De acordo com sua irmã Fuwawa, Mococo pode ser teimosa, mas no fundo ela tem um grande coração. Mococo se importa muito com sua irmã, embora elas ocasionalmente discutam. Ela se sente solitária quando elas estão separadas, e Mococo quase nunca transmite sem sua irmã.</p>
+
+        <p>Ambas as irmãs são especialmente apaixonadas por canto e dança. São apaixonadas, trabalhadoras e têm uma atitude de nunca desistir.</p>`,
         aniversario: '02 de Fevereiro',
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
@@ -866,7 +982,7 @@ const talentos = [
             <h3>Estréia</h3>
             <p>Fuwawa e Mococo fizeram sua transmissão de estreia em 31 de julho, das 12h45 às 13h30 JST (domingo, 30 de julho de 2023, das 20h45 às 21h30 PDT). Sua estreia atingiu mais de 119.000 espectadores no pico. Durante a transmissão, elas também apresentaram uma prévia de sua primeira música original, "Lifetime Showtime". A transmissão foi seguida pelo lançamento de seu primeiro cover, "KAIBUTSU".</p>
 
-            <p>Fuwawa e Mococo foram os últimos membros do hololive -Advent- a estrear. Seguindo a tradição da hololive, isso foi seguido pelo grupo de colaboração Generation, com todos os membros, e pelo lançamento de sua primeira música em grupo, "Rebellion".</p>
+            <p>Fuwawa e Mococo foram os últimos membros da hololive -Advent- a estrear. Seguindo a tradição da hololive, isso foi seguido pelo grupo de colaboração Generation, com todos os membros, e pelo lançamento de sua primeira música em grupo, "Rebellion".</p>
             
             <h3>Em 2025</h3>
             <p>Em 15 de janeiro de 2025, Mococo estreou seu terceiro traje 2D. Mococo tem dois penteados, um cabelo um pouco mais curto com franja reta e tranças nas laterais com as pontas lembrando maria-chiquinhas curtas, e maria-chiquinhas curtas e baixas com scrunchies brancos e fofos. Mococo usa uma blusa branca com gola e alças rosa com babados, a blusa tem uma estampa que diz "MOGOGO" com uma asa de morcego acima e uma estrela abaixo. Ela tem uma saia azul estilo demin com uma borda branca fofa, complementada com fitas azuis e vários acessórios brancos. Mococo usa meias brancas assimétricas, a maior tem uma borda rosa com um pequeno coração rosa e uma fita, a outra é listrada em rosa. Mococo usa sapatos azul-claros com saltos rosa. Mococo também pode usar uma jaqueta rosa com fitas brancas decorativas e óculos de armação branca.</p>
@@ -885,10 +1001,9 @@ const talentos = [
     },
     {
         nome: 'Elizabeth Rose Bloodflame',
-        descricao: `A Rainha Escarlate, Elizabeth Rose Bloodflame abre caminho para o mundo e todo o seu povo.<br>
-        Ela não apenas fica na vanguarda durante as missões com suas proezas físicas, mas também captura os corações de todos ao seu redor com sua bela voz para cantar.<br>
-        Ela é altamente autodisciplinada e um pouco dura demais consigo mesma, mas, talvez devido à ênfase de sua cultura na educação e nas maneiras, ela tende a ser um pouco branda com as pessoas ao seu redor.<br>
-        Como resultado, ela passa seus dias estressada com seu trabalho coordenando a Justiça, mas parece que não há nada que uma boa soneca em uma cama confortável não possa consertar.`,
+        descricao: `<p>Elizabeth tem uma atitude direta e bondosa. Ela é educada e amigável, e se dá bem com os outros membros. Ela possui uma confiança silenciosa, além de talento para o drama e um ótimo senso de humor. Ela é uma lutadora corajosa e trabalhadora diligente, e raramente xinga. Ela é uma apoiadora leal dos outros membros da Justice, embora tenha uma admiração não tão secreta por Nerissa Ravencroft, membro do Advent.</p>
+
+        <p>Ela tem um talento especial para imitação de voz, que ocasionalmente usa para pregar peças. Ela também é uma cantora talentosa e tem o hábito de cantarolar. Ela costuma trollar membros da hololive e da HOLOSTARS, demonstrando um lado mais brincalhão.</p>`,
         aniversario: '25 de Abril',
         altura: '171cm',
         ilustrador: 'MEPHISTO',
@@ -924,7 +1039,7 @@ const talentos = [
             <h3>Em 2025</h3>
             <p>Em 1 de janeiro de 2025, Elizabeth estreou sua fantasia de ano novo. Elizabeth tem um rabo de cavalo com várias mechas, ela tem um kogai em forma de espada, à direita ela tem um kanzashi com flores azuis, brancas e amarelas e uma fita preta. Liz tem brincos de nó de botão vermelho. Ela usa tiras finas, pretas, cruzadas, que parecem segurar seu quimono pelas costas. Elizabeth usa sarashi branco . Seu quimono vermelho tem vários padrões de galhos, folhas e rosas brancas e azuis. Seu obi é grande e tem duas fitas em camadas em branco e vermelho, a fita vermelha tem um padrão de pássaro voando branco e um nó de botão roxo no centro. A saia do quimono tem um corte no meio expondo suas pernas, a saia é em camadas com uma seção superior de renda branca e uma seção interna com o mesmo padrão de sua parte superior do corpo, com uma borda preta com babados. Liz usa sandálias pretas e vermelhas. Ela também pode segurar um leque, um microfone e um coquetel verde.</p>
 
-            <p>Em 15 de março, ela atingiu 500.000 inscritos no YouTube, tornando-se o 66º membro do hololive e também o primeiro membro do -Justice- a atingir o marco.</p>
+            <p>Em 15 de março, ela atingiu 500.000 inscritos no YouTube, tornando-se o 66º membro da hololive e também o primeiro membro do -Justice- a atingir o marco.</p>
             
             <p>Fonte:
             <a href="https://virtualyoutuber.fandom.com/wiki/Elizabeth_Rose_Bloodflame">Virtual YouTuber Wiki | Fandom</a>
@@ -932,11 +1047,11 @@ const talentos = [
     },
     {
         nome: 'Gigi Murin',
-        descricao: `Nascida e criada sob a bandeira da Liberdade, Gigi Murin é uma caçadora de espírito livre e gremlin travessa.<br>
-        Enquanto ela é proficiente em perseguir alvos com pura intuição, ela luta com a memorização de direções e tomar decisões calculadas.<br>
-        Ela afirma que prefere não passar muito tempo pensando porque isso faz sua cabeça doer.<br>
-        Essas peculiaridades também estão presentes em sua vida cotidiana, onde ela tende a priorizar seu desejo instintivo por diversão e ser boba sobre qualquer outra coisa.<br>
-        Ela costuma ser a fonte de dores de cabeça para quem está ao seu redor, causando problemas porque ela “achou que seria engraçado.”`,
+        descricao: `<p>Gigi é uma gamer e adora a emoção de vencer. Ela tem energia de "gremlin" e é barulhenta, enérgica, imprevisível, caótica e às vezes irritante.</p>
+
+        <p>Ela é obsessiva e determinada. Ela é incessante com memes e pedidos, principalmente "boat goes binted" e seus planos para convencer Mori Calliope a jogar League of Legends. Ela também faz piadas grosseiras de vez em quando. No entanto, ela não é maldosa e faz de tudo para fazer os outros rirem. Ela se descreveria como "caótica e boa" em alinhamento.</p>
+
+        <p>Ela também tem um lado gentil e é dedicada aos seus Grems. É amiga íntima de Cecilia Immergreen, que serve como contraponto às suas explosões malucas.</p>`,
         aniversario: '18 de Outubro',
         altura: '153cm',
         ilustrador: 'Makihitsuji',
@@ -984,11 +1099,11 @@ const talentos = [
     },
     {
         nome: 'Cecilia Immergreen',
-        descricao: `Cecilia Immergreen é um autômato antigo, com propensão para flores, chá e criação musical.<br>
-        Elaborada na antiguidade, Cecília foi originalmente feita para ser dedicada à servidão eterna.<br>
-        No entanto, nos últimos tempos, ela começou a relaxar no trabalho, cozinhando preguiçosamente principalmente batatas junto com tudo o mais que encontrava na cozinha.<br>
-        Ela praticamente abandonou seus deveres, fazendo o mínimo e mergulhando principalmente em seus vários hobbies astutos.<br>
-        Com novos interesses na vida, ela assume cada nova experiência com a pura curiosidade de uma jovem.`,
+        descricao: `<p>Cecilia é uma streamer inteligente e direta. Ela pode ser teimosa e combativa, e frequentemente usa sarcasmo. Às vezes, ela gosta de pregar peças em seus parceiros de colaboração, mas apenas por diversão. Seu objetivo é entreter seus espectadores.</p>
+
+        <p>Ela é excepcionalmente criativa e conhecida por programar "Imersões" únicas em transmissões, seja diminuindo sua altura para ficar igual à do protagonista de Legend of Zelda , criando uma tela verde para si mesma no jogo ou programando seus próprios minijogos controlados por chat. Ela também é conhecida por seu talento musical e toca violino com maestria.</p>
+
+        <p>Ela é boa amiga de Gigi Murin, e as duas formam uma dupla cômica, com Cecilia como contraparte. Às vezes, elas são mais como cúmplices no crime.</p>`,
         aniversario: '11 de Novembro',
         altura: '162cm',
         ilustrador: 'DSmile',
@@ -1014,7 +1129,7 @@ const talentos = [
 
             <p>Cecilia foi anunciada como uma das quatro integrantes da hololive English -Justice- em 18 de junho de 2024, em um vídeo intitulado "A Missão Começa!". Cecilia fez seu primeiro tweet logo depois. Isso foi seguido por um breve vídeo de perfil, intitulado "Que este conjunto comece!" 🎶 #holoJustice</p>
 
-            <p>O anúncio da quarta geração do hololive em inglês pegou a maior parte da comunidade VTuber de surpresa. A geração anterior em inglês, Advent, havia estreado menos de um ano antes, e o último relatório trimestral da Cover sugeria uma estratégia de estreias menos frequentes de Vtubers. Os nomes dos novos membros vazaram por meio de registro de marca algumas horas antes do anúncio oficial.</p>
+            <p>O anúncio da quarta geração da hololive em inglês pegou a maior parte da comunidade VTuber de surpresa. A geração anterior em inglês, Advent, havia estreado menos de um ano antes, e o último relatório trimestral da Cover sugeria uma estratégia de estreias menos frequentes de Vtubers. Os nomes dos novos membros vazaram por meio de registro de marca algumas horas antes do anúncio oficial.</p>
 
             <p>Antes da estreia, os membros do Justice gravaram uma série de áudios de "missões" onde visitaram um santuário para desejar uma estreia de sucesso, visitaram uma casa mal-assombrada, visitaram um maid café e se encontraram com FUWAMOCO para obter conselhos. Os clipes só seriam lançados em dezembro de 2024.</p>
 
@@ -1038,10 +1153,13 @@ const talentos = [
     },
     {
         nome: 'Raora Panthera',
-        descricao: `A Artista dos Olhos de Deus, Raora Panthera é dotada de proezas investigativas e descritivas.<br>
-        Seus meios de coleta de informações são diversos, utilizando não apenas sua agilidade e habilidades sociais, mas também diversas plataformas de mídia social e outros métodos únicos.<br>
-        As composições faciais que ela desenha com base nas informações que coleta são conhecidas por sua precisão, quase como se ela estivesse olhando diretamente para os criminosos enquanto desenha.<br>
-        No entanto, hoje em dia, seu olhar é direcionado para encontrar novas pizzarias e desfrutar da cultura pop do extremo leste.`,
+        descricao: `<p>A Artista dos Olhos de Deus, Raora Panthera é dotada de proezas investigativas e descritivas. Seus meios de coleta de informações são diversos, utilizando não apenas sua agilidade e habilidades sociais, mas também diversas plataformas de mídia social e outros métodos únicos.</p>
+
+        <p>As composições faciais que ela desenha com base nas informações que coleta são conhecidas por sua precisão, quase como se ela estivesse olhando diretamente para os criminosos enquanto desenha.</p>
+
+        <p>No entanto, hoje em dia, seu olhar é direcionado para encontrar novas pizzarias e desfrutar da cultura pop do extremo leste.</p>
+            
+        <p>Raora é alegre, paciente e amigável. Ela tem uma atitude suave e reconfortante, e seu riso é contagiante. Ela é sempre positiva e meio cabeça-de-vento, e não xinga. Embora geralmente gentil no comportamento, ela não tem medo de impor sua postura em assuntos importantes: ingredientes de pizza, cozinhar macarrão ou as constantes exigências dos Chattini para receber jetpacks.</p>`,
         aniversario: '11 de Maio',
         altura: '158cm',
         ilustrador: 'Nekojira',
@@ -1081,7 +1199,7 @@ const talentos = [
 
             <p>Em 28 de fevereiro, Ina, Bijou, Gigi e Raora estrearam novos mascotes Palico como parte de um patrocínio do jogo Monster Hunter Wilds.</p>
 
-            <p>Em 26 de março, ela atingiu 500.000 inscritos em seu canal do YouTube durante uma transmissão do jogo Galaxy Burger com Mori Calliope. Raora é o 67º membro do hololive e também o segundo membro do Justice a atingir o marco.</p>
+            <p>Em 26 de março, ela atingiu 500.000 inscritos em seu canal do YouTube durante uma transmissão do jogo Galaxy Burger com Mori Calliope. Raora é o 67º membro da hololive e também o segundo membro do Justice a atingir o marco.</p>
             
             <p>Fonte:
             <a href="https://virtualyoutuber.fandom.com/wiki/Raora_Panthera">Virtual YouTuber Wiki | Fandom</a>
@@ -1091,8 +1209,8 @@ const talentos = [
 
 const fotos = [
     [ // Myth
-        [`${pastaFotosPefil}/gura.png`, 'Gura'], [`${pastaFotosPefil}/ame.png`, 'Amelia'], [`${pastaFotosPefil}/kiara.png`, 'Kiara'], 
-        [`${pastaFotosPefil}/mori.png`, 'Calli'], [`${pastaFotosPefil}/ina.png`, 'Ina'], 
+        [`${pastaFotosPefil}/mori.png`, 'Calli'], [`${pastaFotosPefil}/kiara.png`, 'Kiara'], [`${pastaFotosPefil}/ina.png`, 'Ina'], 
+        [`${pastaFotosPefil}/gura.png`, 'Gura'], [`${pastaFotosPefil}/ame.png`, 'Amelia']
     ],
     
     [ // Council / Promise
