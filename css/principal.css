@@ -1,31 +1,50 @@
 /* Folha de estilo príncipal */
 
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --corFundoClara: white;
+    --corFundoEscura: rgb(59, 0, 184);
+    --corSombra: #aaa;
+}
+
 body {
     display: grid;
-    grid-template-columns: 70fr 30fr;
-    grid-template-rows: 8vh 90vh 80vh 90vh 16vh 10vh;
-    grid-template-areas: "h h" "m a" "tw tw" "sc sa" "s s" "f f";
     margin: auto;
     background-image: url(../assets/img/layout/fundo.jpg);
     background-size: cover;
     background-repeat: repeat;
-}       
+    font-family: Inclusive Sans, sans-serif;
+    grid-template-columns: 70fr 30fr;
+    grid-template-rows:  12vh 360vh 8vh;
+    grid-template-areas: 'h h' 'm m' 'f f';
+}
 
 header {
     grid-area: h;
     display: flex;
     justify-content: space-between;
+    background-color: var(--corFundoClara);
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+main {
+    grid-area: m;
 }
 
 header h1 {
-    grid-area: hh1;
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin: 1.1rem;
+    font-weight: 300;
+}
+
+header:hover {
+    box-shadow: 0px 0px 5px var(--corFundoEscura);
 }
 
 header a {
-    grid-area: ha;
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -35,56 +54,14 @@ header a {
     font-weight: bold;
 }
 
-main { 
-    grid-area: m;
-    display: grid;
-    grid-template-rows: 6vh 84vh;
-    grid-template-areas: "g" "ti";
+header a:hover {
+    background-color: var(--corFundoEscura);
+    color: var(--corFundoClara);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 footer {
     grid-area: f;
-}
-
-nav#grupos {
-    grid-area: g;
-    display: flex;
-    justify-content: space-between;
-}
-
-button.nomesGrupos {
-    width: 100%;
-    margin: 0.6rem;
-}
-
-section#talentosImgs {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 42vh 42vh;
-    grid-template-areas: "pri seg ter" "qua qui sex";
-}
-
-#talentosImgs div {
-    position: relative;
-    justify-self: center;
-}
-
-#talentosImgs p.nomeTalento {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-#talentosImgs img {
-    height: 100%;
-}
-
-section#comentarios {
-    overflow: auto;
-}
-
-section#musicas {
-    grid-area: s;
+    background-color: var(--corFundoClara);
 }

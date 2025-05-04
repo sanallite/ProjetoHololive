@@ -127,7 +127,7 @@ if ( parametros.has('t') ) {
         }, 3000);
     }
 
-    document.title = `Hololive English - ${talentoAtual.nome}`;
+    document.title = `Site de Fã - Hololive English - ${talentoAtual.nome}`;
 
     /* Exibindo o conteúdo relacionado ao talento atual. */
     exibirThumbnails();

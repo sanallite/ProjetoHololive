@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Hololive English</title>
+        <title>Site de Fã - Hololive English</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/paginaInicial.css">
         <link rel="stylesheet" href="css/aside.css">
         <link rel="stylesheet" href="css/wallpapers.css">
         <link rel="stylesheet" href="css/playerAudio.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+        </style>
 
         <script src="https://apis.google.com/js/api.js"></script>
         <!-- Importando a biblioteca de APIs do Google -->
@@ -22,108 +27,110 @@
     
     <body>
         <header>
-            <h1>Hololive English</h1>
+            <h1>Site de Fã - Hololive English</h1>
 
             <a href="https://hololivepro.com/en" target="_blank">Site Oficial</a>
         </header>
 
-        <aside>
-            <article id="talentosDesc"></article>
-            <!-- Conteúdo criado dinâmicamente no app.js -->
-        </aside>
-
         <main>
-            <nav id="grupos"></nav>
+            <section id="gruposImagens">
+                <nav id="grupos"></nav>
+                <section id="talentosImgs"></section>
+            </section>
 
-            <section id="talentosImgs"></section>
-        </main>
+            <aside>
+                <article id="talentosDesc"></article>
+                <!-- Conteúdo criado dinâmicamente no app.js -->
+            </aside>
 
-        <section id="talentosWallpapers">
-            <div class="papel1"></div>
-            <div class="papel2"></div>
-            <div class="papel3"></div>
-            <!-- Exibição de imagens feita inicialmente pelo css e depois alterada dinâmicamente em carrossel.js -->
-        </section>
+            <section id="talentosWallpapers">
+                <div class="papel1"></div>
+                <div class="papel2"></div>
+                <div class="papel3"></div>
+                <!-- Exibição de imagens feita inicialmente pelo css e depois alterada dinâmicamente em carrossel.js -->
+            </section>
 
-        <section id="comentarios">
-            <h2>Comentários</h2>
+            <section id="comentarios">
+                <h2>Comentários</h2>
 
-            <form>
-                <fieldset>
-                    <legend>Escreva no chat!</legend>
+                <form>
+                    <fieldset>
+                        <legend>Escreva no chat!</legend>
 
-                    <input type="text" placeholder="Digite seu nome">
+                        <input type="text" placeholder="Digite seu nome">
 
-                    <textarea name="Comentários" cols="50" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
+                        <textarea name="Comentários" cols="50" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
+
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+
+                        <p class="feedbackComment"></p>
+                    </fieldset>
+                </form>
+
+                <div id="listaComentarios"></div>
+            </section>
+
+
+            <aside id="tabela">
+                <section id="infoPlayer">
+                    <h2>Informações sobre o player de música:</h2>
 
                     <p>
-                        <input type="submit" value="Enviar">
-                    </p>
+                        Clique na barra de progresso para avançar ou retroceder.<br>
+                        Você pode pausar/tocar a música apertando Space.<br>
+                        O progresso dá música é salvo conforme você navega entre as páginas, mas sem autoplay.
+                    </p>  
+                </section>
 
-                    <p class="feedbackComment"></p>
-                </fieldset>
-            </form>
+                <section id="talentosInfo">
+                    <h2>Informações sobre os talentos</h2>
 
-            <div id="listaComentarios"></div>
-        </section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Aniversário</th>
+                                <th>Altura</th>
+                            </tr>
+                        </thead>
 
-        <aside id="tabela">
-            <section id="infoPlayer">
-                <h2>Informações sobre o player de música:</h2>
+                        <tbody class="tabelaInfo"></tbody>
 
-                <p>
-                    Clique na barra de progresso para avançar ou retroceder.<br>
-                    Você pode pausar/tocar a música apertando Space.<br>
-                    O progresso dá música é salvo conforme você navega entre as páginas, mas sem autoplay.
-                </p>  
-            </section>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </aside>
 
-            <section id="talentosInfo">
-                <h2>Informações sobre os talentos</h2>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Aniversário</th>
-                            <th>Altura</th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="tabelaInfo"></tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-        </aside>
-
-        <section id="musicas">
-            <div class="capa">
-                <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
-            </div>
-
-            <div class="player">
-                <audio class="player" preload="auto"></audio>
-
-                <div class="controles">
-                    <button class="play">Play</button>
-                    <button class="pause">Pause</button>
-                    <button class="proxima">Próxima</button>
-                    <button class="anterior">Anterior</button>
+            <section id="musicas">
+                <div class="capa">
+                    <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
                 </div>
 
-                <div class="progresso">
-                    <div class="barraProgresso"></div>
-                </div>
+                <div class="player">
+                    <audio class="player" preload="auto"></audio>
 
-                <p>Now Playing:</p>
-                <p class="nome"></p>
-            </div>
-        </section>
+                    <div class="controles">
+                        <button class="play">Play</button>
+                        <button class="pause">Pause</button>
+                        <button class="proxima">Próxima</button>
+                        <button class="anterior">Anterior</button>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="barraProgresso"></div>
+                    </div>
+
+                    <p>Now Playing:</p>
+                    <p class="nome"></p>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <blockquote>Site criado por Márcio Teodoro, Sanallite<br>
