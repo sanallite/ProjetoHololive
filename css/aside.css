@@ -1,55 +1,58 @@
-/* Folha de estilo para os elementos dentro do primeiro aside da página inicial. */
+/* Folha de estilo para os elementos dentro dos aside da página inicial. */
 
-aside {
-    grid-area: a;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-}
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    aside {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+    }
 
-aside#tabela {
-    grid-area: sa;
-    display: flex;
-    flex-direction: column;
-}
+    aside#tabela {
+        display: flex;
+        flex-direction: column;
+    }
 
-article#talentosDesc {
-    grid-area: td;
-    background-color: rgb(190, 239, 255);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
+    article#talentosDesc {
+        background-color: var(--corFundoAzul);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
 
-#talentosDesc summary {
-    cursor: pointer;
-}
+    #talentosDesc summary {
+        cursor: pointer;
+    }
 
-section#talentosInfo {
-    grid-area: tic;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
+    section#talentosInfo {
+        grid-area: tic;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 
-#talentosInfo form {
-    margin: 1rem;
-}
+    #talentosInfo form {
+        margin: 1rem;
+    }
 
-#talentosInfo table {
-    justify-self: center;
-    border-collapse: collapse;
-}
+    #talentosInfo table {
+        justify-self: center;
+        border-collapse: collapse;
+    }
 
-#talentosInfo table tr, th, td {
-    border-style: solid;
-    border-width: 1px;
-    padding: 0.7rem
-}
+    #talentosInfo table tr,
+    th,
+    td {
+        border-style: solid;
+        border-width: 1px;
+        padding: 0.7rem
+    }
 
-table thead tr, tfoot tr {
-    background-color: whitesmoke;
-}
+    table thead tr,
+    tfoot tr {
+        background-color: whitesmoke;
+    }
 
-#talentosInfo h2 {
-    justify-self: center;
+    #talentosInfo h2 {
+        justify-self: center;
+    }
 }

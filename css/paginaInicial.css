@@ -1,47 +1,138 @@
 /* Folha de estilo da página inicial. */
 
-section#gruposImagens {
-    display: grid;
-    grid-area: g;
-    grid-template-rows: 6vh 84vh;
-    grid-template-areas: "ng" "ti";
-}
-
-nav#grupos {
-    grid-area: ng;
-    display: flex;
-    justify-content: space-between;
-}
-
-button.nomesGrupos {
-    width: 100%;
-    margin: 0.6rem;
-}
-
-section#talentosImgs {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 42vh 42vh;
-    grid-template-areas: "pri seg ter" "qua qui sex";
-}
-
-#talentosImgs div {
-    position: relative;
-    justify-self: center;
-}
-
+/* Todas as telas */
 #talentosImgs p.nomeTalento {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
     font-weight: bold;
     font-size: 2rem;
+    color: var(--corFundoBranca);
+    text-shadow: 0 0 10px var(--corFundoRoxa);
+}
+section#gruposImagens {
+    margin-left: 1rem
 }
 
-#talentosImgs img {
-    height: 100%;
+nav#grupos button {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: larger;
+    cursor: pointer;
+    font-family: Inclusive Sans, sans-serif;
 }
 
-section#comentarios {
-    overflow: auto;
+nav#grupos button.destaque {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+}
+
+nav#grupos button:hover {
+    box-shadow: 0px 0px 5px var(--corFundoRoxa);
+}
+
+nav#grupos button.destaque:hover {
+    box-shadow: 0px 0px 5px var(--corFundoBranca);
+}
+
+section#talentosImgs img {
+    cursor: pointer;
+}
+
+aside article#talentosDesc:hover {
+    box-shadow: 0px 0px 5px var(--corFundoBranca);
+}
+
+article#talentosDesc h3 {
+    margin-top: 0;
+}
+
+article#talentosDesc iframe {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+article#talentosDesc a {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article#talentosDesc a:hover {
+    box-shadow: 0px 0px 5px var(--corFundoRoxa);
+}
+
+article#talentosDesc a:visited {
+    color: black;
+}
+
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    main {
+        display: grid;
+        grid-template-columns: 70fr 30fr;
+        grid-template-rows: 88vh 75vh 90vh;
+        grid-template-areas: 'g atd' 'tw tw' 'sc amt';
+    }
+
+    section#gruposImagens {
+        display: grid;
+        grid-area: g;
+        grid-template-rows: 6vh 82vh;
+        grid-template-areas: "ng" "ti";
+    }
+
+    nav#grupos {
+        grid-area: ng;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button.nomesGrupos {
+        width: 100%;
+        margin: 0.6rem;
+    }
+
+    section#talentosImgs {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 41vh 41vh;
+        grid-template-areas: "pri seg ter" "qua qui sex";
+    }
+
+    #talentosImgs div {
+        position: relative;
+        justify-self: center;
+    }
+
+    #talentosImgs p.nomeTalento {
+        position: absolute;
+        bottom: 5%;
+    }
+
+    #talentosImgs img {
+        height: 100%;
+    }
+
+    main aside:first-of-type {
+        grid-area: atd;
+    }
+
+    main aside#tabela {
+        grid-area: amt;
+    }
+
+    section#talentosWallpapers {
+        grid-area: tw;
+    }
+
+    section#comentarios {
+        grid-area: sc;
+        overflow: auto;
+    }
 }

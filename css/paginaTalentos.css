@@ -1,28 +1,31 @@
 /* Folha de estilos da página de talentos. */
 
-header a:first-of-type {
-    padding: 1.1rem;
-}
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    header a:first-of-type {
+        padding: 1.1rem;
+    }
 
-header a h1 {
-    margin: 0;
-    font-size: 2rem;
-}
+    header a h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
 
-header a:first-of-type:hover {
-    color: var(--corFundoClara);
-    border-radius: 0.5rem 0 0 0.5rem;
-}
+    header a:first-of-type:hover {
+        color: var(--corFundoBranca);
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
 
-div.fotoPrincipal img {
-    height: 500px;
-}
+    div.fotoPrincipal img {
+        height: 500px;
+    }
 
-div.thumbnails img {
-    height: 100px;
-}
+    div.thumbnails img {
+        height: 100px;
+    }
 
-section#clipes div {
-    display: flex;
-    flex-wrap: wrap;
+    section#clipes div {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

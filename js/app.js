@@ -8,6 +8,22 @@ import { exibirUploads } from './youtubeApi.js';
 
 const playerMusica = document.querySelector('audio.player');
 
+const destacarBotao = () => {
+    const grupoAtual = localStorage.getItem('grupo') || 'Myth';
+
+    const botoes = document.querySelectorAll('button.nomesGrupos');
+
+    for (let i = 0; i < botoes.length; i++) {
+        botoes[i].classList.remove('destaque');
+
+        if ( botoes[i].classList.contains(grupoAtual) ) {
+            const elemento = botoes[i];
+
+            elemento.classList.add('destaque');
+        }        
+    }
+}
+
 /* Função que cria botões de acordo com a quantidade de grupos no array de nomes. */
 const exibirNomesGrupos = () => {
     const navGrupos = document.getElementById('grupos');
@@ -25,6 +41,8 @@ const exibirNomesGrupos = () => {
 
             window.localStorage.setItem('grupo', element);
             /* Armazenando o nome do grupo. */
+
+            destacarBotao();
         });
         /* Cada botão criado terá um escutador de eventos, ao ser clicado executará uma função anônima, que chama outra com um parâmetro diferente de acordo com o elemento do array, que representa um dos grupos. */
     })
@@ -108,9 +126,6 @@ const exibirInfoTalentos = async talento => {
     const idVideoMaisRecente = uploadsCanal.result.items[0].contentDetails.videoId;
     /* Acessando uma parte específica do resultado. */
 
-    let divInfo = document.createElement('div');
-    divInfo.className = `descTalento ${talento.nome}`;
-
     let nome = document.createElement('h3');
     nome.textContent = talento.nome;
 
@@ -128,8 +143,6 @@ const exibirInfoTalentos = async talento => {
     frameVideo.setAttribute('frameborder', 0);
     frameVideo.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope');
 
-    divInfo.append(nome, desc, infoLive, frameVideo);
-
     let linkPag2 = document.createElement('a');
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
     linkPag2.textContent = 'Ir para página do talento';
@@ -138,9 +151,7 @@ const exibirInfoTalentos = async talento => {
         sessionStorage.setItem('tempoAtualMusica', playerMusica.currentTime);
     })
 
-    divInfo.appendChild(linkPag2);
-
-    articleTalentos.appendChild(divInfo);
+    articleTalentos.append(nome, desc, infoLive, frameVideo, linkPag2);
 }
 
 /* Função que cria uma tabela com algumas informações dos talentos. */
@@ -178,6 +189,7 @@ const criarTabelaInfo = () => {
 /* Estado inicial da página */
 exibirNomesGrupos();
 criarTabelaInfo();
+destacarBotao();
 
 const nomeArmazenado = localStorage.getItem('talento');
 const grupoArmazenado = localStorage.getItem('grupo');

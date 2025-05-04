@@ -29,24 +29,3 @@ div.papel3 {
     background-size: cover;
     background-position: left;
 }
-
-/* div.album1 {
-    grid-area: a1;
-    background-image: url(../assets/img/capas/thousand.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-div.album2 {
-    grid-area: a2;
-    background-image: url(../assets/img/capas/rise.png);
-    background-size: cover;
-    background-position: center;
-}
-
-div.album3 {
-    grid-area: a3;
-    background-image: url(../assets/img/capas/rebellion.jpg);
-    background-size: cover;
-    background-position: center;  
-} */
