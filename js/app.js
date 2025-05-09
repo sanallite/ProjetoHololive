@@ -31,7 +31,7 @@ const exibirNomesGrupos = () => {
     nomesGrupos.forEach(element => {
         let botao = document.createElement('button');
         botao.textContent = element;
-        botao.className = `nomesGrupos ${element}`;
+        botao.className = `nomesGrupos hoverRoxo ${element}`;
 
         navGrupos.appendChild(botao);
 
@@ -145,6 +145,7 @@ const exibirInfoTalentos = async talento => {
 
     let linkPag2 = document.createElement('a');
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
+    linkPag2.classList.add('hoverRoxo');
     linkPag2.textContent = 'Ir para página do talento';
 
     linkPag2.addEventListener('click', () => {

@@ -1,58 +1,102 @@
 /* Folha de estilo para os elementos dentro dos aside da página inicial. */
 
+aside {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+}
+
+aside#tabela {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem;
+    background-color: var(--corFundoAzul);
+    border-radius: 0.5rem;
+}
+
+article#talentosDesc {
+    background-color: var(--corFundoAzul);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#talentosDesc summary {
+    cursor: pointer;
+}
+
+article#talentosDesc h3 {
+    margin-top: 0;
+}
+
+article#talentosDesc iframe {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+article#talentosDesc a {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article#talentosDesc a:visited {
+    color: black;
+}
+
+section#talentosInfo {
+    overflow: auto;
+}
+
+section#talentosInfo table {
+    justify-self: center;
+    border-collapse: collapse;
+}
+
+table thead tr th:first-of-type {
+    border-top-left-radius: 0.5rem;
+}
+
+table thead tr th:nth-of-type(3) {
+    border-top-right-radius: 0.5rem;
+}
+
+table tfoot tr td {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+table tr, th ,td {
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 0.7rem
+}
+
+table tbody, table thead tr, table thead th, table tfoot, table tfoot tr, table tfoot td {
+    border-width: 0;
+}
+
+table tbody td, table tbody th {
+    background-color: var(--corFundoBranca);
+    border-color: var(--corFundoAzul);
+}
+
+table thead tr, tfoot tr {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+}
+
+table thead tr th:not(th:last-of-type) {
+    border-right-width: 0.1rem;
+}
+
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
-    aside {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        overflow-y: auto;
-    }
-
-    aside#tabela {
-        display: flex;
-        flex-direction: column;
-    }
-
-    article#talentosDesc {
-        background-color: var(--corFundoAzul);
-        border-radius: 0.5rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    #talentosDesc summary {
-        cursor: pointer;
-    }
-
-    section#talentosInfo {
-        grid-area: tic;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    #talentosInfo form {
-        margin: 1rem;
-    }
-
-    #talentosInfo table {
-        justify-self: center;
-        border-collapse: collapse;
-    }
-
-    #talentosInfo table tr,
-    th,
-    td {
-        border-style: solid;
-        border-width: 1px;
-        padding: 0.7rem
-    }
-
-    table thead tr,
-    tfoot tr {
-        background-color: whitesmoke;
-    }
-
-    #talentosInfo h2 {
-        justify-self: center;
-    }
 }

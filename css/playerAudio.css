@@ -1,24 +1,63 @@
 /* Folha de estilos do player de música. */
 
-#musicas div.progresso {
-    width: 30%;
-    height: 6px;
-    background-color: #ddd;
+section#musicas {
+    display: flex;
+    flex-direction: row;
+}
+
+#musicas div.player {
+    width: 100%;
+}
+
+#musicas div.controles {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.controles button {
+    background-color: var(--corFundoAzul);
+    border-width: 0;
     cursor: pointer;
-    margin: 1rem
+    display: flex;
+    align-items: center;
+}
+
+div.controles img {
+    width: 30px;
+    height: 30px;
+}
+
+#musicas div.progresso {
+    width: 100%;
+    height: 6px;
+    background-color: var(--corFundoBranca);
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: 2rem;
 }
 
 #musicas div.barraProgresso {
     width: 0%;
     height: 100%;
-    background-color: lightblue;
+    background-color: var(--corFundoRoxa);
+    border-radius: 2rem;
 }
 
 #musicas button.hidden {
     display: none;
 }
 
+#musicas div.capa {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
 #musicas img.capa {
-    width: 6em;
-    height: 6em;
+    width: 8em;
+    height: 8em;
+}
+
+#musicas p.nome {
+    font-weight: bold;
 }

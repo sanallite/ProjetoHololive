@@ -26,7 +26,7 @@
     </head>
     
     <body>
-        <header>
+        <header class="hoverRoxo">
             <h1>Site de Fã - Hololive English</h1>
 
             <a href="https://hololivepro.com/en" target="_blank">Site Oficial</a>
@@ -39,7 +39,7 @@
             </section>
 
             <aside>
-                <article id="talentosDesc"></article>
+                <article id="talentosDesc" class="hoverBranco"></article>
                 <!-- Conteúdo criado dinâmicamente no app.js -->
             </aside>
 
@@ -51,28 +51,26 @@
             </section>
 
             <section id="comentarios">
-                <h2>Comentários</h2>
+                <h2 class="hoverRoxo">Comentários</h2>
 
-                <form>
+                <form class="hoverRoxo">
                     <fieldset>
                         <legend>Escreva no chat!</legend>
 
                         <input type="text" placeholder="Digite seu nome">
 
-                        <textarea name="Comentários" cols="50" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
+                        <textarea name="Comentários" cols="30" rows="10" placeholder="Deixe aqui seus comentários"></textarea>
 
-                        <p>
-                            <input type="submit" value="Enviar">
-                        </p>
-
-                        <p class="feedbackComment"></p>
+                        <input type="submit" value="Enviar">
                     </fieldset>
+
+                    <p class="feedbackComment"></p>
                 </form>
 
-                <div id="listaComentarios"></div>
+                <div id="listaComentarios" class="hoverRoxo"></div>
             </section>
 
-            <aside id="tabela">
+            <aside id="tabela" class="hoverBranco">
                 <section id="musicas">
                     <div class="capa">
                         <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
@@ -80,19 +78,30 @@
     
                     <div class="player">
                         <audio class="player" preload="auto"></audio>
-    
-                        <div class="controles">
-                            <button class="play">Play</button>
-                            <button class="pause">Pause</button>
-                            <button class="proxima">Próxima</button>
-                            <button class="anterior">Anterior</button>
-                        </div>
-    
+
                         <div class="progresso">
                             <div class="barraProgresso"></div>
                         </div>
     
-                        <p>Now Playing:</p>
+                        <div class="controles">
+                            <button class="anterior" aria-label="Música anterior">
+                                <img src="./assets/img/layout/skip-backward-fill.svg">
+                            </button>
+
+                            <button class="play" aria-label="Tocar música">
+                                <img src="./assets/img/layout/play-fill.svg">
+                            </button>
+
+                            <button class="pause" aria-label="Pausar música">
+                                <img src="./assets/img/layout/pause-fill.svg">
+                            </button>
+
+                            <button class="proxima" aria-label="Próxima música">
+                                <img src="./assets/img/layout/skip-forward-fill.svg">
+                            </button>       
+                        </div>
+    
+                        <p><em>Now Playing:</em></p>
                         <p class="nome"></p>
                     </div>
                 </section>
@@ -101,9 +110,10 @@
                     <h2>Informações sobre o player de música:</h2>
 
                     <p>
+                        Essas são versões instrumentais das principais músicas em grupos da Hololive EN.<br>
                         Clique na barra de progresso para avançar ou retroceder.<br>
                         Você pode pausar/tocar a música apertando Space.<br>
-                        O progresso dá música é salvo conforme você navega entre as páginas, mas sem autoplay.
+                        O progresso da música é salvo conforme você navega entre as páginas, mas sem autoplay.
                     </p>  
                 </section>
 
@@ -131,7 +141,7 @@
             </aside>
         </main>
 
-        <footer>
+        <footer class="hoverRoxo">
             <blockquote>Site criado por Márcio Teodoro, Sanallite<br>
             Copyright 2016 Cover Corp. Todos os direitos reservados. - All rights reserved.</blockquote>
         </footer>

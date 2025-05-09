@@ -8,27 +8,45 @@
     --corFundoAzul: rgb(190, 239, 255);
 }
 
+body {
+    font-family: Inclusive Sans, sans-serif;
+    background-image: url(../assets/img/layout/fundo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    margin: auto;
+}
+
+header {
+    background-color: var(--corFundoBranca);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: var(--corFundoBranca);
+}
+
+.hoverRoxo:hover {
+    box-shadow: 0px 0px 5px var(--corFundoRoxa);
+}
+
+.hoverBranco:hover {
+    box-shadow: 0px 0px 5px var(--corFundoBranca);
+}
+
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
     body {
         display: grid;
-        margin: auto;
-        background-image: url(../assets/img/layout/fundo.jpg);
-        background-size: cover;
-        background-repeat: repeat;
-        font-family: Inclusive Sans, sans-serif;
         grid-template-columns: 70fr 30fr;
-        grid-template-rows: 11vh 360vh 8vh;
+        grid-template-rows: 11vh 255vh 8vh;
         grid-template-areas: 'h h' 'm m' 'f f';
     }
 
     header {
-        grid-area: h;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--corFundoBranca);
-        margin: 1rem;
-        border-radius: 0.5rem;
+        grid-area: h;  
     }
 
     main {
@@ -40,10 +58,6 @@
         align-items: center;
         margin: 1.1rem;
         font-weight: 300;
-    }
-
-    header:hover {
-        box-shadow: 0px 0px 5px var(--corFundoRoxa);
     }
 
     header a {
@@ -65,6 +79,5 @@
 
     footer {
         grid-area: f;
-        background-color: var(--corFundoBranca);
     }
 }

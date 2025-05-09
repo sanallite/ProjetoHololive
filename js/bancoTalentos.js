@@ -889,11 +889,14 @@ const talentos = [
         nome: 'Fuwawa Abyssgard',
         descricao: `<p>Apesar da reputação das irmãs mais velhas de serem confiáveis, Fuwawa é meio cabeça de vento. Ela é boba por natureza e costuma dizer coisas estranhas. Ela é ruim em ortografia e matemática, descuidada e frequentemente desastrada em videogames. No entanto, isso não é problema, pois ela é excepcionalmente fofa.</p>
 
+        <details>
+        <summary>Ler mais</summary>
         <p>Ela é bondosa e gentil. No entanto, Fuwawa às vezes parece ser a "gêmea má" e, ocasionalmente... Ela pode ser um pouco egoísta às vezes e, ocasionalmente, demonstra um lado "yandere".</p>
 
         <p>Ela se importa muito com sua irmã gêmea Mococo. Mococo diz que Fuwawa é confiável e a ajuda a se acalmar. No entanto, Fuwawa também parece ter um complexo de irmã.</p>
 
-        <p>Ambas as irmãs são especialmente talentosas em canto e dança, são trabalhadoras e nunca desistem.</p>`,
+        <p>Ambas as irmãs são especialmente talentosas em canto e dança, são trabalhadoras e nunca desistem.</p>
+        </details>`,
         aniversario: '01 de Fevereiro',
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
@@ -946,9 +949,12 @@ const talentos = [
         nome: 'Mococo Abyssgard',
         descricao: `<p>Mococo, a irmã mais nova, é enérgica, otimista e especialmente amigável. Ela tem uma atitude positiva e anima os espectadores com suas Mococo Pup Talks. Ela é gentil com os outros, embora ocasionalmente possa causar problemas quando fica superexcitada. Ela também é muito sensível e bastante carente. Ela fica incomodada quando as pessoas a chamam por apelidos estranhos.</p>
 
+        <details>
+        <summary>Ler mais</summary>
         <p>De acordo com sua irmã Fuwawa, Mococo pode ser teimosa, mas no fundo ela tem um grande coração. Mococo se importa muito com sua irmã, embora elas ocasionalmente discutam. Ela se sente solitária quando elas estão separadas, e Mococo quase nunca transmite sem sua irmã.</p>
 
-        <p>Ambas as irmãs são especialmente apaixonadas por canto e dança. São apaixonadas, trabalhadoras e têm uma atitude de nunca desistir.</p>`,
+        <p>Ambas as irmãs são especialmente apaixonadas por canto e dança. São apaixonadas, trabalhadoras e têm uma atitude de nunca desistir.</p>
+        </details>`,
         aniversario: '02 de Fevereiro',
         altura: '155cm',
         ilustrador: 'ICOMOCHI',
@@ -1155,11 +1161,14 @@ const talentos = [
         nome: 'Raora Panthera',
         descricao: `<p>A Artista dos Olhos de Deus, Raora Panthera é dotada de proezas investigativas e descritivas. Seus meios de coleta de informações são diversos, utilizando não apenas sua agilidade e habilidades sociais, mas também diversas plataformas de mídia social e outros métodos únicos.</p>
 
+        <details>
+        <summary>Ler mais</summary>
         <p>As composições faciais que ela desenha com base nas informações que coleta são conhecidas por sua precisão, quase como se ela estivesse olhando diretamente para os criminosos enquanto desenha.</p>
 
         <p>No entanto, hoje em dia, seu olhar é direcionado para encontrar novas pizzarias e desfrutar da cultura pop do extremo leste.</p>
             
-        <p>Raora é alegre, paciente e amigável. Ela tem uma atitude suave e reconfortante, e seu riso é contagiante. Ela é sempre positiva e meio cabeça-de-vento, e não xinga. Embora geralmente gentil no comportamento, ela não tem medo de impor sua postura em assuntos importantes: ingredientes de pizza, cozinhar macarrão ou as constantes exigências dos Chattini para receber jetpacks.</p>`,
+        <p>Raora é alegre, paciente e amigável. Ela tem uma atitude suave e reconfortante, e seu riso é contagiante. Ela é sempre positiva e meio cabeça-de-vento, e não xinga. Embora geralmente gentil no comportamento, ela não tem medo de impor sua postura em assuntos importantes: ingredientes de pizza, cozinhar macarrão ou as constantes exigências dos Chattini para receber jetpacks.</p>
+        </details>`,
         aniversario: '11 de Maio',
         altura: '158cm',
         ilustrador: 'Nekojira',
