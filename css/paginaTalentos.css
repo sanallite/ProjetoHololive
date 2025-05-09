@@ -14,23 +14,52 @@ header a:first-of-type:hover {
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
+aside#descricao {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--corFundoAzul);
+    border-radius: 0.5rem;
+    overflow-y: auto;
+}
+
+aside#descricao h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+section#historiaClipes {
+    overflow-y: auto;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+article.historia {
+    background-color: var(--corFundoBranca);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: justify;
+}
+
+article.historia h3 {
+    color: var(--corFundoRoxa);
+}
+
+article.historia h3:first-of-type {
+    margin-top: 0;
+}
+
+article.historia p:last-of-type {
+    margin-bottom: 0;
+}
+
 div.thumbnails img {
     height: fit-content;
     width: 7rem;
     cursor: pointer;
 }
 
-section#clipes div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section#tituloImg {
-    padding: 1rem;
-}
-
 section#tituloImg h2 { 
-    margin-top: 0;
+    margin: 0 1rem 1rem 1rem;
     background-color: var(--corFundoBranca);
     width: fit-content;
     height: fit-content;
@@ -46,16 +75,101 @@ section#tituloImg div.thumbnails {
     margin-left: 1rem;
 }
 
+aside#tabelaMusicas {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--corFundoAzul);
+    border-radius: 0.5rem;
+    height: fit-content;
+}
+
+aside#tabelaMusicas table {
+    justify-self: center;
+    width: 70%;
+}
+
+aside#tabelaMusicas td, #tabelaMusicas th {
+    padding: 0.7rem
+}
+
+aside#tabelaMusicas tr:last-of-type :nth-last-of-type(2) {
+    border-bottom-left-radius: 0.5rem;
+}
+
+aside#tabelaMusicas tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 0.5rem;
+}
+
+aside#tabelaMusicas td {
+    background-color: var(--corFundoBranca);
+}
+
+aside#tabelaMusicas table tbody th {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+aside#tabelaMusicas a {
+    display: flex;
+    justify-self: center;
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+aside#tabelaMusicas a:visited {
+    color: black;
+}
+
+section#clipes div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#clipes h3 {
+    background-color: var(--corFundoBranca);
+    width: fit-content;
+    padding: 0.5rem;
+    color: var(--corFundoRoxa);
+    border-radius: 0.25rem;
+}
+
+section#clipes iframe {
+    width: 600px;
+    height: 338px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px gray;
+}
+
+section#historiaClipes button {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+    border-width: 0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
     main {
         display: grid;
         grid-template-columns: 70fr 30fr;
+        grid-template-rows: 88vh 167vh;
     }
 
     section#tituloImg {
         display: grid;
-        grid-template-rows: 6vh 80vh;
+        grid-template-rows: 6vh 82vh;
         grid-template-areas: 'tt' 'si';
     }
 
@@ -72,7 +186,7 @@ section#tituloImg div.thumbnails {
 
     section.imagens div.thumbnails {
         grid-area: tb;
-        height: 80vh;
+        height: 82vh;
     }
 
     section.imagens div.fotoPrincipal {
@@ -81,7 +195,7 @@ section#tituloImg div.thumbnails {
     }
 
     div.fotoPrincipal img {
-        height: 80vh;
+        height: 82vh;
         width: fit-content;
     }
 }

@@ -152,22 +152,25 @@ barra.addEventListener('click', event => {
     /* Exemplo: player.duration = 240, porcentagem = 0.41866 então currentTime = 100.4784 segundos, em torno de 1 minuto e 40 segundos na música. */
 });
 
-/* Escutadores de eventos nos campos de texto, para remover ou adicionar o escutador que lida com a as teclas, evitando o conflito entre o uso dos inputs com o controle do player. */
-campoInput.addEventListener('focus', () => {
-    alternarEscutadorEvento('remover');
-});
+if ( campoInput && campoTextArea ) {
+    /* Escutadores de eventos nos campos de texto, para remover ou adicionar o escutador que lida com a as teclas, evitando o conflito entre o uso dos inputs com o controle do player. */
+    campoInput.addEventListener('focus', () => {
+        alternarEscutadorEvento('remover');
+    });
 
-campoInput.addEventListener('blur', () => {
-    alternarEscutadorEvento('adicionar');
-})
+    campoInput.addEventListener('blur', () => {
+        alternarEscutadorEvento('adicionar');
+    })
 
-campoTextArea.addEventListener('focus', () => {
-    alternarEscutadorEvento('remover');
-})
+    campoTextArea.addEventListener('focus', () => {
+        alternarEscutadorEvento('remover');
+    })
 
-campoTextArea.addEventListener('blur', () => {
-    alternarEscutadorEvento('adicionar');
-})
+    campoTextArea.addEventListener('blur', () => {
+        alternarEscutadorEvento('adicionar');
+    })
+}
+
 
 /* Estudador de eventos no documento, onde apertando Space toca ou pausa a música. */
 document.addEventListener('keydown', tocarPausarTecla);

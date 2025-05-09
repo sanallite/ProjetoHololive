@@ -6,6 +6,8 @@ import { talentos, nomesGrupos, mapaFotosGrupos, mapaTalentos, Myth } from "./ba
 import { exibirUploads } from './youtubeApi.js';
 /* Importando uma função que pega dados da API do YouTube. */
 
+import { configurarDetailsToggle } from "./detailsToggle.js";
+
 const playerMusica = document.querySelector('audio.player');
 
 const destacarBotao = () => {
@@ -153,6 +155,8 @@ const exibirInfoTalentos = async talento => {
     })
 
     articleTalentos.append(nome, desc, infoLive, frameVideo, linkPag2);
+
+    configurarDetailsToggle();
 }
 
 /* Função que cria uma tabela com algumas informações dos talentos. */

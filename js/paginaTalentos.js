@@ -6,6 +6,8 @@ import { talentos } from "./bancoTalentos";
 import { exibirInfo } from "./youtubeApi";
 /* Importando uma função que pega dados da API do YouTube. */
 
+import { configurarDetailsToggle } from "./detailsToggle";
+
 const parametros = new URLSearchParams(window.location.search);
 
 let talentoAtual = null;
@@ -14,8 +16,9 @@ const mainContainer = document.querySelector('main');
 const thumbnails = document.querySelector('div.thumbnails');
 const fotoPrincipal = document.querySelector('div.fotoPrincipal');
 const botaoVoltarPagina = document.querySelector('#historiaClipes button');
+const tituloNome = document.querySelector('aside#descricao h3');
 const articleDesc = document.querySelector('article.descricao');
-const asideHistoria = document.querySelector('#historiaClipes aside');
+const asideMusicas = document.querySelector('#tabelaMusicas');
 const articleHistoria = document.querySelector('article.historia');
 const tabelaDetalhes = document.querySelector('#tabelaMusicas table tbody');
 const secaoClipes = document.querySelector('section#clipes div');
@@ -60,6 +63,7 @@ const exibirThumbnails = () => {
 
 /* Função que pega as informações do talento, tanto do banco de dados local, quanto da API do YouTube, e exibe os valores em três seções separadas, a descrição, história e a tabela de informações. */
 const exibirDescDetalhes = async () => {
+    tituloNome.textContent = talentoAtual.nome;
     articleDesc.innerHTML = talentoAtual.descricao;
     articleHistoria.innerHTML = talentoAtual.historia || "";
 
@@ -82,15 +86,18 @@ const exibirDescDetalhes = async () => {
 
         link.setAttribute('href', `https://youtube.com/${talentoAtual.canalSecreto}`);
         link.setAttribute('target', '_blank');
+        link.classList.add('hoverRoxo');
 
         link.textContent = 'Canal Secreto';
-        asideHistoria.appendChild(link);
+        asideMusicas.appendChild(link);
     }
     /* Os talentos graduados/afiliados tem um canal "secreto", quem sabe, sabe. */
 
     if ( talentoAtual?.dataGraduacao ) {
         criarLinhaTabela('Graduação:', talentoAtual.dataGraduacao)
     }
+
+    configurarDetailsToggle();
 }
 
 /* Função para criar iframes com os vídeo-clipes dos talentos. */

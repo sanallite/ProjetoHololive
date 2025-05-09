@@ -36,12 +36,16 @@ footer {
     box-shadow: 0px 0px 5px var(--corFundoBranca);
 }
 
+summary {
+    cursor: pointer;
+}
+
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
     body {
         display: grid;
         grid-template-columns: 70fr 30fr;
-        grid-template-rows: 11vh 255vh 8vh;
+        grid-template-rows: 11vh 255vh 9vh;
         grid-template-areas: 'h h' 'm m' 'f f';
     }
 
