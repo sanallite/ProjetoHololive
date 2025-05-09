@@ -13,11 +13,11 @@ let talentoAtual = null;
 const mainContainer = document.querySelector('main');
 const thumbnails = document.querySelector('div.thumbnails');
 const fotoPrincipal = document.querySelector('div.fotoPrincipal');
-const botaoVoltarPagina = document.querySelector('main nav button');
-const articleDesc = document.querySelector('#imagensDesc article');
-const asideHistoria = document.querySelector('#historiaDetalhes aside');
-const articleHistoria = document.querySelector('#historiaDetalhes article');
-const tabelaDetalhes = document.querySelector('#historiaDetalhes aside table tbody');
+const botaoVoltarPagina = document.querySelector('#historiaClipes button');
+const articleDesc = document.querySelector('article.descricao');
+const asideHistoria = document.querySelector('#historiaClipes aside');
+const articleHistoria = document.querySelector('article.historia');
+const tabelaDetalhes = document.querySelector('#tabelaMusicas table tbody');
 const secaoClipes = document.querySelector('section#clipes div');
 
 /* Função auxiliar para criar elementos img. */

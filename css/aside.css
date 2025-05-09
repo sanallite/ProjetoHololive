@@ -9,7 +9,7 @@ aside {
 aside#tabela {
     display: flex;
     flex-direction: column;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem;
     padding: 1rem;
     background-color: var(--corFundoAzul);
     border-radius: 0.5rem;

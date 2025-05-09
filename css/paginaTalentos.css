@@ -1,31 +1,87 @@
 /* Folha de estilos da página de talentos. */
 
+header a:first-of-type {
+    padding: 1.1rem;
+}
+
+header a h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header a:first-of-type:hover {
+    color: var(--corFundoBranca);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+div.thumbnails img {
+    height: fit-content;
+    width: 7rem;
+    cursor: pointer;
+}
+
+section#clipes div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#tituloImg {
+    padding: 1rem;
+}
+
+section#tituloImg h2 { 
+    margin-top: 0;
+    background-color: var(--corFundoBranca);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--corFundoRoxa);
+}
+
+section#tituloImg div.thumbnails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
-    header a:first-of-type {
-        padding: 1.1rem;
+    main {
+        display: grid;
+        grid-template-columns: 70fr 30fr;
     }
 
-    header a h1 {
-        margin: 0;
-        font-size: 2rem;
+    section#tituloImg {
+        display: grid;
+        grid-template-rows: 6vh 80vh;
+        grid-template-areas: 'tt' 'si';
     }
 
-    header a:first-of-type:hover {
-        color: var(--corFundoBranca);
-        border-radius: 0.5rem 0 0 0.5rem;
+    section#tituloImg h2 {
+        grid-area: tt;
+    }
+
+    section.imagens {
+        grid-area: si;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 'tb fp';
+    }
+
+    section.imagens div.thumbnails {
+        grid-area: tb;
+        height: 80vh;
+    }
+
+    section.imagens div.fotoPrincipal {
+        grid-area: fp;
+        justify-self: center;
     }
 
     div.fotoPrincipal img {
-        height: 500px;
-    }
-
-    div.thumbnails img {
-        height: 100px;
-    }
-
-    section#clipes div {
-        display: flex;
-        flex-wrap: wrap;
+        height: 80vh;
+        width: fit-content;
     }
 }

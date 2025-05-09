@@ -39,6 +39,7 @@ section#talentosImgs img {
 
 section#comentarios {
     padding: 1rem;
+    overflow-y: auto;
 }
 
 section#comentarios h2 {
@@ -81,6 +82,17 @@ section#comentarios input[type="text"] {
     border-width: 0.2rem;
     border-color: var(--corFundoAzul);
     border-style: solid;
+}
+
+section#comentarios input:disabled, section#comentarios textarea:disabled {
+    background-color: var(--corFundoAzul);
+    cursor: not-allowed;
+}
+
+section#comentarios input[type="submit"]:disabled {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    cursor: not-allowed;
 }
 
 section#comentarios input[type="submit"] {
@@ -232,6 +244,5 @@ div.comentario > p:first-of-type {
 
     section#comentarios {
         grid-area: sc;
-        overflow: auto;
     }
 }

@@ -15,7 +15,7 @@ section#musicas {
 }
 
 div.controles button {
-    background-color: var(--corFundoAzul);
+    background-color: transparent;
     border-width: 0;
     cursor: pointer;
     display: flex;

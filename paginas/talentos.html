@@ -23,61 +23,77 @@
         <a href="https://hololivepro.com/en" target="_blank">Site Oficial</a>
     </header>
     <main>
-        <nav>
-            <h2>Página dos Talento</h2>
-            <button>Página Inicial</button>
-        </nav>
+        <section id="tituloImg">
+            <h2 class="hoverRoxo">Página do Talento</h2>
 
-        <section id="imagensDesc">
-            <div class="thumbnails"></div>
-            <div class="fotoPrincipal"></div>
-            <article>Descrição</article>
+            <section class="imagens">
+                <div class="thumbnails"></div>
+                <div class="fotoPrincipal"></div>
+            </section>
         </section>
 
-        <section id="historiaDetalhes">
+        <aside id="descicao">
+            <article class="descricao">Descrição</article>
+        </aside>
+
+        <section id="historiaClipes">
             <article class="historia"></article>
             <!-- Conteúdo criado dinâmicamente em paginaTalentos.js -->
 
-            <aside>
-                <table>
-                    <tbody>
-                        <th colspan="2">Detalhes</th>
-                    </tbody>
-                </table>
-            </aside>
+            <section id="clipes">
+                <h3>Clipes de Música</h3>
+
+                <div></div>
+            </section>
+
+            <button>Página Inicial</button>
         </section>
 
-        <section id="clipes">
-            <h3>Clipes de Música</h3>
-
-            <div></div>
-        </section>
-
-        <section id="musicas">
-            <div class="capa">
-                <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
-            </div>
-
-            <div class="player">
-                <audio class="player" preload="auto"></audio>
-
-                <div class="controles">
-                    <button class="play">Play</button>
-                    <button class="pause">Pause</button>
-                    <button class="proxima">Próxima</button>
-                    <button class="anterior">Anterior</button>
+        <aside id="tabelaMusicas">
+            <section id="musicas">
+                <div class="capa">
+                    <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
                 </div>
 
                 <div class="progresso">
                     <div class="barraProgresso"></div>
                 </div>
 
-                <p>Now Playing:</p>
-                <p class="nome"></p>
-            </div>
-        </section>
+                <div class="player">
+                    <audio class="player" preload="auto"></audio>
+
+                    <div class="controles">
+                        <button class="anterior" aria-label="Música anterior">
+                            <img src="../assets/img/layout/skip-backward-fill.svg">
+                        </button>
+
+                        <button class="play" aria-label="Tocar música">
+                            <img src="../assets/img/layout/play-fill.svg">
+                        </button>
+
+                        <button class="pause" aria-label="Pausar música">
+                            <img src="../assets/img/layout/pause-fill.svg">
+                        </button>
+
+                        <button class="proxima" aria-label="Próxima música">
+                            <img src="../assets/img/layout/skip-forward-fill.svg">
+                        </button>    
+                    </div>
+
+                    <p><em>Now Playing:</em></p>
+                    <p class="nome"></p>
+                </div>
+            </section>
+
+            <table>
+                <tbody>
+                    <th colspan="2">Detalhes</th>
+                </tbody>
+            </table>
+        </aside>
     </main>
-    <footer>
+
+    <footer class="hoverRoxo">
         <blockquote>
             Site criado por Márcio Teodoro, Sanallite<br>
             Copyright 2016 Cover Corp. Todos os direitos reservados. - All rights reserved.

@@ -12,6 +12,8 @@ const nomeMusica = document.querySelector('section#musicas p.nome');
 const barra = document.querySelector('section#musicas div.progresso');
 const barraProgresso = document.querySelector('section#musicas div.barraProgresso');
 const imagemCapa = document.querySelector('section#musicas img.capa');
+const campoInput = document.querySelector('section#comentarios input[type="text"]');
+const campoTextArea = document.querySelector('section#comentarios textarea');
 
 let indiceAtual = Number(sessionStorage.getItem('musicaAtual')) || 0;
 let tempoAtual = Number(sessionStorage.getItem('tempoAtualMusica')) || 0;
@@ -30,6 +32,30 @@ const alternarBotoes = () => {
     else {
         botaoPlay.classList.add('hidden');
         botaoPause.classList.remove('hidden');
+    }
+}
+/* Se os campos input não estiverem em foco, esse será o manipulador de eventos acionado, para tocar ou pausar a música ao apertar a tecla space. */
+const tocarPausarTecla = (event) => {
+    if ( event.code === 'Space' ) {
+        event.preventDefault();
+
+        if ( player.paused ) {
+            tocar();
+        }
+
+        else {
+            pausar();
+        }
+    }
+}
+
+const alternarEscutadorEvento = (mudanca) => {
+    if ( mudanca === 'remover' ) {
+        document.removeEventListener('keydown', tocarPausarTecla);
+    }
+
+    else if ( mudanca === 'adicionar' ) {
+        document.addEventListener('keydown', tocarPausarTecla);
     }
 }
 
@@ -126,20 +152,25 @@ barra.addEventListener('click', event => {
     /* Exemplo: player.duration = 240, porcentagem = 0.41866 então currentTime = 100.4784 segundos, em torno de 1 minuto e 40 segundos na música. */
 });
 
-/* Estudador de eventos no documento, onde apertando Space toca ou pausa a música. */
-document.addEventListener('keydown', (event) => {
-    if ( event.code === 'Space' ) {
-        event.preventDefault();
-
-        if ( player.paused ) {
-            tocar();
-        }
-
-        else {
-            pausar();
-        }
-    }
+/* Escutadores de eventos nos campos de texto, para remover ou adicionar o escutador que lida com a as teclas, evitando o conflito entre o uso dos inputs com o controle do player. */
+campoInput.addEventListener('focus', () => {
+    alternarEscutadorEvento('remover');
 });
+
+campoInput.addEventListener('blur', () => {
+    alternarEscutadorEvento('adicionar');
+})
+
+campoTextArea.addEventListener('focus', () => {
+    alternarEscutadorEvento('remover');
+})
+
+campoTextArea.addEventListener('blur', () => {
+    alternarEscutadorEvento('adicionar');
+})
+
+/* Estudador de eventos no documento, onde apertando Space toca ou pausa a música. */
+document.addEventListener('keydown', tocarPausarTecla);
 
 /* Escutador de eventos na janela, que antes de descarregar, salva no armazenamento da sessão o tempo atual da música, para que possamos retornar pra aquele momento facilmente quando abrirmos a página de novo. */
 window.addEventListener('beforeunload', () => {
