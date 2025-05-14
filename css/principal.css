@@ -8,6 +8,7 @@
     --corFundoAzul: rgb(190, 239, 255);
 }
 
+/* Todas as telas */
 body {
     font-family: Inclusive Sans, sans-serif;
     background-image: url(../assets/img/layout/fundo.jpg);
@@ -24,8 +25,37 @@ header {
     justify-content: space-between;
 }
 
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 1.1rem;
+    font-weight: 300;
+}
+
+header a {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
 footer {
     background-color: var(--corFundoBranca);
+    padding: 0.5rem 0;
+}
+
+summary {
+    cursor: pointer;
 }
 
 .hoverRoxo:hover {
@@ -36,16 +66,12 @@ footer {
     box-shadow: 0px 0px 5px var(--corFundoBranca);
 }
 
-summary {
-    cursor: pointer;
-}
-
 /* Apenas telas de computador */
 @media (min-width: 1200px) and (orientation: landscape) {
     body {
         display: grid;
         grid-template-columns: 70fr 30fr;
-        grid-template-rows: 11vh 255vh 9vh;
+        grid-template-rows: 11vh 280vh 11vh;
         grid-template-areas: 'h h' 'm m' 'f f';
     }
 
@@ -55,30 +81,6 @@ summary {
 
     main {
         grid-area: m;
-    }
-
-    header h1 {
-        display: flex;
-        align-items: center;
-        margin: 1.1rem;
-        font-weight: 300;
-    }
-
-    header a {
-        display: flex;
-        padding: 1rem;
-        align-items: center;
-        text-decoration: none;
-        font-size: 1.2em;
-        color: black;
-        font-weight: bold;
-    }
-
-    header a:hover {
-        background-color: var(--corFundoRoxa);
-        color: var(--corFundoBranca);
-        border-top-right-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
     }
 
     footer {

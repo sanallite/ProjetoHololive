@@ -1220,6 +1220,7 @@ const fotos = [
     [ // Myth
         [`${pastaFotosPefil}/mori.png`, 'Calli'], [`${pastaFotosPefil}/kiara.png`, 'Kiara'], [`${pastaFotosPefil}/ina.png`, 'Ina'], 
         [`${pastaFotosPefil}/gura.png`, 'Gura'], [`${pastaFotosPefil}/ame.png`, 'Amelia']
+        /* Essa é a ordem que as imagens vão ser exibidas. */
     ],
     
     [ // Council / Promise

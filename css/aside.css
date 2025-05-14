@@ -1,18 +1,11 @@
 /* Folha de estilo para os elementos dentro dos aside da página inicial. */
 
+/* Todas as telas */
+/* Primeiro aside */
 aside {
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
-}
-
-aside#tabela {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--corFundoAzul);
-    border-radius: 0.5rem;
 }
 
 article#talentosDesc {
@@ -20,10 +13,6 @@ article#talentosDesc {
     border-radius: 0.5rem;
     padding: 1rem;
     margin-bottom: 1rem;
-}
-
-#talentosDesc summary {
-    cursor: pointer;
 }
 
 article#talentosDesc h3 {
@@ -49,6 +38,16 @@ article#talentosDesc a {
 
 article#talentosDesc a:visited {
     color: black;
+}
+
+/* Segundo aside */
+aside#tabela {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--corFundoAzul);
+    border-radius: 0.5rem;
 }
 
 section#talentosInfo {
@@ -96,7 +95,4 @@ table thead tr, tfoot tr {
 table thead tr th:not(th:last-of-type) {
     border-right-width: 0.1rem;
 }
-
-/* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) {
-}
+/* Exceto o último elemento th */

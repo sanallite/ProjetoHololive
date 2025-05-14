@@ -34,6 +34,7 @@ const alternarBotoes = () => {
         botaoPause.classList.remove('hidden');
     }
 }
+
 /* Se os campos input não estiverem em foco, esse será o manipulador de eventos acionado, para tocar ou pausar a música ao apertar a tecla space. */
 const tocarPausarTecla = (event) => {
     if ( event.code === 'Space' ) {

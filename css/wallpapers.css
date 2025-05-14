@@ -1,12 +1,10 @@
 /* Folha de estilos para os wallpapers exibidos na página inicial. */
 
+/* Todas as telas */
 section#talentosWallpapers {
-    grid-area: tw;
+    margin-top: 1rem;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 75vh 1fr;
-    grid-template-areas: "p1 p2 p3" "bt bt bt";
+    position: relative;
 }
 
 div.papel1 {
@@ -28,4 +26,24 @@ div.papel3 {
     background-image: url(../assets/img/wallpapers/council.jpg);
     background-size: cover;
     background-position: left;
+}
+
+#talentosWallpapers p {
+    position: absolute;
+    left: 1rem;
+    background-color: var(--corFundoBranca);
+    padding: 0.5rem;
+    color: var(--corFundoRoxa);
+    border-radius: 0.25rem;
+}
+
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    section#talentosWallpapers {
+        grid-area: tw;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 100vh;
+        grid-template-areas: "p1 p2 p3";
+    }
 }

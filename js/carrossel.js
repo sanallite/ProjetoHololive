@@ -11,6 +11,7 @@ const caminhoImagens = '../assets/img/wallpapers';
 const wallpapers = [`${caminhoImagens}/holomyth.webp`, `${caminhoImagens}/council.jpg`, `${caminhoImagens}/advent.webp`, `${caminhoImagens}/justice.png`];
 
 const mensagem = document.createElement('p');
+mensagem.classList.add('hoverRoxo');
 
 let intervalo = null;
 let indice = 1;

@@ -10,6 +10,7 @@ import { configurarDetailsToggle } from "./detailsToggle.js";
 
 const playerMusica = document.querySelector('audio.player');
 
+/* Função que pega o elemento que contem o nome do grupo atual. */
 const destacarBotao = () => {
     const grupoAtual = localStorage.getItem('grupo') || 'Myth';
 
@@ -71,8 +72,9 @@ const exibirFotosPefilTalentos = grupo => {
 
         let imagem = document.createElement('img');
         imagem.setAttribute('src', `${grupo[i][0]}`);
-        imagem.className = `fotoPerfilTalento ${grupo[i][1]}`;
-        /* O array de fotos é uma matriz com cada elemento sendo outro array, com o primeiro elemento sendo o caminho da foto e o segundo o nome do talento, que é usado na chamada do escutador de eventos. */
+        imagem.className = `fotoPerfilTalento`;
+        imagem.alt = `Imagem clicável de ${grupo[i][1]}`;
+        /* O array de fotos é uma matriz com cada elemento sendo outro array, com o primeiro elemento sendo o caminho da foto e o segundo o nome do talento, que também é usado na chamada do escutador de eventos. */
 
         imagem.addEventListener('click', () => {
             exibirInfoTalentos(mapaTalentos[grupo[i][1]]);
@@ -105,7 +107,7 @@ const exibirFotosPefilTalentos = grupo => {
     /* Para cada elemento do vetor que contém as imagens, será criado um elemento html para exibi-lás */
 }
 
-/* Função para exibir as informações de um talento que inicialmente é a Gura, criando elementos html dinâmicamente, com essa função sendo executada pelo escutador de eventos quando uma foto de perfil dos talentos é clicada. */
+/* Função para exibir as informações de um talento, que inicialmente é a Calli, criando elementos html dinâmicamente, com essa função sendo executada pelo escutador de eventos quando uma foto de perfil dos talentos é clicada. */
 const exibirInfoTalentos = async talento => {
     const articleTalentos = document.querySelector('#talentosDesc');
     const descricoesTalentos = document.querySelectorAll('.descTalento');

@@ -1,4 +1,4 @@
-/* Função com escutador de eventos para mudar o texto do elemento summary. */
+/* Função com escutador de eventos para mudar o texto do elemento summary, usado em ambas as páginas. */
 export const configurarDetailsToggle = () => {
     const detalhes = document.querySelector('details');
 

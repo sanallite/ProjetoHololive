@@ -1,5 +1,6 @@
 /* Folha de estilos da página de talentos. */
 
+/* Todas as telas */
 header a:first-of-type {
     padding: 1.1rem;
 }
@@ -52,6 +53,21 @@ article.historia p:last-of-type {
     margin-bottom: 0;
 }
 
+article.historia a {
+    color: var(--corFundoRoxa);
+}
+
+article.historia a:visited {
+    color: black;
+}
+
+section#tituloImg div.thumbnails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
 div.thumbnails img {
     height: fit-content;
     width: 7rem;
@@ -66,13 +82,6 @@ section#tituloImg h2 {
     padding: 0.5rem;
     border-radius: 0.25rem;
     color: var(--corFundoRoxa);
-}
-
-section#tituloImg div.thumbnails {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 1rem;
 }
 
 aside#tabelaMusicas {
@@ -92,9 +101,10 @@ aside#tabelaMusicas td, #tabelaMusicas th {
     padding: 0.7rem
 }
 
-aside#tabelaMusicas tr:last-of-type :nth-last-of-type(2) {
+aside#tabelaMusicas tr:last-of-type td:nth-last-of-type(2) {
     border-bottom-left-radius: 0.5rem;
 }
+/* Penúltima coluna dentro da última linha */
 
 aside#tabelaMusicas tr:last-of-type td:last-of-type {
     border-bottom-right-radius: 0.5rem;
@@ -141,8 +151,6 @@ section#clipes h3 {
 }
 
 section#clipes iframe {
-    width: 600px;
-    height: 338px;
     margin: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 5px gray;
@@ -197,5 +205,10 @@ section#historiaClipes button {
     div.fotoPrincipal img {
         height: 82vh;
         width: fit-content;
+    }
+
+    section#clipes iframe {
+        width: 600px;
+        height: 338px;
     }
 }

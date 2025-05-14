@@ -1,5 +1,6 @@
 /* Folha de estilos do player de música. */
 
+/* Todas as telas */
 section#musicas {
     display: flex;
     flex-direction: row;

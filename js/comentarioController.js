@@ -27,11 +27,7 @@ const corAleatoria = () => {
 const exibirComentarios = (comentarios, erro = null) => {
     if ( erro ) {
         console.error(erro);
-
-        const mensagem = document.createElement('p');
-        mensagem.textContent = erro;
-        listaComentarios.appendChild(mensagem);
-
+        listaComentarios.textContent = erro;
         return;
     }
 

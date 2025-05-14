@@ -86,6 +86,7 @@ const exibirDescDetalhes = async () => {
 
         link.setAttribute('href', `https://youtube.com/${talentoAtual.canalSecreto}`);
         link.setAttribute('target', '_blank');
+        link.setAttribute('referrerpolicy', 'noreferrer');
         link.classList.add('hoverRoxo');
 
         link.textContent = 'Canal Secreto';
@@ -128,6 +129,7 @@ if ( parametros.has('t') ) {
 
     if ( !talentoAtual ) {
         mainContainer.textContent = 'Parâmetro inválido. Retornando a página inicial.';
+        mainContainer.style.padding = '1rem';
 
         setTimeout(() => {
             window.location.assign('../index.html');
