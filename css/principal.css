@@ -1,0 +1,89 @@
+/* Folha de estilo príncipal */
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --corFundoBranca: white;
+    --corFundoRoxa: rgb(59, 0, 184);
+    --corFundoAzul: rgb(190, 239, 255);
+}
+
+/* Todas as telas */
+body {
+    font-family: Inclusive Sans, sans-serif;
+    background-image: url(../assets/img/layout/fundo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    margin: auto;
+}
+
+header {
+    background-color: var(--corFundoBranca);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 1.1rem;
+    font-weight: 300;
+}
+
+header a {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+footer {
+    background-color: var(--corFundoBranca);
+    padding: 0.5rem 0;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.hoverRoxo:hover {
+    box-shadow: 0px 0px 5px var(--corFundoRoxa);
+}
+
+.hoverBranco:hover {
+    box-shadow: 0px 0px 5px var(--corFundoBranca);
+}
+
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    body {
+        display: grid;
+        grid-template-columns: 70fr 30fr;
+        grid-template-rows: 11vh 280vh 11vh;
+        grid-template-areas: 'h h' 'm m' 'f f';
+    }
+
+    header {
+        grid-area: h;  
+    }
+
+    main {
+        grid-area: m;
+    }
+
+    footer {
+        grid-area: f;
+    }
+}

@@ -1,0 +1,251 @@
+/* Folha de estilo da página inicial. */
+
+/* Todas as telas */
+section#gruposImagens {
+    margin-left: 1rem
+}
+
+nav#grupos {
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav#grupos button {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: larger;
+    cursor: pointer;
+    width: 100%;
+    margin: 0.6rem;
+}
+
+nav#grupos button.destaque {
+    background-color: var(--corFundoRoxa);
+    color: var(--corFundoBranca);
+}
+
+nav#grupos button:hover {
+    box-shadow: 0px 0px 5px var(--corFundoRoxa);
+}
+
+nav#grupos button.destaque:hover {
+    box-shadow: 0px 0px 5px var(--corFundoBranca);
+}
+
+section#talentosImgs img {
+    cursor: pointer;
+}
+
+#talentosImgs p.nomeTalento {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--corFundoBranca);
+    text-shadow: 0 0 10px var(--corFundoRoxa);
+}
+
+section#comentarios {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+section#comentarios h2 {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+
+section#comentarios form {
+    background-color: var(--corFundoBranca);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+section#comentarios fieldset {
+    border-width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+section#comentarios fieldset legend {
+    color: var(--corFundoRoxa);
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+section#comentarios input {
+    padding: 0.5rem;
+}
+
+section#comentarios input[type="text"] {
+    margin-right: 1rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    border-width: 0.2rem;
+    border-color: var(--corFundoAzul);
+    border-style: solid;
+}
+
+section#comentarios input:disabled, section#comentarios textarea:disabled {
+    background-color: var(--corFundoAzul);
+    cursor: not-allowed;
+}
+
+section#comentarios input[type="submit"] {
+    margin-left: 1rem;
+    border-width: 0;
+    background-color: var(--corFundoRoxa);
+    font-weight: bold;
+    color: var(--corFundoBranca);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    height: fit-content;
+}
+
+section#comentarios input[type="submit"]:disabled {
+    background-color: var(--corFundoBranca);
+    color: var(--corFundoRoxa);
+    cursor: not-allowed;
+}
+
+section#comentarios textarea {
+    resize: vertical;
+    display: flex;
+    padding: 0.5rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    border-width: 0.2rem;
+    border-color: var(--corFundoAzul);
+}
+
+section#comentarios p.feedbackComment {
+    margin-bottom: 0;
+    display: none;
+}
+
+div#listaComentarios {
+    background-color: var(--corFundoBranca);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+div#listaComentarios div.comentario {
+    padding: 1rem;
+    margin: 0.7rem;
+    box-shadow: 0 1px 5px gray;
+    border-radius: 0.5rem;
+}
+
+div.comentario div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.comentario div > p:first-of-type {
+    width: fit-content;
+}
+
+div.comentario p {
+    margin-bottom: 0;
+}
+
+div.comentario > p:first-of-type {
+    margin: 0;
+}
+/* Primeiro elemento p que é filho direto da div com a classe comentario. */
+
+/* Cores dos "superchats" */
+.scAzul {
+    background-color: rgb(39,229,253);
+}
+ 
+.scTurquesa {
+    background-color: rgb(47,233,181);
+}
+
+.scAmarelo {
+    background-color: rgb(250,215,73);
+}
+
+.scLaranja {
+    background-color: rgb(242,124,34);
+    color: var(--corFundoBranca);
+}
+
+.scRoxo {
+    background-color: rgb(230,37,102);
+    color: var(--corFundoBranca);
+}
+
+.scVermelho {
+    background-color: rgb(228,36,33);
+    color: var(--corFundoBranca);
+}
+
+/* Apenas telas de computador */
+@media (min-width: 1200px) and (orientation: landscape) {
+    main {
+        display: grid;
+        grid-template-columns: 70fr 30fr;
+        grid-template-rows: 88vh 100vh 92vh;
+        grid-template-areas: 'g atd' 'tw tw' 'sc amt';
+    }
+
+    section#gruposImagens {
+        display: grid;
+        grid-area: g;
+        grid-template-rows: 6vh 82vh;
+        grid-template-areas: "ng" "ti";
+    }
+
+    nav#grupos {
+        grid-area: ng;
+    }
+
+    section#talentosImgs {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 41vh 41vh;
+        grid-template-areas: "pri seg ter" "qua qui sex";
+    }
+
+    #talentosImgs div {
+        position: relative;
+        justify-self: center;
+    }
+
+    #talentosImgs p.nomeTalento {
+        position: absolute;
+        bottom: 5%;
+    }
+
+    #talentosImgs img {
+        height: 100%;
+    }
+
+    main aside:first-of-type {
+        grid-area: atd;
+    }
+
+    main aside#tabela {
+        grid-area: amt;
+    }
+
+    section#talentosWallpapers {
+        grid-area: tw;
+    }
+
+    section#comentarios {
+        grid-area: sc;
+    }
+}

@@ -1,0 +1,154 @@
+/* Scripts da página dos talentos. */
+
+import { talentos } from "./bancoTalentos";
+/* Importando o objeto com as informações dos talentos. */
+
+import { exibirInfo } from "./youtubeApi";
+/* Importando uma função que pega dados da API do YouTube. */
+
+import { configurarDetailsToggle } from "./detailsToggle";
+
+const parametros = new URLSearchParams(window.location.search);
+
+let talentoAtual = null;
+
+const mainContainer = document.querySelector('main');
+const thumbnails = document.querySelector('div.thumbnails');
+const fotoPrincipal = document.querySelector('div.fotoPrincipal');
+const botaoVoltarPagina = document.querySelector('#historiaClipes button');
+const tituloNome = document.querySelector('aside#descricao h3');
+const articleDesc = document.querySelector('article.descricao');
+const asideMusicas = document.querySelector('#tabelaMusicas');
+const articleHistoria = document.querySelector('article.historia');
+const tabelaDetalhes = document.querySelector('#tabelaMusicas table tbody');
+const secaoClipes = document.querySelector('section#clipes div');
+
+/* Função auxiliar para criar elementos img. */
+const criarElementoImagem = (img, container) => {
+    const elemento = document.createElement('img');
+    elemento.setAttribute('src', img);
+    container.appendChild(elemento);
+
+    if ( container === thumbnails ) {
+        elemento.addEventListener('click', () => {
+            let fotoPrincipalAtual = document.querySelector('div.fotoPrincipal img');
+            fotoPrincipalAtual.setAttribute('src', img);
+        })
+    }
+    /* Se a imagem for do tipo thumbnail, quando ela for clicada, a imagem princípal vai receber o caminho da imagem clicada. */
+}
+
+/* Função auxiliar para criar linhas na tabela. */
+const criarLinhaTabela = (chave, valor) => {
+    const coluna1 = document.createElement('td');
+    const coluna2 = document.createElement('td');
+    const linha = document.createElement('tr');
+
+    coluna1.textContent = chave;
+    coluna2.textContent = valor;
+
+    linha.append(coluna1, coluna2);
+
+    tabelaDetalhes.appendChild(linha);
+}
+
+/* Função que chama a função que cria imagens conforme os itens do objeto outfits do talento atual.. */
+const exibirThumbnails = () => {
+    criarElementoImagem(talentoAtual.outfits[0], fotoPrincipal);
+
+    for ( let i = 0; i < talentoAtual.outfits.length; i++ ) {
+        criarElementoImagem(talentoAtual.outfits[i], thumbnails);
+    }
+}
+
+/* Função que pega as informações do talento, tanto do banco de dados local, quanto da API do YouTube, e exibe os valores em três seções separadas, a descrição, história e a tabela de informações. */
+const exibirDescDetalhes = async () => {
+    tituloNome.textContent = talentoAtual.nome;
+    articleDesc.innerHTML = talentoAtual.descricao;
+    articleHistoria.innerHTML = talentoAtual.historia || "";
+
+    const infoCanal = await exibirInfo(talentoAtual.canal);
+    /* talentoAtual.canal representa o @ do canal. Ex: exibirInfo(@WatsonAmelia) */
+    /* Essa função primeiro chama uma função para verificar se a api foi carregada, para evitar problemas com a assíncronia da API, como tentar acessar uma propriedade de um objeto que não está definido ainda pois a API não terminou de iniciar. */
+
+    const numeroInscritos = infoCanal.result.items[0].statistics.subscriberCount;
+    /* Acessando uma parte específica do resultado. */
+
+    criarLinhaTabela('Aniversário:', talentoAtual.aniversario);
+    criarLinhaTabela('Altura:', talentoAtual.altura);
+    criarLinhaTabela('Ilustrador(a):', talentoAtual.ilustrador);
+    criarLinhaTabela('Nome dos fãs:', talentoAtual.nomeFas);
+    criarLinhaTabela('Grupo:', talentoAtual.grupo);
+    criarLinhaTabela('Inscritos:', Intl.NumberFormat('pt-br').format(numeroInscritos));
+
+    if ( talentoAtual?.canalSecreto ) {
+        let link = document.createElement('a');
+
+        link.setAttribute('href', `https://youtube.com/${talentoAtual.canalSecreto}`);
+        link.setAttribute('target', '_blank');
+        link.setAttribute('referrerpolicy', 'noreferrer');
+        link.classList.add('hoverRoxo');
+
+        link.textContent = 'Canal Secreto';
+        asideMusicas.appendChild(link);
+    }
+    /* Os talentos graduados/afiliados tem um canal "secreto", quem sabe, sabe. */
+
+    if ( talentoAtual?.dataGraduacao ) {
+        criarLinhaTabela('Graduação:', talentoAtual.dataGraduacao)
+    }
+
+    configurarDetailsToggle();
+}
+
+/* Função para criar iframes com os vídeo-clipes dos talentos. */
+const criarEmbedClipes = () => {
+    for (let index = 0; index < talentoAtual.clipes.length; index++) {
+        let frame = document.createElement('iframe');
+        frame.src = `https://youtube.com/embed/${talentoAtual.clipes[index]}`;
+        frame.allowFullscreen = true;
+        frame.setAttribute('frameborder', 0);
+        frame.setAttribute('width', '400px');
+        frame.setAttribute('height', '240px');
+        frame.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope');
+
+        secaoClipes.appendChild(frame);
+    }
+}
+
+/* Verificação inicial da página. */
+if ( parametros.has('t') ) {
+    const nomeTalento = parametros.get('t');
+    
+    for ( let i = 0; i < talentos.length; i++ ) {
+        if ( talentos[i].nome === nomeTalento ) {
+            talentoAtual = talentos[i];
+        }
+        /* Pegando o valor do parâmetro e buscando uma correspondência no array de objetos. */
+    }
+
+    if ( !talentoAtual ) {
+        mainContainer.textContent = 'Parâmetro inválido. Retornando a página inicial.';
+        mainContainer.style.padding = '1rem';
+
+        setTimeout(() => {
+            window.location.assign('../index.html');
+        }, 3000);
+    }
+
+    document.title = `Site de Fã - Hololive English - ${talentoAtual.nome}`;
+
+    /* Exibindo o conteúdo relacionado ao talento atual. */
+    exibirThumbnails();
+    exibirDescDetalhes();
+    criarEmbedClipes();
+}
+
+else {
+    window.location.assign('../index.html');
+    /* Caso a página for acessada sem parâmetros, será feito o redirecionamento. */
+}
+
+botaoVoltarPagina.addEventListener('click', () => {
+    window.location.assign('../index.html');
+})
