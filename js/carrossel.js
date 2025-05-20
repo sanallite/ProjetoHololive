@@ -39,6 +39,8 @@ const removerMensagem = () => {
     }, 5000);
 }
 
+const definirImagemCamada = (elemento, caminho) => elemento.style.backgroundImage = `url(${caminho})`;
+
 const alternarIntervalo = () => {
     if (intervalo) {
         limparIntervalo();
@@ -61,6 +63,22 @@ const alternarIntervalo = () => {
     /* Se a variável for nula, o intervalo é recriado, para continuar a exibição das imagens. */
 }
 
+const aplicarAnimacao = (acao, elemento) => {
+    const camadaAtual = elemento.querySelector('.camada-atual');
+    const camadaNova = elemento.querySelector('.camada-nova');
+
+    if ( acao === 'addClasses' ) {
+        elemento.classList.add('slide-right');
+        camadaAtual.classList.add('fade-out');
+        camadaNova.classList.add('fade-in');
+    }
+
+    else {
+        camadaAtual.classList.remove('fade-out');
+        camadaNova.classList.remove('fade-in');
+    }
+}
+
 /* Função que define os wallpapers alternadamente, sendo executada a cada intervalo de tempo. */
 const alternarImagens = () => {
     let atual = wallpapers[indice];
@@ -70,10 +88,30 @@ const alternarImagens = () => {
     let proxima = wallpapers[indice + 1] || wallpapers[0];
     /* Caso índice + 1 retorne um valor undefined, o que acontece se o valor de índice for maior que a quantidade de elementos no array, o valor do índice será 0, indicando o primeiro elemento. */
 
-    segundaImagem.style.backgroundImage = `url(${atual})`;
-    primeiraImagem.style.backgroundImage = `url(${anterior})`;
-    terceiraImagem.style.backgroundImage = `url(${proxima})`;
-    /* Exemplo: proxima = wallpapers[2] = '../assets/img/wallpapers/advent.webp' */
+    definirImagemCamada(primeiraImagem.querySelector('.camada-nova'), anterior);
+    definirImagemCamada(segundaImagem.querySelector('.camada-nova'), atual);
+    definirImagemCamada(terceiraImagem.querySelector('.camada-nova'), proxima);
+    /* Atualizando as camadas novas com as próximas imagens, buscando nos elementos pais. Exemplo: proxima = wallpapers[2] = '../assets/img/wallpapers/advent.webp' */
+
+    aplicarAnimacao('addClasses', primeiraImagem);
+    aplicarAnimacao('addClasses', segundaImagem);
+    aplicarAnimacao('addClasses', terceiraImagem);
+
+    setTimeout(() => {
+        definirImagemCamada(primeiraImagem.querySelector('.camada-atual'), anterior);
+        definirImagemCamada(segundaImagem.querySelector('.camada-atual'), atual);
+        definirImagemCamada(terceiraImagem.querySelector('.camada-atual'), proxima);
+        /* Movendo o conteúdo da camada nova para a camada atual */
+
+        aplicarAnimacao('resetarCamada', primeiraImagem);
+        aplicarAnimacao('resetarCamada', segundaImagem);
+        aplicarAnimacao('resetarCamada', terceiraImagem);
+        /* Restaurando as opacidades para o próximo ciclo. */
+
+        primeiraImagem.classList.remove('slide-right');
+        segundaImagem.classList.remove('slide-right');
+        terceiraImagem.classList.remove('slide-right');
+    }, 1000)
 
     indice = (indice + 1) % wallpapers.length;
     /* Incrementação do valor do índice. O novo valor vai ser o resto da divisão, ou módulo, entre o tamanho do array e indice + 1, isso garante que o valor do índice irá corresponder a um elemento do array, pois ele vai ser menor do que o tamanho dele. */

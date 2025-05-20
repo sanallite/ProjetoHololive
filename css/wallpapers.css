@@ -7,28 +7,89 @@ section#talentosWallpapers {
     position: relative;
 }
 
+div.wp {
+    position: relative;
+    overflow: hidden;
+}
+
 div.papel1 {
     grid-area: p1;
-    background-image: url(../assets/img/wallpapers/justice.png);
-    background-size: cover;
-    background-position: right;
 }
 
 div.papel2 {
     grid-area: p2;
-    background-image: url(../assets/img/wallpapers/holomyth.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 div.papel3 {
     grid-area: p3;
+}
+
+div.papel1 div.camada-atual {
+    background-image: url(../assets/img/wallpapers/justice.png);
+}
+
+div.papel2 div.camada-atual {
+    background-image: url(../assets/img/wallpapers/holomyth.webp);
+}
+
+div.papel3 div.camada-atual {
     background-image: url(../assets/img/wallpapers/council.jpg);
+}
+
+div.camada-atual, div.camada-nova {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
+}
+
+div.camada-atual {
+    z-index: 1;
+    opacity: 1;
+}
+
+div.camada-nova {
+    z-index: 2;
+    opacity: 0;
+}
+
+.papel1 .camada-atual, .papel1 .camada-nova {
+    background-position: right;
+}
+
+.papel2 .camada-atual, .papel2 .camada-nova {
+    background-position: center;
+}
+
+.papel3 .camada-atual, .papel3 .camada-nova {
     background-position: left;
 }
 
+div.fade-in {
+    opacity: 1;
+}
+
+div.fade-out {
+    opacity: 0;
+}
+
+@keyframes deslizar-direita {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+div.wp.slide-right {
+    animation: deslizar-direita 1s forwards;
+}
+
 #talentosWallpapers p {
+    z-index: 3;
     position: absolute;
     left: 1rem;
     background-color: var(--corFundoBranca);
