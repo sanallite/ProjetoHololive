@@ -63,3 +63,7 @@ div.controles img {
 #musicas p.nome {
     font-weight: bold;
 }
+
+#musicas.fade-in {
+    animation: fade-in 1s forwards;
+}

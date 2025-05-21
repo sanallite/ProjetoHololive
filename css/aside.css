@@ -48,9 +48,6 @@ aside#tabela {
     padding: 1rem;
     background-color: var(--corFundoAzul);
     border-radius: 0.5rem;
-}
-
-section#talentosInfo {
     overflow: auto;
 }
 
@@ -96,3 +93,7 @@ table thead tr th:not(th:last-of-type) {
     border-right-width: 0.1rem;
 }
 /* Exceto o último elemento th */
+
+article#talentosDesc.short-slide-up, aside#tabela {
+    animation: short-slide-up 0.5s forwards;
+}

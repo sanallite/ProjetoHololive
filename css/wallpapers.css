@@ -67,14 +67,7 @@ div.camada-nova {
     background-position: left;
 }
 
-div.fade-in {
-    opacity: 1;
-}
-
-div.fade-out {
-    opacity: 0;
-}
-
+/* Animações */
 @keyframes deslizar-direita {
     from {
         transform: translateX(100%);
@@ -84,8 +77,8 @@ div.fade-out {
     }
 }
 
-div.wp.slide-right {
-    animation: deslizar-direita 1s forwards;
+div.wp.papel2.slide-right {
+    animation: deslizar-direita 0.8s forwards;
 }
 
 #talentosWallpapers p {

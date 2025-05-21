@@ -22,7 +22,6 @@ nav#grupos button {
 }
 
 nav#grupos button.destaque {
-    background-color: var(--corFundoRoxa);
     color: var(--corFundoBranca);
 }
 
@@ -190,6 +189,22 @@ div.comentario > p:first-of-type {
 .scVermelho {
     background-color: rgb(228,36,33);
     color: var(--corFundoBranca);
+}
+
+/* Animações */
+@keyframes preencher-cor {
+    from {
+        background-color: var(--corFundoBranca);
+        color: var(--corFundoBranca);
+    }
+    to {
+        background-color: var(--corFundoRoxa);
+        color: var(--corFundoBranca);
+    }
+}
+
+nav#grupos button.destaque.preencher-cor {
+    animation: preencher-cor 0.5s forwards;
 }
 
 /* Apenas telas de computador */

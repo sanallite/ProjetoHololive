@@ -23,6 +23,7 @@ const destacarBotao = () => {
             const elemento = botoes[i];
 
             elemento.classList.add('destaque');
+            elemento.classList.add('preencher-cor');
         }        
     }
 }
@@ -72,7 +73,7 @@ const exibirFotosPefilTalentos = grupo => {
 
         let imagem = document.createElement('img');
         imagem.setAttribute('src', `${grupo[i][0]}`);
-        imagem.className = `fotoPerfilTalento`;
+        imagem.className = `fotoPerfilTalento fade-in`;
         imagem.alt = `Imagem clicável de ${grupo[i][1]}`;
         /* O array de fotos é uma matriz com cada elemento sendo outro array, com o primeiro elemento sendo o caminho da foto e o segundo o nome do talento, que também é usado na chamada do escutador de eventos. */
 
@@ -117,6 +118,8 @@ const exibirInfoTalentos = async talento => {
     }
     /* Removendo os elementos com as informações que estavam sendo exibidas na tela, para exibir as informações do talento que tava a foto clicada. */
 
+    articleTalentos.classList.add('fade-in');
+
     articleTalentos.textContent = 'Carregando...';
     /* A cada chamada da função, após a remoção dos elementos filhos será exibido um texto para indicar que estamos esperando as resposta da API. */
 
@@ -159,6 +162,13 @@ const exibirInfoTalentos = async talento => {
     articleTalentos.append(nome, desc, infoLive, frameVideo, linkPag2);
 
     configurarDetailsToggle();
+
+    articleTalentos.classList.add('short-slide-up');
+
+    setTimeout(() => {
+        articleTalentos.classList.remove('fade-in');
+        articleTalentos.classList.remove('short-slide-up');
+    }, 500)
 }
 
 /* Função que cria uma tabela com algumas informações dos talentos. */

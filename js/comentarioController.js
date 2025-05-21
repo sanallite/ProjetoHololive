@@ -63,6 +63,9 @@ const exibirComentarios = (comentarios, erro = null) => {
             container.append(nome, divCommentDate);
 
             listaComentarios.append(container);
+            container.classList.add('slide-up');
+
+            listaComentarios.classList.remove('fade-in');
         });
     }
 }

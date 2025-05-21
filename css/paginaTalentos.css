@@ -39,6 +39,8 @@ article.historia {
     padding: 1rem;
     border-radius: 0.5rem;
     text-align: justify;
+    line-height: 1.4;
+    margin: auto;
 }
 
 article.historia h3 {
@@ -142,7 +144,7 @@ section#clipes div {
     justify-content: center;
 }
 
-section#clipes h3 {
+section#historiaClipes h3.hoverRoxo {
     background-color: var(--corFundoBranca);
     width: fit-content;
     padding: 0.5rem;
@@ -156,15 +158,13 @@ section#clipes iframe {
     box-shadow: 0 0 5px gray;
 }
 
-section#historiaClipes button {
-    background-color: var(--corFundoRoxa);
-    color: var(--corFundoBranca);
-    border-width: 0;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
+/* Animações */
+.short-slide-up {
+    animation: short-slide-up 0.5s forwards;
+}
+
+aside#tabelaMusicas.slide-up {
+    animation: slide-up 0.5s forwards;
 }
 
 /* Apenas telas de computador */
@@ -172,7 +172,7 @@ section#historiaClipes button {
     main {
         display: grid;
         grid-template-columns: 70fr 30fr;
-        grid-template-rows: 88vh 167vh;
+        grid-template-rows: 88vh 192vh;
     }
 
     section#tituloImg {

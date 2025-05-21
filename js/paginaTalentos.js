@@ -27,6 +27,7 @@ const secaoClipes = document.querySelector('section#clipes div');
 const criarElementoImagem = (img, container) => {
     const elemento = document.createElement('img');
     elemento.setAttribute('src', img);
+    elemento.classList.add('fade-in');
     container.appendChild(elemento);
 
     if ( container === thumbnails ) {
@@ -43,13 +44,14 @@ const criarLinhaTabela = (chave, valor) => {
     const coluna1 = document.createElement('td');
     const coluna2 = document.createElement('td');
     const linha = document.createElement('tr');
-
+    
     coluna1.textContent = chave;
     coluna2.textContent = valor;
 
     linha.append(coluna1, coluna2);
+    linha.classList.add('slide-up');
 
-    tabelaDetalhes.appendChild(linha);
+    tabelaDetalhes.append(linha);
 }
 
 /* Função que chama a função que cria imagens conforme os itens do objeto outfits do talento atual.. */

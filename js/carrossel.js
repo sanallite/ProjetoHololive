@@ -63,12 +63,15 @@ const alternarIntervalo = () => {
     /* Se a variável for nula, o intervalo é recriado, para continuar a exibição das imagens. */
 }
 
+/* Função para alteranar as classes para animação, */
 const aplicarAnimacao = (acao, elemento) => {
     const camadaAtual = elemento.querySelector('.camada-atual');
     const camadaNova = elemento.querySelector('.camada-nova');
 
     if ( acao === 'addClasses' ) {
-        elemento.classList.add('slide-right');
+        segundaImagem.classList.add('slide-right');
+        /* Sómente a imagem do meio tem animação de slide, as outras utilizam o fade. */
+
         camadaAtual.classList.add('fade-out');
         camadaNova.classList.add('fade-in');
     }
@@ -77,6 +80,7 @@ const aplicarAnimacao = (acao, elemento) => {
         camadaAtual.classList.remove('fade-out');
         camadaNova.classList.remove('fade-in');
     }
+    /* Se a ação for resetarCamadas. */
 }
 
 /* Função que define os wallpapers alternadamente, sendo executada a cada intervalo de tempo. */
@@ -91,7 +95,7 @@ const alternarImagens = () => {
     definirImagemCamada(primeiraImagem.querySelector('.camada-nova'), anterior);
     definirImagemCamada(segundaImagem.querySelector('.camada-nova'), atual);
     definirImagemCamada(terceiraImagem.querySelector('.camada-nova'), proxima);
-    /* Atualizando as camadas novas com as próximas imagens, buscando nos elementos pais. Exemplo: proxima = wallpapers[2] = '../assets/img/wallpapers/advent.webp' */
+    /* Definindo as imagens de fundo das camadas novas com as próximas imagens a serem exibidas, buscando nos elementos pais. Exemplo: proxima = wallpapers[2] = '../assets/img/wallpapers/advent.webp' */
 
     aplicarAnimacao('addClasses', primeiraImagem);
     aplicarAnimacao('addClasses', segundaImagem);
@@ -101,16 +105,15 @@ const alternarImagens = () => {
         definirImagemCamada(primeiraImagem.querySelector('.camada-atual'), anterior);
         definirImagemCamada(segundaImagem.querySelector('.camada-atual'), atual);
         definirImagemCamada(terceiraImagem.querySelector('.camada-atual'), proxima);
-        /* Movendo o conteúdo da camada nova para a camada atual */
+        /* A forma que a transição das imagens de fundo é feita é através de duas divs que ocupam o mesmo espaço, com a opacidade delas sendo alternada, através das classes fade-out e fade-in. A função chamada define a imagem de fundo da camada atual para ser a mesma da camada nova, até que o intervalo de tempo altere os índices. */
 
         aplicarAnimacao('resetarCamada', primeiraImagem);
         aplicarAnimacao('resetarCamada', segundaImagem);
         aplicarAnimacao('resetarCamada', terceiraImagem);
-        /* Restaurando as opacidades para o próximo ciclo. */
+        /* Restaurando as opacidades para o próximo ciclo, com uma animação de fade. */
 
-        primeiraImagem.classList.remove('slide-right');
         segundaImagem.classList.remove('slide-right');
-        terceiraImagem.classList.remove('slide-right');
+        /* Removendo a classe da animação após ela ter sido executada. */
     }, 1000)
 
     indice = (indice + 1) % wallpapers.length;
