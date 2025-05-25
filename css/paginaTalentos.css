@@ -168,7 +168,7 @@ aside#tabelaMusicas.slide-up {
 }
 
 /* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) {
+@media (min-width: 1200px) and (orientation: landscape) and ( min-height: 650px) {
     main {
         display: grid;
         grid-template-columns: 70fr 30fr;

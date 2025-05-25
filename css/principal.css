@@ -104,25 +104,3 @@ summary {
 .slide-up {
     animation: slide-up 0.5s forwards;
 }
-
-/* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) {
-    body {
-        display: grid;
-        grid-template-columns: 70fr 30fr;
-        grid-template-rows: 11vh 280vh 13vh;
-        grid-template-areas: 'h h' 'm m' 'f f';
-    }
-
-    header {
-        grid-area: h;  
-    }
-
-    main {
-        grid-area: m;
-    }
-
-    footer {
-        grid-area: f;
-    }
-}

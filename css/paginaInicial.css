@@ -7,7 +7,7 @@ section#gruposImagens {
 
 nav#grupos {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 nav#grupos button {
@@ -19,6 +19,7 @@ nav#grupos button {
     cursor: pointer;
     width: 100%;
     margin: 0.6rem;
+    padding: 0.4rem;
 }
 
 nav#grupos button.destaque {
@@ -35,6 +36,12 @@ nav#grupos button.destaque:hover {
 
 section#talentosImgs img {
     cursor: pointer;
+    height: 100%;
+}
+
+section#talentosImgs div {
+    position: relative;
+    justify-self: center;
 }
 
 #talentosImgs p.nomeTalento {
@@ -42,11 +49,14 @@ section#talentosImgs img {
     font-size: 2rem;
     color: var(--corFundoBranca);
     text-shadow: 0 0 10px var(--corFundoRoxa);
+    position: absolute;
+    bottom: 5%;
 }
 
 section#comentarios {
     padding: 1rem;
     overflow-y: auto;
+    max-height: 200vh;
 }
 
 section#comentarios h2 {
@@ -207,24 +217,44 @@ nav#grupos button.destaque.preencher-cor {
     animation: preencher-cor 0.5s forwards;
 }
 
-/* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) {
+/* Áreas do grid */
+section#gruposImagens {
+    grid-area: g;
+}
+
+nav#grupos {
+    grid-area: ng;
+}
+
+main aside:first-of-type {
+    grid-area: atd;
+}
+
+main aside#tabela {
+    grid-area: amt;
+}
+
+section#talentosWallpapers {
+    grid-area: tw;
+}
+
+section#comentarios {
+    grid-area: sc;
+}
+
+/* Janelas grandes */
+@media (min-width: 1200px) and (orientation: landscape)  {
     main {
         display: grid;
         grid-template-columns: 70fr 30fr;
-        grid-template-rows: 88vh 100vh 92vh;
+        grid-template-rows: 88vh auto;
         grid-template-areas: 'g atd' 'tw tw' 'sc amt';
     }
 
     section#gruposImagens {
         display: grid;
-        grid-area: g;
-        grid-template-rows: 6vh 82vh;
+        grid-template-rows: auto 82vh;
         grid-template-areas: "ng" "ti";
-    }
-
-    nav#grupos {
-        grid-area: ng;
     }
 
     section#talentosImgs {
@@ -233,34 +263,143 @@ nav#grupos button.destaque.preencher-cor {
         grid-template-rows: 41vh 41vh;
         grid-template-areas: "pri seg ter" "qua qui sex";
     }
+}
 
-    #talentosImgs div {
-        position: relative;
-        justify-self: center;
+/* Janelas pequenas */
+@media ( max-width: 1199px ) and ( orientation: landscape ) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
     }
 
-    #talentosImgs p.nomeTalento {
-        position: absolute;
-        bottom: 5%;
+    section#gruposImagens {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'ng' 'ti';
     }
 
-    #talentosImgs img {
-        height: 100%;
+    section#talentosImgs {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        grid-auto-rows: 50vh;
     }
 
-    main aside:first-of-type {
-        grid-area: atd;
+    article#talentosDesc iframe {
+        height: 400px;
     }
 
-    main aside#tabela {
-        grid-area: amt;
-    }
-
-    section#talentosWallpapers {
-        grid-area: tw;
+    header {
+        margin: 1rem 1rem 0.5rem 1rem
     }
 
     section#comentarios {
-        grid-area: sc;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    /* Margem a mais pra facilitar a rolagem da tela */
+}
+
+/* Telas de celulares */
+@media ( max-width: 690px ) and ( orientation: portrait ) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
+    }
+
+    header h1 {
+        margin: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    header a {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    section#gruposImagens {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'ng' 'ti';
+    }
+
+    section#talentosImgs {
+        display: grid;
+        grid-auto-rows: 40vh;
+        grid-template-columns: 1fr;
+    }
+
+    nav#grupos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav#grupos button {
+        width: 40%;
+    }
+
+    section#comentarios {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    /* Margem a mais pra facilitar a rolagem da tela */
+
+    section#comentarios fieldset {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#comentarios input[type="text"], section#comentarios textarea {
+        margin: 0.5rem;
+    }
+
+    section#comentarios input[type="text"] {
+        width: 90%;
+    }
+
+    section#comentarios textarea {
+        width: 90%;
+    }
+
+    section#comentarios input[type="submit"] {
+        margin: 0.5rem;
+    }
+
+    div.comentario div {
+        flex-direction: column;
+    }
+}
+
+/* Tablets no modo retrato */
+@media ( min-width: 691px ) and ( orientation: portrait ) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
+    }
+
+    header {
+        margin: 1rem 1rem 0.5rem 1rem
+    }
+
+    section#gruposImagens {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'ng' 'ti';
+    }
+
+    section#talentosImgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 35vh;
     }
 }

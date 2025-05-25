@@ -91,13 +91,22 @@ div.wp.papel2.slide-right {
     border-radius: 0.25rem;
 }
 
-/* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) {
+section#talentosWallpapers {
+    grid-area: tw;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: "p1 p2 p3";
+}
+
+@media ( max-width: 690px ) and ( orientation: portrait ) {
     section#talentosWallpapers {
-        grid-area: tw;
-        display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-        grid-template-rows: 100vh;
-        grid-template-areas: "p1 p2 p3";
+        grid-template-rows: 40vh;
+    }
+}
+
+@media ( min-width: 691px ) and ( orientation: portrait ) {
+    section#talentosWallpapers {
+        grid-template-rows: 50vh;
     }
 }

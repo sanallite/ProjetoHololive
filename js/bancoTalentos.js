@@ -1261,6 +1261,21 @@ export const musicas = [
         nome: 'Rise',
         src: `${pastaMusicas}/rise.mp3`,
         capa: `${pastaCapas}/rise.png`,
+    },
+    {
+        nome: 'Connect the World',
+        src: `${pastaMusicas}/connect.mp3`,
+        capa: `${pastaCapas}/connect.jpg`
+    },
+    {
+        nome: 'Breaking Dimensions',
+        src: `${pastaMusicas}/breakingdimensions.mp3`,
+        capa: `${pastaCapas}/breakingdimensions.jpg`
+    },
+    {
+        nome: 'Odyssey',
+        src: `${pastaMusicas}/odyssey.mp3`,
+        capa: `${pastaCapas}/odyssey.jpg`
     }
 ]
 

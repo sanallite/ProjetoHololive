@@ -44,11 +44,15 @@ article#talentosDesc a:visited {
 aside#tabela {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
+    overflow: auto;
+    padding: 0;
+}
+
+aside#tabela section#musicasInfoTabela {
     background-color: var(--corFundoAzul);
     border-radius: 0.5rem;
-    overflow: auto;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 section#talentosInfo table {
@@ -94,6 +98,6 @@ table thead tr th:not(th:last-of-type) {
 }
 /* Exceto o último elemento th */
 
-article#talentosDesc.short-slide-up, aside#tabela {
+article#talentosDesc.short-slide-up, section#musicasInfoTabela {
     animation: short-slide-up 0.5s forwards;
 }

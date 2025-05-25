@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="css/wallpapers.css">
         <link rel="stylesheet" href="css/playerAudio.css">
 
+        <link rel="icon" type="image/x-icon" href="assets/img/layout/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/layout/sana_favicon16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/layout/sana_favicon32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/layout/sana_favicon180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/layout/sana_favicon192.png">
+
         <script src="https://apis.google.com/js/api.js"></script>
         <!-- Importando a biblioteca de APIs do Google -->
 
@@ -77,73 +83,62 @@
                 <div id="listaComentarios" class="hoverRoxo fade-in">Carregando...</div>
             </section>
 
-            <aside id="tabela" class="hoverBranco">
-                <section id="musicas" class="fade-in">
-                    <div class="capa">
-                        <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
-                    </div>
-    
-                    <div class="player">
-                        <audio class="player" preload="auto"></audio>
-
-                        <div class="progresso">
-                            <div class="barraProgresso"></div>
+            <aside id="tabela">
+                <section id="musicasInfoTabela" class="hoverBranco">
+                    <section id="musicas" class="fade-in">
+                        <div class="capa">
+                            <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
                         </div>
-    
-                        <div class="controles">
-                            <button class="anterior" aria-label="Música anterior">
-                                <img src="./assets/img/layout/skip-backward-fill.svg">
-                            </button>
-
-                            <button class="play" aria-label="Tocar música">
-                                <img src="./assets/img/layout/play-fill.svg">
-                            </button>
-
-                            <button class="pause" aria-label="Pausar música">
-                                <img src="./assets/img/layout/pause-fill.svg">
-                            </button>
-
-                            <button class="proxima" aria-label="Próxima música">
-                                <img src="./assets/img/layout/skip-forward-fill.svg">
-                            </button>       
+                        <div class="player">
+                            <audio class="player" preload="auto"></audio>
+                            <div class="progresso">
+                                <div class="barraProgresso"></div>
+                            </div>
+                            <div class="controles">
+                                <button class="anterior" aria-label="Música anterior">
+                                    <img src="./assets/img/layout/skip-backward-fill.svg">
+                                </button>
+                                <button class="play" aria-label="Tocar música">
+                                    <img src="./assets/img/layout/play-fill.svg">
+                                </button>
+                                <button class="pause" aria-label="Pausar música">
+                                    <img src="./assets/img/layout/pause-fill.svg">
+                                </button>
+                                <button class="proxima" aria-label="Próxima música">
+                                    <img src="./assets/img/layout/skip-forward-fill.svg">
+                                </button>
+                            </div>
+                            <p><em>Now Playing:</em></p>
+                            <p class="nome"></p>
                         </div>
-    
-                        <p><em>Now Playing:</em></p>
-                        <p class="nome"></p>
-                    </div>
-                </section>
-
-                <section id="infoPlayer">
-                    <h2>Informações sobre o player de música:</h2>
-
-                    <p>
-                        Essas são versões instrumentais das principais músicas em grupos da Hololive EN.<br>
-                        Clique na barra de progresso para avançar ou retroceder.<br>
-                        Você pode pausar/tocar a música apertando Space.<br>
-                        O progresso da música é salvo conforme você navega entre as páginas, mas sem autoplay.
-                    </p>  
-                </section>
-
-                <section id="talentosInfo">
-                    <h2>Informações sobre os talentos</h2>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Aniversário</th>
-                                <th>Altura</th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="tabelaInfo"></tbody>
-
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    </section>
+                    <section id="infoPlayer">
+                        <h2>Informações sobre o player de música:</h2>
+                        <p>
+                            Essas são versões instrumentais de algumas das principais músicas em grupos da Hololive EN.<br>
+                            Clique na barra de progresso para avançar ou retroceder.<br>
+                            Você pode pausar/tocar a música apertando Space.<br>
+                            O progresso da música é salvo conforme você navega entre as páginas, mas sem autoplay.
+                        </p>
+                    </section>
+                    <section id="talentosInfo">
+                        <h2>Informações sobre os talentos</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Aniversário</th>
+                                    <th>Altura</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tabelaInfo"></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
                 </section>
             </aside>
         </main>
