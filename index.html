@@ -22,7 +22,7 @@
 
         <script type="module" src="./js/app.js"></script>
         <script src="./js/carrossel.js" defer></script>
-        <script type="module" src="./js/comentarioController.js" defer></script>
+        <script type="module" src="./js/comentarioController.js"></script>
         <script type="module" src="js/youtubeApi.js"></script>
         <script type="module" src="./js/playerAudio.js"></script>
     </head>
@@ -31,7 +31,7 @@
         <header class="hoverRoxo">
             <h1>Site de Fã - Hololive English</h1>
 
-            <a href="https://hololivepro.com/en" target="_blank" referrerpolicy="noreferrer">Site Oficial</a>
+            <a href="https://hololivepro.com/en" target="_blank" referrerpolicy="no-referrer">Site Oficial</a>
         </header>
 
         <main>
@@ -89,31 +89,37 @@
                         <div class="capa">
                             <img class="capa" src="" alt="Capa da música sendo tocada atualmente.">
                         </div>
+
                         <div class="player">
                             <audio class="player" preload="auto"></audio>
+
                             <div class="progresso">
                                 <div class="barraProgresso"></div>
                             </div>
+
                             <div class="controles">
                                 <button class="anterior" aria-label="Música anterior">
-                                    <img src="./assets/img/layout/skip-backward-fill.svg">
+                                    <img src="./assets/img/layout/skip-backward-fill.svg" alt="Música anterior">
                                 </button>
                                 <button class="play" aria-label="Tocar música">
-                                    <img src="./assets/img/layout/play-fill.svg">
+                                    <img src="./assets/img/layout/play-fill.svg" alt="Tocar música">
                                 </button>
                                 <button class="pause" aria-label="Pausar música">
-                                    <img src="./assets/img/layout/pause-fill.svg">
+                                    <img src="./assets/img/layout/pause-fill.svg" alt="Pausar música">
                                 </button>
                                 <button class="proxima" aria-label="Próxima música">
-                                    <img src="./assets/img/layout/skip-forward-fill.svg">
+                                    <img src="./assets/img/layout/skip-forward-fill.svg" alt="Próxima música">
                                 </button>
                             </div>
+
                             <p><em>Now Playing:</em></p>
                             <p class="nome"></p>
                         </div>
                     </section>
+
                     <section id="infoPlayer">
                         <h2>Informações sobre o player de música:</h2>
+
                         <p>
                             Essas são versões instrumentais de algumas das principais músicas em grupos da Hololive EN.<br>
                             Clique na barra de progresso para avançar ou retroceder.<br>
@@ -121,8 +127,10 @@
                             O progresso da música é salvo conforme você navega entre as páginas, mas sem autoplay.
                         </p>
                     </section>
+
                     <section id="talentosInfo">
                         <h2>Informações sobre os talentos</h2>
+
                         <table>
                             <thead>
                                 <tr>
@@ -131,7 +139,9 @@
                                     <th>Altura</th>
                                 </tr>
                             </thead>
+
                             <tbody class="tabelaInfo"></tbody>
+
                             <tfoot>
                                 <tr>
                                     <td colspan="3">*Com limitador, Sem limitador: 1,697,840km</td>

@@ -129,6 +129,7 @@ if ( parametros.has('t') ) {
     }
 
     if ( !talentoAtual ) {
+        document.body.style.opacity = 1;
         mainContainer.textContent = 'Parâmetro inválido. Retornando a página inicial.';
         mainContainer.style.padding = '1rem';
 
