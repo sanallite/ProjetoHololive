@@ -1,5 +1,10 @@
 /* Folha de estilos da página de talentos. */
 
+body {
+    opacity: 0;
+    /* Opacidade inicial, alterada quando o conteúdo é carregado. */
+}
+
 /* Todas as telas */
 header a:first-of-type {
     padding: 1.1rem;
@@ -65,15 +70,28 @@ article.historia a:visited {
 
 section#tituloImg div.thumbnails {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section.imagens {
     margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section.imagens div.fotoPrincipal {
+    justify-self: center;
 }
 
 div.thumbnails img {
     height: fit-content;
     width: 7rem;
     cursor: pointer;
+    margin: 0.5rem
+}
+
+div.fotoPrincipal img {
+    width: fit-content;
 }
 
 section#tituloImg h2 { 
@@ -167,48 +185,194 @@ aside#tabelaMusicas.slide-up {
     animation: slide-up 0.5s forwards;
 }
 
-/* Apenas telas de computador */
-@media (min-width: 1200px) and (orientation: landscape) and ( min-height: 650px) {
+/* Áreas do grid */
+section#tituloImg {
+    grid-area: ti;
+}
+
+section.imagens div.thumbnails {
+    grid-area: th;
+}
+
+section.imagens div.fotoPrincipal {
+    grid-area: fp;
+}
+
+section#historiaClipes {
+    grid-area: hc;
+}
+
+aside#tabelaMusicas {
+    grid-area: tm;
+}
+
+aside#descricao {
+    grid-area: dc;
+}
+
+/* Janelas grandes */
+@media (min-width: 1200px) and (orientation: landscape) {
     main {
         display: grid;
-        grid-template-columns: 70fr 30fr;
-        grid-template-rows: 88vh 192vh;
-    }
-
-    section#tituloImg {
-        display: grid;
-        grid-template-rows: 6vh 82vh;
-        grid-template-areas: 'tt' 'si';
-    }
-
-    section#tituloImg h2 {
-        grid-area: tt;
+        grid-template-columns: 7fr 3fr;
+        grid-template-rows: 88vh auto;
+        grid-template-areas: 'ti dc' 'hc tm'
     }
 
     section.imagens {
-        grid-area: si;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-areas: 'tb fp';
+        grid-template-areas: 'th fp';
     }
 
     section.imagens div.thumbnails {
-        grid-area: tb;
         height: 82vh;
-    }
-
-    section.imagens div.fotoPrincipal {
-        grid-area: fp;
-        justify-self: center;
+        flex-direction: column;
     }
 
     div.fotoPrincipal img {
         height: 82vh;
-        width: fit-content;
     }
 
     section#clipes iframe {
         width: 600px;
         height: 338px;
+    }
+}
+
+/* Janelas pequenas e tablets no modo paisagem */
+@media ( max-width: 1199px ) and ( orientation: landscape ){
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: 'ti ti' 'dc dc' 'hc tm';
+    }
+
+    section.imagens {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 3fr 5fr;
+        grid-template-areas: 'th fp';
+    }
+
+    section.imagens div.thumbnails img {
+        width: 8rem;
+    }
+
+    section.imagens div.fotoPrincipal img {
+        height: 72vh;
+    }
+
+    section#tituloImg div.thumbnails {
+        flex-direction: row;
+    }
+
+    section#clipes div iframe {
+        height: 356px
+    }
+
+    aside#tabelaMusicas table {
+        width: 100%;
+    }
+}
+
+/* Para todas as telas menores, que têm um layout diferente */
+@media ( max-width: 1199px ) {
+    section#historiaClipes {
+        margin-top: 0;
+    }
+
+    section#historiaClipes > h3:first-of-type {
+        margin-top: 0;
+    }
+    /* O h3 primeiro filho direito da section */
+
+    section#clipes div iframe {
+        width: 100%;
+    }
+}
+
+/* Tablets no modo retrato */
+@media ( min-width: 691px ) and ( orientation: portrait ) {
+    main {
+        display: grid;
+        grid-template-areas: 'ti' 'dc' 'tm' 'hc';
+    }
+
+    section.imagens {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'th' 'fp';
+    }
+
+    section.imagens div.fotoPrincipal img {
+        height: 72vh;
+    }
+
+    section.imagens div.thumbnails {
+        flex-direction: row;
+    }
+
+    section.imagens div.thumbnails img {
+        width: 8rem;
+    }
+
+    section#clipes div iframe {
+        height: 400px
+    }
+}
+
+/* Telas de celulares no modo retrato */
+@media ( max-width: 690px ) and ( orientation: portrait ) {
+    header a h1 {
+        margin: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    header a {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    header a:first-of-type {
+        padding: revert;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: 'ti' 'dc' 'tm' 'hc';
+    }
+
+    section#tituloImg h2 {
+        font-size: 1.1rem
+    }
+
+    section.imagens {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'fp' 'th';
+    }
+
+    section.imagens div.fotoPrincipal img {
+        height: 40vh;
+    }
+
+    section.imagens div.thumbnails {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section.imagens div.thumbnails img {
+        width: 5rem;
+    }
+
+    aside#tabelaMusicas table {
+        width: 100%;
+    }
+
+    section#clipes div iframe {
+        height: 300px;
     }
 }

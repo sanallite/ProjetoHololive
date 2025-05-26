@@ -246,7 +246,7 @@ section#comentarios {
 @media (min-width: 1200px) and (orientation: landscape)  {
     main {
         display: grid;
-        grid-template-columns: 70fr 30fr;
+        grid-template-columns: 7fr 3fr;
         grid-template-rows: 88vh auto;
         grid-template-areas: 'g atd' 'tw tw' 'sc amt';
     }
@@ -265,7 +265,7 @@ section#comentarios {
     }
 }
 
-/* Janelas pequenas */
+/* Janelas pequenas e tablets no modo paisagem */
 @media ( max-width: 1199px ) and ( orientation: landscape ) {
     main {
         display: grid;
@@ -290,11 +290,9 @@ section#comentarios {
     article#talentosDesc iframe {
         height: 400px;
     }
+}
 
-    header {
-        margin: 1rem 1rem 0.5rem 1rem
-    }
-
+@media ( max-width: 1199px ) {
     section#comentarios {
         margin-right: 1rem;
         margin-left: 1rem;
@@ -302,14 +300,8 @@ section#comentarios {
     /* Margem a mais pra facilitar a rolagem da tela */
 }
 
-/* Telas de celulares */
+/* Telas de celulares no modo retrato */
 @media ( max-width: 690px ) and ( orientation: portrait ) {
-    main {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
-    }
-
     header h1 {
         margin: 0.8rem;
         font-size: 1.2rem;
@@ -319,6 +311,12 @@ section#comentarios {
         padding: 0.8rem;
         font-size: 0.8rem;
         text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
     }
 
     section#gruposImagens {
@@ -344,12 +342,6 @@ section#comentarios {
     nav#grupos button {
         width: 40%;
     }
-
-    section#comentarios {
-        margin-right: 1rem;
-        margin-left: 1rem;
-    }
-    /* Margem a mais pra facilitar a rolagem da tela */
 
     section#comentarios fieldset {
         flex-direction: column;
@@ -383,10 +375,6 @@ section#comentarios {
         display: grid;
         grid-template-rows: auto;
         grid-template-areas: 'g' 'atd' 'tw' 'sc' 'amt';
-    }
-
-    header {
-        margin: 1rem 1rem 0.5rem 1rem
     }
 
     section#gruposImagens {

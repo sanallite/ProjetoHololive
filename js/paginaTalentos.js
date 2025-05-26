@@ -15,7 +15,6 @@ let talentoAtual = null;
 const mainContainer = document.querySelector('main');
 const thumbnails = document.querySelector('div.thumbnails');
 const fotoPrincipal = document.querySelector('div.fotoPrincipal');
-const botaoVoltarPagina = document.querySelector('#historiaClipes button');
 const tituloNome = document.querySelector('aside#descricao h3');
 const articleDesc = document.querySelector('article.descricao');
 const asideMusicas = document.querySelector('#tabelaMusicas');
@@ -144,13 +143,11 @@ if ( parametros.has('t') ) {
     exibirThumbnails();
     exibirDescDetalhes();
     criarEmbedClipes();
+
+    document.body.classList.add('fade-in');
 }
 
 else {
     window.location.assign('../index.html');
     /* Caso a página for acessada sem parâmetros, será feito o redirecionamento. */
 }
-
-botaoVoltarPagina.addEventListener('click', () => {
-    window.location.assign('../index.html');
-})
