@@ -1,4 +1,4 @@
-/* Folha de estilo príncipal */
+/* Folha de estilo príncipal, que se aplica a ambas as páginas. */
 
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
 
@@ -52,6 +52,14 @@ header a:hover {
 footer {
     background-color: var(--corFundoBranca);
     padding: 0.5rem 0;
+}
+
+footer blockquote a {
+    color: var(--corFundoRoxa);
+}
+
+footer blockquote a:visited {
+    color: black;
 }
 
 summary {

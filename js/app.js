@@ -8,8 +8,6 @@ import { exibirUploads } from './youtubeApi.js';
 
 import { configurarDetailsToggle } from "./detailsToggle.js";
 
-const playerMusica = document.querySelector('audio.player');
-
 /* Função que pega o elemento que contem o nome do grupo atual. */
 const destacarBotao = () => {
     const grupoAtual = localStorage.getItem('grupo') || 'Myth';
@@ -154,10 +152,6 @@ const exibirInfoTalentos = async talento => {
     linkPag2.setAttribute('href', `paginas/talentos.html?t=${talento.nome}`);
     linkPag2.classList.add('hoverRoxo');
     linkPag2.textContent = 'Ir para página do talento';
-
-    linkPag2.addEventListener('click', () => {
-        sessionStorage.setItem('tempoAtualMusica', playerMusica.currentTime);
-    })
 
     articleTalentos.append(nome, desc, infoLive, frameVideo, linkPag2);
 

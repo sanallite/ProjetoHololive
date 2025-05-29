@@ -127,7 +127,6 @@ window.addEventListener('beforeunload', alternarIntervalo);
 primeiraImagem.addEventListener('dblclick', alternarIntervalo);
 segundaImagem.addEventListener('dblclick', alternarIntervalo);
 terceiraImagem.addEventListener('dblclick', alternarIntervalo);
-segundaImagem.addEventListener('touchend', alternarIntervalo);
 /* Escutadores de evento nos três elementos de imagem. */
 
 alternarIntervalo();

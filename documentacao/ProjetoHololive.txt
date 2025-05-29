@@ -1,0 +1,90 @@
+--- Projeto Hololive - Márcio Teodoro ---
+
+-- Introdução --
+Este é um site feito como projeto pessoal meu, para praticar e aprofundar meus conhecimentos em desenvolvimento web front-end, mas também integrando estruturas back-end. Eu assisto as vtubers da Hololive desde 2021, e gosto muito delas, com livestreams e músicas diversas elas oferecem entreterimento de qualidade para vários grupos e têm uma comunidade maravilhosa.
+
+O objetivo do desenvolvimento foi criar um site com uma estrutura de código moderna, mas utilizando apenas as linguagens em seu formato padrão, para reforçar o meu conhecimento base em JavaScript, CSS e HTML.
+
+Eu estudo desenvolvimento de sites desde 2022 e tenho diploma técnico, esse projeto foi feito num período de transição de carreiras e desenvolvimento pessoal, onde um grande foco do meu tempo foi em me aprofundar no aprendizado de desenvolvedor.
+
+-- Título --
+Site de Fã - Hololive English
+A intenção é específicar que esse é um projeto de fã sem vínculos com a Hololive Productions.
+
+-- Público Alvo --
+Fãs de jogos e animes, que são o principal público alvo de Virtual Youtubers em geral. O objetivo é apresentar ao público brasileiro os talentos da Hololive English trazendo informações em Português.
+
+-- Requisitos do Projeto --
+- Ter uma página para cada talento.
+- Adicionar vídeos do YouTube nas páginas para acesso rápido ao conteúdo delas.
+- Ter um carrossel de imagens.
+- Responsividade para todos os tipos de tela.
+- Seção de comentários.
+- Ter um player de músicas de fundo.
+- Usar CSS Grid na estilização.
+- Adicionar animações.
+
+-- Padrão de Cores --
+- Para textos e elementos em destaque, a cor é roxa. rgb(59, 0, 184)
+- Para cor de fundo dos elementos principais e cor dos textos dos elementos em destaque, branco.
+- Para cor de fundo dos elementos aside, ao lado, azul claro, rgb(190, 239, 255);
+- Para textos, preto.
+
+-- Estrutura de Arquivos --
+- assets/ Todos os arquivos de conteúdo do site, divididos entre áudio e imagens. A pasta assets/img/layout/ contém as imagens e ícones utilizados.
+
+- css/ Arquivos de estilização, divididos entre as páginas e partes do conteúdo.
+
+- documentacao/ Arquivo do protótipo e esse arquivo.
+
+- js/ Códigos JavaScript, com "app.js" se referindo aos scripts da página inicial, com os outros sendo para funcionalidades específicas.
+
+- paginas/ Local onde fica a página do talento, que tem seu conteúdo definido por um parâmetro na url que se refere ao nome do talento.
+
+- Todos os arquivos de script e estilização tem uma breve descrição na primeira linha.
+
+-- Banco de Dados --
+Esse site tem um banco de dados local feito inteiramente por mim, armazenando as informações dos talentos e os caminhos para as imagens e músicas.
+Os objetos de cada talento, que são armazenandos em um vetor, contêm as seguintes propriedades:
+- Nome
+- Descrição, um template literal com elementos html envolvendo o texto.
+- Aniversário
+- Altura
+- Ilustrador da personagem
+- Nome dos fãs do talento
+- Grupo ao qual ela pertence
+- Canal, o arroba do canal no YouTube
+- Outfits, um vetor com as imagens das roupas alternativas do talento
+- Clipes, um vetor com IDs de vídeos do YT, de alguns clipes de músicas em que aquele talento canta.
+- História, um template literal com elementos html envolvendo o texto.
+
+-- Banco de Dados Firestore --
+Os comentários dos usuários ficam armazenando no Cloud Firestore. Não há necessidade de autênticação para comentar mas foram definidas regras de segurança rígidas para garantir que o uso seja apenas o que está no escopo do site, com validação de campos e tipo de dados.
+
+-- Ambiente de Desenvolvimento --
+Para criar um servidor local foi utilizado a ferramenta Vite, que também é a responsável pela importação das variáveis de ambiente, que são as minhas chaves das APIs do Firebase do Google/YouTube.
+
+O desenvolvimento foi realizado num navegador baseado no Chromium, o Vivaldi, com o editor de texto VSCode. em uma distribuição Linux.
+
+Para hospedagem foi utilizado o Firebase.
+
+Nenhum padrão de design foi seguido a risca, mas o código foi organizado e revisado para boa leitura. Os arquivos JavaScript seguem um padrão de posição do conteúdo:
+1. Importações
+2. Definição de constantes
+3. Funções auxiliares
+4. Funções principais
+5. Execução inicial das funções
+6. Escutadores de eventos, os de elementos primeiro, depois o documento e por último a janela.
+
+Os códigos foram criados com a assitência de inteligência artificial, mas planejados e escritos majoritariamente por mim. O arquivo com maior influência de IA foi "youtubeApi.js", para criação de uma forma mais robusta de carregar a API assíncronamente, fazer consultas e lidar com seus resultados.
+
+-- Licença --
+Essa aplicação está protegida sob a licença GNU GPL-3. Consulte o arquivo "LICENSE"
+Todas as imagens, músicas e marcas relacionadas aos talentos são de propriedade da Cover Corporation, utilizados para objetivos de aprendizado sem fins comerciais.
+
+-- Para entrar em contato acesse meu LinkedIn --
+www.linkedin.com/in/márcio-rodriguês-teodoro-6b9511303
+
+---------------------------------------------
+28 de Maio de 2025, Márcio Rodriguês Teodoro.
+---------------------------------------------
