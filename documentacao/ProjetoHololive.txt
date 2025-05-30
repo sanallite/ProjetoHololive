@@ -11,6 +11,9 @@ Eu estudo desenvolvimento de sites desde 2022 e tenho diploma técnico, esse pro
 Site de Fã - Hololive English
 A intenção é específicar que esse é um projeto de fã sem vínculos com a Hololive Productions.
 
+-- URL --
+https://sanallite-hololive.web.app
+
 -- Público Alvo --
 Fãs de jogos e animes, que são o principal público alvo de Virtual Youtubers em geral. O objetivo é apresentar ao público brasileiro os talentos da Hololive English trazendo informações em Português.
 
@@ -29,9 +32,16 @@ Fãs de jogos e animes, que são o principal público alvo de Virtual Youtubers 
 - Para cor de fundo dos elementos principais e cor dos textos dos elementos em destaque, branco.
 - Para cor de fundo dos elementos aside, ao lado, azul claro, rgb(190, 239, 255);
 - Para textos, preto.
+- Os comentários seguem o padrão de cores dos "Super Chats" do YouTube: 
+    azul claro rgb(39,229,253),
+    turquesa rgb(47,233,181),
+    amarelo rgb(250,215,73),
+    laranja rgb(242,124,34),
+    rosa escuro rgb(230,37,102) e
+    vermelho rgb(228,36,33).
 
 -- Estrutura de Arquivos --
-- assets/ Todos os arquivos de conteúdo do site, divididos entre áudio e imagens. A pasta assets/img/layout/ contém as imagens e ícones utilizados.
+- public/assets/ Todos os arquivos de conteúdo do site, divididos entre áudio e imagens. A sub-pasta img/layout/ contém as imagens e ícones utilizados.
 
 - css/ Arquivos de estilização, divididos entre as páginas e partes do conteúdo.
 
@@ -62,11 +72,11 @@ Os objetos de cada talento, que são armazenandos em um vetor, contêm as seguin
 Os comentários dos usuários ficam armazenando no Cloud Firestore. Não há necessidade de autênticação para comentar mas foram definidas regras de segurança rígidas para garantir que o uso seja apenas o que está no escopo do site, com validação de campos e tipo de dados.
 
 -- Ambiente de Desenvolvimento --
-Para criar um servidor local foi utilizado a ferramenta Vite, que também é a responsável pela importação das variáveis de ambiente, que são as minhas chaves das APIs do Firebase do Google/YouTube.
+Para criar um servidor local e fazer as builds de produção foi utilizado a ferramenta Vite, que também é a responsável pela importação local das variáveis de ambiente, que são as minhas chaves das APIs do Firebase do Google/YouTube.
 
 O desenvolvimento foi realizado num navegador baseado no Chromium, o Vivaldi, com o editor de texto VSCode. em uma distribuição Linux.
 
-Para hospedagem foi utilizado o Firebase.
+Para hospedagem foi utilizado o Firebase Hosting. Com uma build de produção sendo transpilada pelo Vite através do comando "npm run build" e armazenada no diretório "dist", que está sendo ignorado para versionamento. Também foram habilitados ações de workflow do Github, que fazem build e deploy do projeto automáticamente após merges e pull requests serem aceitas, incluindo a utilização de Secrets do repositório para armazenar as variáveis de ambiente remotamente.
 
 Nenhum padrão de design foi seguido a risca, mas o código foi organizado e revisado para boa leitura. Os arquivos JavaScript seguem um padrão de posição do conteúdo:
 1. Importações
@@ -86,5 +96,5 @@ Todas as imagens, músicas e marcas relacionadas aos talentos são de propriedad
 www.linkedin.com/in/márcio-rodriguês-teodoro-6b9511303
 
 ---------------------------------------------
-28 de Maio de 2025, Márcio Rodriguês Teodoro.
+30 de Maio de 2025, Márcio Rodriguês Teodoro.
 ---------------------------------------------

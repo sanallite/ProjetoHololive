@@ -349,7 +349,7 @@ section#comentarios {
     }
 
     section#comentarios input[type="text"], section#comentarios textarea {
-        margin: 0.5rem;
+        margin: 0 auto 0.5rem auto;
     }
 
     section#comentarios input[type="text"] {

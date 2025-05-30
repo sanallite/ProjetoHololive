@@ -1,7 +1,7 @@
 {
   "name": "sanallite-hololive",
-  "version": "0.1.0",
-  "description": "Projeto front-end, meio full stack",
+  "version": "1.0.0",
+  "description": "Projeto de aplicação web para aprendizado. Sobre as Virtual YouTubers da Hololive English",
   "main": "./js/app.js",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "author": "Márcio Teodoro",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "type": "module",
   "dependencies": {
     "firebase": "^11.5.0"
