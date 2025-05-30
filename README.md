@@ -1,11 +1,12 @@
 # Projeto Hololive
 
 ## Link do Site
+[https://sanallite-hololive.web.app](https://sanallite-hololive.web.app)
 
 ## Objetivo da Aplicação
 Apresentar os talentos da [Hololive](https://hololivepro.com/en), a maior agência de Virtual YouTubers femininas do mundo. [VTubers](https://pt.wikipedia.org/wiki/YouTuber_Virtual) são criadores de conteúdo digital focado em transmissão ao vivo de jogos, também entrando em música e dança e outras áreas. A Hololive English é a sua vertente ocidental, que contém atualmente 15 talentos, ou idols, como também são chamados, divididos em quatro "gerações". A Hololive English teve sua estréia em 2020, com o "debut" das streamers do grupo chamado Myth. A [Cover Corp](https://cover-corp.com/en), empresa pai da Hololive, também tem uma agência focada em talentos masculinos, chamada [Holostars](https://holostars.hololivepro.com).
 
-Virtual Youtubers ainda é uma categoria de lives pouco conhecida no Brasil, e este site ajuda a divulgar os talentos para o nosso público, trazendo informações em Português, com links diretos para o conteúdo original.
+Virtual YouTubers ainda é uma categoria de lives pouco conhecida no Brasil, e este site ajuda a divulgar os talentos para o nosso público, trazendo informações em Português, com links diretos para o conteúdo original.
 
 > [!IMPORTANT]
 > Este é um projeto de aprendizado sem fins comerciais, todos os direitos sobre a marca Hololive e seus talentos são reservados a Cover Corporation.
@@ -37,8 +38,8 @@ Este é um "projeto de paixão" feito por mim devido ao meu grande apreço pelos
 * Carrossel de imagens automático, que pode ser pausado/retomado com duplo clique nas imagens.
 
 ## Capturas de Tela
-<img src="assets/img/layout/paginaInicial.png" width="400px">
-<img src="assets/img/layout/paginaTalento.png" width="400px">
+<img src="assets/img/layout/paginaInicial.png" width="250px">
+<img src="assets/img/layout/paginaTalento.png" width="250px">
 
 ## Contato
 [LinkedIn](https://www.linkedin.com/in/márcio-rodriguês-teodoro-6b9511303)
