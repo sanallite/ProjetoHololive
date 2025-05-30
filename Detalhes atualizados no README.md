@@ -13,7 +13,7 @@ Virtual YouTubers ainda é uma categoria pouco conhecida no Brasil, e este site 
 >
 > Os códigos são de minha autoria e estão protegidos sob a licença [GNU GPL-3](LICENSE)
 
->[!WARN]
+>[!WARNING]
 > Atualmente o site não é completamente compatível com o navegador Firefox e derivados, devido a estilização das páginas, mas está planejada a correção disso.
 
 ## Objetivo do Desenvolvimento
@@ -42,8 +42,7 @@ Este é um "projeto de paixão" feito por mim devido ao meu grande apreço pelos
 * Carrossel de imagens automático, que pode ser pausado/retomado com duplo clique nas imagens.
 
 ## Capturas de Tela
-<img src="public/assets/img/layout/paginaInicial.png" width="400px">
-<img src="public/assets/img/layout/paginaTalento.png" width="400px">
+<img src="public/assets/img/layout/paginaInicial.png" width="450px"> <img src="public/assets/img/layout/paginaTalento.png" width="450px">
 
 ## Contato
 [LinkedIn](https://www.linkedin.com/in/márcio-rodriguês-teodoro-6b9511303)
