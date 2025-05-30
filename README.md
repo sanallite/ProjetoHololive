@@ -38,8 +38,8 @@ Este é um "projeto de paixão" feito por mim devido ao meu grande apreço pelos
 * Carrossel de imagens automático, que pode ser pausado/retomado com duplo clique nas imagens.
 
 ## Capturas de Tela
-<img src="assets/img/layout/paginaInicial.png" width="250px">
-<img src="assets/img/layout/paginaTalento.png" width="250px">
+<img src="public/assets/img/layout/paginaInicial.png" width="250px">
+<img src="public/assets/img/layout/paginaTalento.png" width="250px">
 
 ## Contato
 [LinkedIn](https://www.linkedin.com/in/márcio-rodriguês-teodoro-6b9511303)
