@@ -74,7 +74,7 @@ Os comentários dos usuários ficam armazenando no Cloud Firestore. Não há nec
 -- Ambiente de Desenvolvimento --
 Para criar um servidor local e fazer as builds de produção foi utilizado a ferramenta Vite, que também é a responsável pela importação local das variáveis de ambiente, que são as minhas chaves das APIs do Firebase do Google/YouTube.
 
-O desenvolvimento foi realizado num navegador baseado no Chromium, o Vivaldi, com o editor de texto VSCode. em uma distribuição Linux.
+O desenvolvimento foi realizado num navegador baseado no Chromium, o Vivaldi, com o editor de texto VSCode. em uma distribuição Linux. Também foram feitos testes no navegador Firefox, com ajustes na estilização sendo feitos para garantir a compatibilidade.
 
 Para hospedagem foi utilizado o Firebase Hosting. Com uma build de produção sendo transpilada pelo Vite através do comando "npm run build" e armazenada no diretório "dist", que está sendo ignorado para versionamento. Também foram habilitados ações de workflow do Github, que fazem build e deploy do projeto automáticamente após merges e pull requests serem aceitas, incluindo a utilização de Secrets do repositório para armazenar as variáveis de ambiente remotamente.
 

@@ -110,10 +110,12 @@ aside#tabelaMusicas {
     background-color: var(--corFundoAzul);
     border-radius: 0.5rem;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 aside#tabelaMusicas table {
-    justify-self: center;
+    align-self: center;
     width: 70%;
 }
 
@@ -143,7 +145,7 @@ aside#tabelaMusicas table tbody th {
 
 aside#tabelaMusicas a {
     display: flex;
-    justify-self: center;
+    align-self: center;
     background-color: var(--corFundoBranca);
     color: var(--corFundoRoxa);
     margin-top: 1rem;

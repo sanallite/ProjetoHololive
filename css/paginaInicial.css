@@ -36,7 +36,9 @@ nav#grupos button.destaque:hover {
 
 section#talentosImgs img {
     cursor: pointer;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 section#talentosImgs div {
@@ -133,6 +135,7 @@ section#comentarios textarea {
     width: 100%;
     border-width: 0.2rem;
     border-color: var(--corFundoAzul);
+    border-style: solid;
 }
 
 section#comentarios p.feedbackComment {
@@ -259,9 +262,14 @@ section#comentarios {
 
     section#talentosImgs {
         display: grid;
-        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 41vh 41vh;
         grid-template-areas: "pri seg ter" "qua qui sex";
+    }
+
+    section#talentosImgs div img {
+        max-height: 41vh;
+        /* Estabelecendo um limite de altura de acordo com o tamanho do container. */
     }
 }
 
@@ -285,6 +293,11 @@ section#comentarios {
         display: grid;
         grid-template-columns: 5fr 5fr;
         grid-auto-rows: 50vh;
+    }
+
+    section#talentosImgs div img {
+        max-height: 50vh;
+        /* Estabelecendo um limite de altura de acordo com o tamanho do container. */
     }
 
     article#talentosDesc iframe {
@@ -331,6 +344,11 @@ section#comentarios {
         display: grid;
         grid-auto-rows: 40vh;
         grid-template-columns: 1fr;
+    }
+
+    section#talentosImgs div img {
+        max-height: 40vh;
+        /* Estabelecendo um limite de altura de acordo com o tamanho do container. */
     }
 
     nav#grupos {
@@ -389,5 +407,10 @@ section#comentarios {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 35vh;
+    }
+
+    section#talentosImgs div img {
+        max-height: 35vh;
+        /* Estabelecendo um limite de altura de acordo com o tamanho do container. */
     }
 }
