@@ -16,7 +16,8 @@ export default defineConfig({
         /* A função resolve constrói caminhos absolutos, garantido compatibilidade entre sistemas operacionais. __dirname representa o diretório onde está o arquivo atual, nesse caso é a pasta raiz. Assim a referência vai ser sempre relativa a localização desse arquivo, independentemente do onde for executado o comando de build. */
 
         // Página do talento
-        talentos: resolve(__dirname, 'paginas/talentos.html')
+        talentos: resolve(__dirname, 'paginas/talentos.html'),
+        quatrozeroquatro: resolve(__dirname, '404.html')
       }
     }
   }
