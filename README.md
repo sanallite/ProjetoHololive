@@ -37,6 +37,7 @@ Este é um "projeto de paixão" feito por mim devido ao meu grande apreço pelos
 * Seção de comentários com a estética dos "Super Chats" do YouTube. Porém não é permitido editar ou remover os comentários. Também só é permitido comentar a cada cinco minutos.
 * Vídeos do YouTube integrados as páginas.
 * Carrossel de imagens automático, que pode ser pausado/retomado com duplo clique nas imagens.
+* Página 404 personalizada.
 
 ## Capturas de Tela
 <img src="public/assets/img/layout/paginaInicial.png" width="450px"> <img src="public/assets/img/layout/paginaTalento.png" width="450px">

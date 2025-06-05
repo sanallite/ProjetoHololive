@@ -1,0 +1,39 @@
+body {
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: var(--corFundoBranca);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+a {
+    background-color: var(--corFundoBranca);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--corFundoRoxa);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--corFundoBranca);
+    background-color: var(--corFundoRoxa);
+}
