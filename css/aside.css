@@ -56,21 +56,11 @@ aside#tabela section#musicasInfoTabela {
 }
 
 section#talentosInfo table {
-    justify-self: center;
-    border-collapse: collapse;
-}
-
-table thead tr th:first-of-type {
-    border-top-left-radius: 0.5rem;
-}
-
-table thead tr th:nth-of-type(3) {
-    border-top-right-radius: 0.5rem;
-}
-
-table tfoot tr td {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-spacing: 0;
+    /* Bordas separadas com zero espaçamento, com o overflow: hidden forçando as células internas a respeitarem o border-radius. */
 }
 
 table tr, th ,td {
