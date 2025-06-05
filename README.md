@@ -13,9 +13,6 @@ Virtual YouTubers ainda é uma categoria pouco conhecida no Brasil, e este site 
 >
 > Os códigos são de minha autoria e estão protegidos sob a licença [GNU GPL-3](LICENSE)
 
->[!WARNING]
-> Atualmente o site não é completamente compatível com o navegador Firefox e derivados, devido a estilização das páginas, mas está planejada a correção disso.
-
 ## Objetivo do Desenvolvimento
 Este é um "projeto de paixão" feito por mim devido ao meu grande apreço pelos talentos da Hololive, e também para aprofundar, praticar e integrar meus conhecimentos de desenvolvimento web, focando no lado front-end. A ideia desse site começou em 2023, foi feito um protótipo no [Figma](https://www.figma.com/pt-br/) de como deveria ser a interface, e a criação de um site estático com pouca estilização. Em março de 2025 pude finalmente retornar ao projeto podendo dedicar meu tempo a ele, criando um site dinâmico e responsivo.
 
