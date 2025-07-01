@@ -31,7 +31,7 @@ const talentos = [
         nomeFas: 'Chumbuds',
         grupo: 'Myth',
         canal: '@GawrGura',
-        canalSecreto: '@senzawa',
+        canalSecreto: '@SamekoSaba',
         dataGraduacao: '01 de Maio de 2025',
         outfits: [
             `${pastaFotosPefil}/gura.png`,
