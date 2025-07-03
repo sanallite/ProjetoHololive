@@ -73,6 +73,8 @@ const talentos = [
 
             <p>Em 19 de abril, Gura lançou sua última música original, Ash Again. A música foi escrita pelo compositor de Devil May Cry, Casey Edwards, e o videoclipe foi animado por Mazumaro, mais conhecido pela animação de fã de 2022, "Myth's Bad Ending."</p>
             
+            <p>Os eventos de despedida de Gura incluíram uma série de transmissões que atingiram em pico cerca de 30 a 90 mil espectadores cada, culminando em um evento de revezamento da holoMyth em 30 de abril, jogando jogos diferentes em todos os canais dos quatro membros ativos. Isso foi seguido por ums Graduation Mini Live final, um evento de 30 minutos no qual ela cantou uma mistura de pop da cidade e músicas originais da hololive. O show atingiu um pico de 195.603 espectadores simultâneos e recebeu uma enxurrada de comentários e superchats tão grande que a caixa de bate-papo congelou para muitos usuários. Suas duas últimas transmissões receberam um total de mais de US$ 50.000 em doações de superchat.</p>
+
             <p>Fonte:
             <a href="https://virtualyoutuber.fandom.com/wiki/Gawr_Gura">Virtual YouTuber Wiki | Fandom</a>
             </p>`
@@ -643,7 +645,7 @@ const talentos = [
 
             <p>Em 26 de abril, Mumei realizou sua última transmissão ao vivo de bate-papo, na qual recebeu ligações e votos de felicidades dos membros da hololive. A transmissão atingiu 55.760 espectadores no pico e recebeu US$ 39.817,47 em doações do Superchat. Ela também lançou um cover de One Voice.</p>
 
-            <p>Em 27 de abril, ela realizou sua transmissão final, um evento de formatura 3D pré-gravado. A transmissão atingiu 124.095 espectadores no pico e recebeu mais US$ 22.639 em receita do Superchat. O evento incluiu uma apresentação do single de 2023 de Mumei, "mumei", com todos os membros atuais da hololive English. A transmissão foi posteriormente sujeita a uma remoção de direitos autorais pela Sony Music Entertainment.</p>
+            <p>Em 27 de abril, ela realizou sua transmissão final, um evento de formatura 3D pré-gravado. A transmissão atingiu 124.095 espectadores no pico e recebeu mais US$ 22.639 em receita do Superchat. O evento incluiu uma apresentação do single de 2023 de Mumei, "mumei", com todos os membros atuais da hololive English. No dia seguinte a transmissão foi sujeita a uma remoção por direitos autorais pela Sony Music Entertainment, que foi retirada após cinco dias.</p>
 
             <p>Fonte:
             <a href="https://virtualyoutuber.fandom.com/wiki/Nanashi_Mumei">Virtual YouTuber Wiki | Fandom</a>
