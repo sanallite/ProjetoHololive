@@ -48,11 +48,13 @@ section#talentosImgs div {
 
 #talentosImgs p.nomeTalento {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--corFundoBranca);
     text-shadow: 0 0 10px var(--corFundoRoxa);
     position: absolute;
     bottom: 5%;
+    cursor: pointer;
+    z-index: 1;
 }
 
 section#comentarios {

@@ -68,6 +68,8 @@ const exibirFotosPefilTalentos = grupo => {
         container.classList.add('fotoContainer');
 
         let nome = document.createElement('p');
+        nome.classList.add('nomeTalento');
+        nome.textContent = mapaTalentos[grupo[i][1]].nome;
 
         let imagem = document.createElement('img');
         imagem.setAttribute('src', `${grupo[i][0]}`);
@@ -83,23 +85,7 @@ const exibirFotosPefilTalentos = grupo => {
         });
         /* Quando uma das imagens for clicada será chamada uma função que envia como parâmetro uma propriedade do objeto mapaTalentos, com o valor dessa propriedade sendo um objeto que contém os dados do talento em outro array. Ex: mapaTalentos[grupo[i][1]] = mapaTalentos['Gura'] */
 
-        imagem.addEventListener('pointerover', () => { 
-            nome.classList.add('nomeTalento');
-            nome.textContent = mapaTalentos[grupo[i][1]].nome;
-
-            container.appendChild(nome);
-        });
-        /* Adicionando um texto "flutuante" para mostrar o nome de cada talento, apenas quando o mouse passsar sobre ou o elemento receber um toque */
-
-        imagem.addEventListener('pointerout', () => {
-            let nomes = document.querySelectorAll('#talentosImgs p.nomeTalento');
-            
-            for (let i = 0; i < nomes.length; i++) {
-                container.removeChild(nomes[i]);
-            }
-        })
-        /* Quando o elemento não está no focado do apontador, o elemento que exibe o nome é removidos */
-
+        container.appendChild(nome);
         container.appendChild(imagem);
         sectionTalentosImgs.appendChild(container);
     }
