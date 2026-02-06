@@ -1019,7 +1019,7 @@ const talentos = [
         grupo: 'Justice',
         canal: '@holoen_erbloodflame',
         outfits: [
-            `${pastaFotosPefil}/liz.png`,
+            `${pastaFotosPefil}/liz.webp`,
             `${pastaFotosPefil}/liz2.png`,
         ],
         clipes: [
@@ -1067,7 +1067,7 @@ const talentos = [
         grupo: 'Justice',
         canal: '@holoen_gigimurin',
         outfits: [
-            `${pastaFotosPefil}/gigi.png`,
+            `${pastaFotosPefil}/gigi.webp`,
             `${pastaFotosPefil}/gigi2.png`,
         ],
         clipes: [
@@ -1238,7 +1238,7 @@ const fotos = [
     ],
 
     [ // Justice
-        [`${pastaFotosPefil}/liz.png`, 'Elizabeth'], [`${pastaFotosPefil}/gigi.png`, 'Gigi'], [`${pastaFotosPefil}/ceci.png`, 'Cecilia'],
+        [`${pastaFotosPefil}/liz.webp`, 'Elizabeth'], [`${pastaFotosPefil}/gigi.webp`, 'Gigi'], [`${pastaFotosPefil}/ceci.png`, 'Cecilia'],
         [`${pastaFotosPefil}/raora.png`, 'Raora']
     ]
 ];
